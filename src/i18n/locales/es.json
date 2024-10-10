@@ -1,5 +1,11 @@
 {
     "welcome": "Bienvenido a mi portafolio",
-    "description": "Este es mi nuevo portafolio creado con React, donde muestro mis habilidades como desarrolladora web y mobile."
+    "description": "Este es mi nuevo portafolio creado con React, donde muestro mis habilidades como desarrolladora web y mobile.", 
+    "hireText":"Contrátame",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "skills": "Habilidades"
   }
   

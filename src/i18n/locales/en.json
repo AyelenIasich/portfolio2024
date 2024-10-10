@@ -1,5 +1,11 @@
 {
     "welcome": "Welcome to my portfolio",
-    "description": "This is my new portfolio built with React, showcasing my skills as a web and mobile developer."
+    "description": "This is my new portfolio built with React, showcasing my skills as a web and mobile developer.",
+    "hireText":"Hire me", 
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills"
   }
   
