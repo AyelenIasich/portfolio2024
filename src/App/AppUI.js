@@ -1,22 +1,18 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import LanguageButton from "../components/LanguageButton";
+import Navbar from "../components/Navbar";
 import "../i18n/i18n";
 import "./App.css";
-import LanguageButton from "../components/LanguageButton";
+import Home from "../sections/Home";
 
 function AppUI() {
-  const { t, i18n } = useTranslation();
-
   return (
-    <div>
+    <>
       {/* Testing translations */}
-      <div className="App">
-        <header></header>
-        <h1>{t("welcome")}</h1>
-        <p>{t("description")}</p>
-      </div>
+      <Navbar />
+      <Home />
       <LanguageButton />
-    </div>
+    </>
   );
 }
 

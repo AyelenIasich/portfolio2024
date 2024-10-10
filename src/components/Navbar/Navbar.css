@@ -1,0 +1,14 @@
+.navbar {
+    background: hsl(0 0% 100% / 0.1) !important;
+    backdrop-filter: blur(1rem);
+    transition: 0.6s ease;
+}
+
+.nav-link{
+    color: var(--nav-link);
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: var(--hover-main);
+}

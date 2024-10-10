@@ -1,0 +1,12 @@
+.social-icon{
+    color: #664E92;
+}
+.github{
+    font-size: 1.8rem;
+}
+.linkedin{
+    font-size: 1.9rem;
+}
+.social-icon:hover{
+    color: var(--hover-main);
+}
