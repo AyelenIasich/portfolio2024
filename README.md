@@ -1,3 +1,14 @@
+
+# Portfolio 2024
+
+## Description / Descripción
+
+**English:**  
+This is my new portfolio built with React, showcasing my skills and projects as a web and mobile developer. I've designed this space to highlight my experience in developing modern applications for both web and mobile platforms, emphasizing my ability to create attractive and functional interfaces. Explore my background, featured projects, and discover how I can help bring your ideas to digital life.
+
+**Español:**  
+Este es mi nuevo portafolio creado con React, donde presento mis habilidades y proyectos como desarrolladora web y mobile. He diseñado este espacio para mostrar mi experiencia en el desarrollo de aplicaciones modernas, tanto para la web como para dispositivos móviles, destacando mi capacidad para crear interfaces atractivas y funcionales. Explora mi trayectoria, mis proyectos destacados y descubre cómo puedo ayudarte a llevar tus ideas a la realidad digital.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
