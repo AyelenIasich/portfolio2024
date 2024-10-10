@@ -1,4 +1,4 @@
-.language-button {
+.language-btn {
   position: fixed;
   top: 25%;
   right: 0px;
@@ -13,6 +13,7 @@
   justify-content: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  transition: border-color 0.3s ease;
 }
 
 .btn-lang {
@@ -24,5 +25,12 @@
 }
 
 .icon-lang {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.language-btn:hover,
+.language-btn:focus {
+    border-color: #6d28d9;
+    box-shadow: 0 0 8px rgba(109, 40, 217, 0.5);
+    background-color: #f3e8ff;
 }
