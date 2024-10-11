@@ -1,11 +1,14 @@
 {
-    "welcome": "Welcome to my portfolio",
+    "descriptionHome": "Experience in web and mobile development. I create intuitive applications with a focus on UX/UI design in Figma. Always eager to learn and grow in tech",
     "description": "This is my new portfolio built with React, showcasing my skills as a web and mobile developer.",
     "hireText":"Hire me", 
     "about": "About",
     "services": "Services",
     "projects": "Projects",
     "experience": "Experience",
-    "skills": "Skills"
+    "skills": "Skills",
+    "DownloadCV": "Download CV",
+    "ScrollDown":"Scroll Down", 
+    "LetsTalk":"Let's talk"
   }
   

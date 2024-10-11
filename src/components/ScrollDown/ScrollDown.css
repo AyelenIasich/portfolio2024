@@ -1,0 +1,28 @@
+.scroll-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #383838;
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.scroll-link:hover {
+  color: var(--hover-main);
+}
+
+.icon-arrow-down {
+  color: var(--purple-icon);
+  font-weight: 600;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

@@ -12,10 +12,10 @@ function LanguageButton() {
   };
 
   return (
-    <div  onClick={toggleLanguage}  className="language-btn">
-      <button type="button" className="btn-lang">
+    <div onClick={toggleLanguage}  className="language-btn">
+      <div type="button" className="btn-lang">
         <FaGlobeAmericas className="icon-lang"/>
-      </button>
+      </div>
     </div>
   );
 }

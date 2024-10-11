@@ -41,4 +41,7 @@
   --bg-lang:rgba(225, 225, 225, 0.1);
   --nav-link:#1A1525;
   --hover-main:#6d28d9;
+  --light-purple-bg:rgba(188, 166, 229, 0.2);
+  --purple-icon:#664E92;
+  --main-color-gradient: linear-gradient(90deg, #AA3CC6 0%, #521D60 100%);
 }

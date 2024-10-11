@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
-      <div className="container-fluid px-md-5">
+      <div className="container ">
         <a className="navbar-brand" href="#">
           <MainLogoSVG height={40} />
         </a>

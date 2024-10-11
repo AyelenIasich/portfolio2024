@@ -1,11 +1,14 @@
 {
-    "welcome": "Bienvenido a mi portafolio",
-    "description": "Este es mi nuevo portafolio creado con React, donde muestro mis habilidades como desarrolladora web y mobile.", 
-    "hireText":"Contrátame",
-    "about": "Sobre mí",
-    "services": "Servicios",
-    "projects": "Proyectos",
-    "experience": "Experiencia",
-    "skills": "Habilidades"
-  }
-  
+  "descriptionHome": "Experiencia en desarrollo web y móvil. Creó aplicaciones intuitivas con enfoque en diseño UX/UI en Figma. Siempre con ganas de aprender y crecer en tecnología", 
+  "description": "Este es mi nuevo portafolio creado con React, donde muestro mis habilidades como desarrolladora web y mobile.",
+  "hireText": "Contrátame",
+  "about": "Sobre mí",
+  "services": "Servicios",
+  "projects": "Proyectos",
+  "experience": "Experiencia",
+  "skills": "Habilidades",
+  "DownloadCV":"Descargar CV", 
+  "ScrollDown": "Desliza hacia abajo",
+  "LetsTalk":"Contáctame"
+
+}
