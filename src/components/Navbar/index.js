@@ -5,13 +5,13 @@ import { useTranslation } from "react-i18next";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
 import "./Navbar.css";
 import SocialLinks from "./SocialLinks";
+import MobileSocialLink from "./SocialLinks/MobileSocialLink";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
 
   const linkSectionList = [
     { itemName: t("about"), itemLink: "#" },
-    { itemName: t("services"), itemLink: "#" },
     { itemName: t("projects"), itemLink: "#" },
     { itemName: t("experience"), itemLink: "#" },
     { itemName: t("skills"), itemLink: "#" },
@@ -40,6 +40,7 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto text-center">
+            <SocialLinks />
             {linkSectionList.map((itemLink) => (
               <NavItem
                 itemName={itemLink.itemName}
@@ -47,8 +48,9 @@ function Navbar() {
                 key={itemLink.itemName}
               />
             ))}
-            <SocialLinks />
-            <PrimaryBtn label={t("hireText")} onClick={handleHireMe} extraStyle="d-none d-md-block"/>
+            <MobileSocialLink/>
+            {/* Button hire me */}
+            {/* <PrimaryBtn label={t("hireText")} onClick={handleHireMe} extraStyle="d-none d-md-block"/> */}
           </ul>
         </div>
       </div>

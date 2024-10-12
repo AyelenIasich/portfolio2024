@@ -52,8 +52,8 @@
 }
 
 .name {
-  /* background: #521D60; */
-  background: linear-gradient(90deg, #AA3CC6 0%, #521D60 100%);
+  background: #AA3CC6;
+  /* background: linear-gradient(90deg, #AA3CC6 0%, #521D60 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -79,7 +79,7 @@
 
 @media (max-width: 576px) {
   .profile-image {
-    width: 80%;
+    width: 85%;
   }
   .button-group{
     align-self: center;
