@@ -1,0 +1,41 @@
+.card-form {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 33px 40px;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .textarea-create {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    border-color: #a78bfa;
+    box-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
+    margin-bottom: 20px;
+    resize: none;
+    background-color: #f9f9ff;
+  }
+  
+  .textarea-create:hover,
+  .textarea-create:focus {
+    border-color: #6d28d9;
+    box-shadow: 0 0 8px rgba(109, 40, 217, 0.5);
+  }
+  
+  .textarea-create::placeholder {
+    color: #b3b3cc;
+    opacity: 0.8;
+  }
+  
+  .label-textarea{
+    color: #18003E;
+    font-weight: 600;
+  }

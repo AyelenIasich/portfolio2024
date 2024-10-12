@@ -1,5 +1,5 @@
 {
-  "descriptionHome": "Experiencia en desarrollo web y móvil. Creó aplicaciones intuitivas con enfoque en diseño UX/UI en Figma. Siempre con ganas de aprender y crecer en tecnología", 
+  "descriptionHome": "Experiencia en desarrollo web y móvil. Creó aplicaciones intuitivas con enfoque en diseño UX/UI en Figma. Siempre con ganas de aprender y crecer en tecnología",
   "description": "Este es mi nuevo portafolio creado con React, donde muestro mis habilidades como desarrolladora web y mobile.",
   "hireText": "Contrátame",
   "about": "Sobre mí",
@@ -7,8 +7,13 @@
   "projects": "Proyectos",
   "experience": "Experiencia",
   "skills": "Habilidades",
-  "DownloadCV":"Descargar CV", 
+  "DownloadCV": "Descargar CV",
   "ScrollDown": "Desliza hacia abajo",
-  "LetsTalk":"Charlemos"
-
+  "LetsTalk": "Charlemos",
+  "ContactDescription": "No dudes en enviarme un mensaje, ya sea para hablar de un nuevo reto, una oportunidad de trabajo o simplemente para saludar",
+  "titleForm": "Trabajemos juntos",
+  "labelName": "Nombre",
+  "labelEmail": "Email",
+  "labelMessage": "Mensaje",
+  "FormBtn": "Enviar Mensaje"
 }

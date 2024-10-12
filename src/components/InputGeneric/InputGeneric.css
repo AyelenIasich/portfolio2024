@@ -1,0 +1,17 @@
+.input-generic {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  .input-generic {
+    border-color: #a78bfa;
+    box-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
+  }
+  .label-input { 
+    font-weight: 600;
+    color: #18003E;
+   }

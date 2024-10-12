@@ -35,7 +35,7 @@ function Home() {
             <h2 className="job-position">FULL STACK DEVELOPER</h2>
             <p className="description pt-4">{t("descriptionHome")}</p>
             {/* <div className="button-group pt-3 pt-lg-3 pt-xxl-5 pb-3  d-flex flex-column align-items-center d-sm-block justify-content-sm-start "> */}
-            <div className="button-group pb-3  align-items-center d-block justify-content-start  ">
+            <div className="button-group pb-3 d-flex d-md-block justify-content-center justify-md-content-start">
               <SecondaryBtn
                 label={t("LetsTalk")}
                 onClick={handleDownloadCV}

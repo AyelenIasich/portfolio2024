@@ -9,6 +9,12 @@
     "skills": "Skills",
     "DownloadCV": "Download CV",
     "ScrollDown":"Scroll Down", 
-    "LetsTalk":"Let's talk"
+    "LetsTalk":"Let's talk", 
+    "ContactDescription":"Feel free to send me a message, whether it's to discuss a new challenge, a job opportunity, or simply to say hello",
+    "titleForm":"Let's Work Together",
+    "labelName":"Name",
+    "labelEmail":"Email",
+    "labelMessage":"Message",
+    "FormBtn":"Send Message"
   }
   
