@@ -40,7 +40,6 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto text-center">
-            <SocialLinks />
             {linkSectionList.map((itemLink) => (
               <NavItem
                 itemName={itemLink.itemName}
@@ -48,9 +47,10 @@ function Navbar() {
                 key={itemLink.itemName}
               />
             ))}
+            <SocialLinks />
             <MobileSocialLink/>
             {/* Button hire me */}
-            {/* <PrimaryBtn label={t("hireText")} onClick={handleHireMe} extraStyle="d-none d-md-block"/> */}
+            <PrimaryBtn label={t("hireText")} onClick={handleHireMe} extraStyle="d-none d-md-block" isHireMe={true}/>
           </ul>
         </div>
       </div>

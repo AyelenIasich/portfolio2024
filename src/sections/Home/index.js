@@ -26,7 +26,7 @@ function Home() {
     <section className="home-section">
       <BgHomeSVG className="background-svg d-none d-md-block" />
       <BgHomeMobile className="background-svg  d-md-none" />
-      <div className="container">
+      <div className="container d-flex  align-items-center justify-content-center ">
         <div className="row content-row ">
           <div className="col-12 col-lg-6 align-self-center justify-content-center order-2 text-content col-home ps-4">
             <h1 className="lastName display-4">
