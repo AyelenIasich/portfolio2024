@@ -2,46 +2,78 @@
   color: #15003e;
   font-weight: 700;
 }
+
 .contact-part2 {
-  color: #ffff;
+  color: #fff;
   font-weight: 400;
 }
+
 .bg-contact-me {
-  background: linear-gradient(180deg, #9978d7 0%, rgba(255, 255, 255, 0) 100%);
-  /* height: 100vh; */
+  /* background: linear-gradient(180deg, #9978d7 0%, rgba(255, 255, 255, 0) 100%); */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /* overflow: hidden;  */
 }
+
+.bg-austranaut-container {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #9978d7 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .contact-subtitle {
-  color: #ffff;
+  color: #fff;
   font-weight: 300;
 }
 
 .form-contact {
   background-color: #fff;
-
-  /* height: 100vh; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg-logo-contact {
-  width: 100%;
-}
 .section-contact {
-  background-color: var(--light-purple-bg);
+  /* background-color: var(--light-purple-bg); */
+  /* min-height: 100vh; */
 }
+
 .description-contact {
-  color:  #fff; 
+  color: #fff;
   font-weight: 400;
   line-height: 1.6;
+  font-size: 0.9rem;
 }
 
-.astrounat-container{
+.astrounat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%;  */
 }
-.img-austronat{
-    width: 100%;
+
+.img-austronat {
+  width: 100%;
+  height: auto; /* Ajusta la altura de forma proporcional */
+  object-fit: cover; /* Hace que la imagen se ajuste al contenedor sin distorsionarse */
+  display: block;
+  margin-bottom: 0; /* Asegura que no haya espacios adicionales debajo de la imagen */
 }
+
 @media (min-width: 576px) {
   .form-contact {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    justify-content: center;
   }
- 
+
+  .astrounat-container {
+    padding-left: 2rem; /* Añade algo de espacio lateral en pantallas más grandes */
+  }
+
+  .bg-contact-me {
+    /* height: 100vh;  */
+  }
 }
