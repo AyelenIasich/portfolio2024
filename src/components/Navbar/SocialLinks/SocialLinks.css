@@ -1,12 +1,33 @@
-.social-icon{
-    color: #664E92;
+.social-icon {
+  color: #664e92;
 }
-.github{
-    font-size: 1.8rem;
+.github {
+  font-size: 1.8rem;
 }
-.linkedin{
-    font-size: 1.9rem;
+.linkedin {
+  font-size: 1.9rem;
 }
-.social-icon:hover{
-    color: var(--hover-main);
+.social-icon:hover {
+  color: var(--hover-main);
+}
+.bg-mobile-social {
+  background-color: aqua;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  /* background: linear-gradient(180deg, #a78bfa 0%, #4b267d 100%); */
+  background-color: white;
+  color: #000000;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.bg-mobile-social:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+.bg-mobile-icon {
+  color: #000000;
 }

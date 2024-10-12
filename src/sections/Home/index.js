@@ -18,8 +18,8 @@ function Home() {
     );
   };
 
-  const handleContactMe = () =>{
-    console.log("redirect to contact me section ") 
+  const handleContactMe = () => {
+    console.log("redirect to contact me section ");
   };
 
   return (
@@ -27,15 +27,20 @@ function Home() {
       <BgHomeSVG className="background-svg d-none d-md-block" />
       <BgHomeMobile className="background-svg  d-md-none" />
       <div className="container">
-        <div className="row content-row " >
+        <div className="row content-row ">
           <div className="col-12 col-md-6 align-self-center justify-content-center order-2 text-content col-home ps-4">
             <h1 className="lastName display-4">
               <span className="name">Ayelén</span> Iasich
             </h1>
             <h2 className="job-position">FULL STACK DEVELOPER</h2>
             <p className="description pt-4">{t("descriptionHome")}</p>
-            <div className="button-group pt-3 pt-lg-3 pt-xxl-5 pb-3  d-flex flex-column align-items-center d-flex d-md-block justify-content-md-start ">
-              <SecondaryBtn label={t("LetsTalk")} onClick={handleDownloadCV} isContactBtn={true} extraStyle={"me-md-4 mb-3 mb-md-0"}/>
+            <div className="button-group pt-3 pt-lg-3 pt-xxl-5 pb-3  d-flex flex-column align-items-center d-sm-block justify-content-sm-start ">
+              <SecondaryBtn
+                label={t("LetsTalk")}
+                onClick={handleDownloadCV}
+                isContactBtn={true}
+                extraStyle={"me-sm-4 mb-3 mb-md-0"}
+              />
               <PrimaryBtn label={t("DownloadCV")} onClick={handleContactMe} />
             </div>
           </div>

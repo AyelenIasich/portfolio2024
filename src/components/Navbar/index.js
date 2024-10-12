@@ -39,7 +39,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto text-center">
             {linkSectionList.map((itemLink) => (
               <NavItem
                 itemName={itemLink.itemName}
@@ -48,7 +48,7 @@ function Navbar() {
               />
             ))}
             <SocialLinks />
-            <PrimaryBtn label={t("hireText")} onClick={handleHireMe} />
+            <PrimaryBtn label={t("hireText")} onClick={handleHireMe} extraStyle="d-none d-md-block"/>
           </ul>
         </div>
       </div>
