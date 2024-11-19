@@ -24,6 +24,6 @@
 }
 @media (max-width: 576px) {
   .secondary-btn {
-    width: 145px;
+    width: 100%;
   }
 }

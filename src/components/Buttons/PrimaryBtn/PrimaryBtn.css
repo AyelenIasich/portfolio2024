@@ -29,6 +29,6 @@
 
 @media (max-width: 576px) {
   .primary-btn {
-    width: 145px;
+    width: 100%;
   }
 }
