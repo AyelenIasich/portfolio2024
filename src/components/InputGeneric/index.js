@@ -5,7 +5,7 @@ function InputGeneric(props) {
   const { placeholder, value, onChange, label } = props;
   return (
     <>
-      <label className="py-3 label-input ">{label}</label>
+      <label className="py-3 label-input pt-lg-4 ">{label}</label>
       <input
         type="text"
         className="input-generic"

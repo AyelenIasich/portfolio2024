@@ -15,6 +15,9 @@
     "labelName":"Name",
     "labelEmail":"Email",
     "labelMessage":"Message",
-    "FormBtn":"Send Message"
+    "FormBtn":"Send Message",
+    "getInTouch": "Get in touch", 
+    "contactMeTitle1": "Contáctame",
+    "contactMeTitle2": "hoy"
   }
   

@@ -15,3 +15,10 @@
     font-weight: 600;
     color: #18003E;
    }
+
+   .input-generic:hover,
+   .input-generic:focus {
+     border-color: #6d28d9;
+     box-shadow: 0 0 8px rgba(109, 40, 217, 0.5);
+   }
+   

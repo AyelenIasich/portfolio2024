@@ -15,5 +15,8 @@
   "labelName": "Nombre",
   "labelEmail": "Email",
   "labelMessage": "Mensaje",
-  "FormBtn": "Enviar Mensaje"
+  "FormBtn": "Enviar Mensaje", 
+  "getInTouch": "Ponte en contacto", 
+  "contactMeTitle1": "Contact",
+  "contactMeTitle2": "Me"
 }

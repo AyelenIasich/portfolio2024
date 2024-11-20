@@ -9,10 +9,8 @@
 }
 
 .bg-contact-me {
-  /* background: linear-gradient(180deg, #9978d7 0%, rgba(255, 255, 255, 0) 100%); */
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  /* overflow: hidden;  */
 }
 
 .bg-austranaut-container {
@@ -35,11 +33,6 @@
   align-items: center;
 }
 
-.section-contact {
-  /* background-color: var(--light-purple-bg); */
-  /* min-height: 100vh; */
-}
-
 .description-contact {
   color: #fff;
   font-weight: 400;
@@ -51,15 +44,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%;  */
 }
 
 .img-austronat {
   width: 100%;
-  height: auto; /* Ajusta la altura de forma proporcional */
-  object-fit: cover; /* Hace que la imagen se ajuste al contenedor sin distorsionarse */
+  height: auto;
+  object-fit: cover;
   display: block;
-  margin-bottom: 0; /* Asegura que no haya espacios adicionales debajo de la imagen */
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {
@@ -70,10 +62,23 @@
   }
 
   .astrounat-container {
-    padding-left: 2rem; /* Añade algo de espacio lateral en pantallas más grandes */
+    padding-left: 2rem;
   }
+}
 
-  .bg-contact-me {
-    /* height: 100vh;  */
+@media (min-width: 992px) {
+  .bg-austranaut-container {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardForm {
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    max-width: 1150px;
+    margin: 25px auto;
   }
 }
