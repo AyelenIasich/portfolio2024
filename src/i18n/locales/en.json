@@ -25,5 +25,11 @@
   "MadeWithLove2": " by Aye",
   "navigationTitle": "Navigation",
   "socialLinksTitle": "Let's Connect!",
-  "downloadCvTitle": "Here you have my CV!"
+  "downloadCvTitle": "Here you have my CV!",
+  "successSendEmail": "Message sent successfully!",
+  "thankYouMessage": "Thank you for reaching out. I’ll review your message and reply shortly.",
+  "okButton": "entiendo",
+  "errorSendEmail": "Failed to send the message",
+  "errorMessage": "There was a problem sending your message. Please try again.",
+  "retryButton": "Try Again"
 }
