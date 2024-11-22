@@ -11,7 +11,7 @@ function Footer() {
   const { t, i18n } = useTranslation();
 
   const FooterNavigationLinks = [
-    { itemName: t("about"), itemLink: "#" },
+    { itemName: t("about"), itemLink: "#aboutMe" },
     { itemName: t("services"), itemLink: "#" },
     { itemName: t("proyects"), itemLink: "#" },
     { itemName: t("experience"), itemLink: "#" },

@@ -35,6 +35,8 @@
   "errorName":"Por favor, ingresa su nombre", 
   "errorEmail":"Por favor, ingresa su email", 
   "errorMessageField":"Por favor, escribe su mensaje", 
-  "errorValidateEmail":"Por favor, ingrese un email válido"
+  "errorValidateEmail":"Por favor, ingrese un email válido", 
+  "AboutMeTitle":"Sobre mí"
+
 
 }

@@ -1,0 +1,25 @@
+.title-background {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, #0e2431 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+}
+
+.title-foreground {
+  font-size: 2.5rem;
+  font-weight: 700;
+  transform: translateY(-80px);
+  position: relative;
+}
+
+.title-foreground::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 70px;
+  background:linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
+}

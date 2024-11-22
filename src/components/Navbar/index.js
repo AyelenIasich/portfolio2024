@@ -11,7 +11,7 @@ function Navbar() {
   const { t, i18n } = useTranslation();
 
   const linkSectionList = [
-    { itemName: t("about"), itemLink: "#" },
+    { itemName: t("about"), itemLink: "#aboutMe" },
     { itemName: t("projects"), itemLink: "#" },
     { itemName: t("experience"), itemLink: "#" },
     { itemName: t("skills"), itemLink: "#" },

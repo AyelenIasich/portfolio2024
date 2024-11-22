@@ -35,5 +35,6 @@
   "errorName":"Please, enter your name", 
   "errorEmail":"Please, enter your email",
   "errorMessageField":"Please, write your message", 
-  "errorValidateEmail":"Please, enter a validate email"
+  "errorValidateEmail":"Please, enter a validate email", 
+  "AboutMeTitle":"About me"
 }
