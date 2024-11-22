@@ -5,18 +5,12 @@ import { ReactComponent as BgHomeMobile } from "../../assets/svg/bg-home-mobile3
 import ayeIasich from "../../assets/png/ayeIasich.png";
 import ScrollDown from "../../components/ScrollDown";
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
-import "./Home.css";
 import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
+import { handleDownloadCV } from "../../utils/cvUtils"; 
+import "./Home.css";
 
 function Home() {
   const { t, i18n } = useTranslation();
-
-  const handleDownloadCV = () => {
-    window.open(
-      "https://drive.google.com/file/d/1JniB1TdmTa74xu3j-w-lv5zP7sCwWKfb/view?usp=sharing",
-      "_blank"
-    );
-  };
 
   const handleContactMe = () => {
     console.log("redirect to contact me section ");
@@ -38,11 +32,11 @@ function Home() {
             <div className="button-group pb-3 d-flex d-md-block justify-content-center justify-md-content-start ">
               <SecondaryBtn
                 label={t("LetsTalk")}
-                onClick={handleDownloadCV}
+                onClick={handleContactMe}
                 isContactBtn={true}
                 extraStyle={"me-2 me-md-4 mb-3 mb-md-0 mt-3 mt-lg-3 mt-xxl-5 "}
               />
-              <PrimaryBtn label={t("DownloadCV")} onClick={handleContactMe} extraStyle={"mt-3 mt-lg-3 mt-xxl-5"} />
+              <PrimaryBtn label={t("DownloadCV")} onClick={handleDownloadCV} extraStyle={"mt-3 mt-lg-3 mt-xxl-5"} />
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2  mt-5 pt-3 pt-md-0  image-content col-home">

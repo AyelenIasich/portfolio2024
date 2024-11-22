@@ -1,0 +1,30 @@
+.footer-social-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-link {
+  color: linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.footer-social-link:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px rgba(170, 60, 198, 0.5);
+}
+
+.footer-redes{
+    height: 40px;
+
+}

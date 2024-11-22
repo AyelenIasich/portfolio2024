@@ -7,6 +7,8 @@
   "projects": "Proyectos",
   "experience": "Experiencia",
   "skills": "Habilidades",
+  "proyects":"Proyectos", 
+  "recommendations":"Recomendaciones",
   "DownloadCV": "Descargar CV",
   "ScrollDown": "Desliza hacia abajo",
   "LetsTalk": "Charlemos",
@@ -18,5 +20,10 @@
   "FormBtn": "Enviar Mensaje", 
   "getInTouch": "Ponte en contacto", 
   "contactMeTitle1": "Contact",
-  "contactMeTitle2": "Me"
+  "contactMeTitle2": "Me",
+  "MadeWithLove":"Hecho con",
+  "MadeWithLove2":" por Aye", 
+  "navigationTitle": "Navegación", 
+  "socialLinksTitle": "¡Conectemos!", 
+  "downloadCvTitle":  "¡Aquí tienes mi CV!"
 }

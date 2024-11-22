@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { socialLinks } from "../../../config/socialLinks";
 import "./SocialLinks.css";
 
 function SocialLinks() {
@@ -8,8 +9,7 @@ function SocialLinks() {
       <li className="nav-item ps-md-3 d-none d-lg-block">
         <a
           className="nav-link"
-          aria-current="page"
-          href="https://github.com/AyelenIasich"
+          href={socialLinks.github}
         >
           <IoLogoGithub className="social-icon github" />
         </a>
@@ -17,8 +17,7 @@ function SocialLinks() {
       <li className="nav-item pe-md-3 d-none d-lg-block">
         <a
           className="nav-link"
-          aria-current="page"
-          href="https://ar.linkedin.com/in/ayeiasich"
+          href={socialLinks.linkedin}
         >
           <IoLogoLinkedin className="social-icon linkedin" />
         </a>

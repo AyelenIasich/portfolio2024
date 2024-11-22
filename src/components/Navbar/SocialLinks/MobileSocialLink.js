@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { socialLinks } from "../../../config/socialLinks";
 
 function MobileSocialLink() {
   return (
@@ -7,8 +8,7 @@ function MobileSocialLink() {
       <li className="nav-item d-lg-none  mb-3 ">
         <a
           className="nav-link bg-mobile-social "
-          aria-current="page"
-          href="https://github.com/AyelenIasich"
+          href={socialLinks.github}
         >
           <IoLogoGithub className="bg-mobile-icon github" />{" "}
           <span className="">Github</span>
@@ -17,8 +17,7 @@ function MobileSocialLink() {
       <li className="nav-item d-lg-none mb-3">
         <a
           className="nav-link bg-mobile-social"
-          aria-current="page"
-          href="https://ar.linkedin.com/in/ayeiasich"
+          href={socialLinks.linkedin}
         >
           <IoLogoLinkedin className="bg-mobile-icon linkedin" />{" "}
           <span className="">LinkedIn</span>
