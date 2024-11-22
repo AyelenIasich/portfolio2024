@@ -1,8 +1,9 @@
 import React from "react";
+import InputError from "../InputError/InputError";
 import "./InputGeneric.css";
 
 function InputGeneric(props) {
-  const { placeholder, value, onChange, label, name } = props;
+  const { placeholder, value, onChange, label, name , error} = props;
   return (
     <>
       <label className="py-3 label-input pt-lg-4 ">{label}</label>
@@ -15,6 +16,7 @@ function InputGeneric(props) {
         onChange={onChange}
         name={name}
       />
+      <InputError formError={error}/>
     </>
   );
 }

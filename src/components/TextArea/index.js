@@ -1,7 +1,8 @@
 import React from "react";
+import InputError from "../InputError/InputError";
 import "./TextArea.css";
 
-function TextArea({ onChange, value, placeholder, label, name }) {
+function TextArea({ onChange, value, placeholder, label, name, error }) {
   return (
     <>
       <label className="label-textarea py-3 pt-lg-4 ">{label}</label>
@@ -13,6 +14,7 @@ function TextArea({ onChange, value, placeholder, label, name }) {
         rows={4}
         name={name}
       ></textarea>
+      <InputError formError={error} />
     </>
   );
 }

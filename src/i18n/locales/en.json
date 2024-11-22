@@ -31,5 +31,9 @@
   "okButton": "entiendo",
   "errorSendEmail": "Failed to send the message",
   "errorMessage": "There was a problem sending your message. Please try again.",
-  "retryButton": "Try Again"
+  "retryButton": "Try Again", 
+  "errorName":"Please, enter your name", 
+  "errorEmail":"Please, enter your email",
+  "errorMessageField":"Please, write your message", 
+  "errorValidateEmail":"Please, enter a validate email"
 }

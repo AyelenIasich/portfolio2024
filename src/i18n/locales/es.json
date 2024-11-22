@@ -31,5 +31,10 @@
   "okButton": "entiendo",
   "errorSendEmail": "No se pudo enviar el mensaje",
   "errorMessage": "Ocurrió un problema al intentar enviar tu mensaje. Por favor, intenta nuevamente.",
-  "retryButton": "Intentar de nuevo"
+  "retryButton": "Intentar de nuevo", 
+  "errorName":"Por favor, ingresa su nombre", 
+  "errorEmail":"Por favor, ingresa su email", 
+  "errorMessageField":"Por favor, escribe su mensaje", 
+  "errorValidateEmail":"Por favor, ingrese un email válido"
+
 }

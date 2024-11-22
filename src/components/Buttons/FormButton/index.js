@@ -3,13 +3,15 @@ import "./FormButton.css";
 
 function FormButton({ onClick, label, extraStyle }) {
   return (
-    <button
-      onClick={onClick}
-      className={`form-btn ${extraStyle ? extraStyle : ""}`}
-      type="submit"
-    >
-      {label}
-    </button>
+    <div className="pt-3">
+      <button
+        onClick={onClick}
+        className={`form-btn ${extraStyle ? extraStyle : ""}`}
+        type="submit"
+      >
+        {label}
+      </button>
+    </div>
   );
 }
 

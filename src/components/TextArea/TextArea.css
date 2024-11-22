@@ -19,7 +19,6 @@
     transition: border-color 0.3s ease;
     border-color: #a78bfa;
     box-shadow: 0 0 8px rgba(167, 139, 250, 0.5);
-    margin-bottom: 20px;
     resize: none;
     background-color: #f9f9ff;
   }

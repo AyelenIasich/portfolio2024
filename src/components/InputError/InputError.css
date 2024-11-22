@@ -1,0 +1,29 @@
+.error-wrapper {
+  background-color: #ffe6e6;
+  border-radius: 20px;
+  border: 1px solid #ff4d4d; 
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #313131;
+  font-weight: 500;
+  margin: 0;
+  flex: 1;
+  padding-right: 10px;
+}
+
+.hide-error {
+  font-size: 14px;
+  color: #313131;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hide-error:hover {
+  color: #ffffff;
+}
