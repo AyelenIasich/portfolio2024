@@ -18,7 +18,10 @@ function Navbar() {
   ];
 
   const handleHireMe = () => {
-    console.log("click");
+    const section = document.getElementById("contactMe");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (

@@ -6,14 +6,17 @@ import ayeIasich from "../../assets/png/ayeIasich.png";
 import ScrollDown from "../../components/ScrollDown";
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
-import { handleDownloadCV } from "../../utils/cvUtils"; 
+import { handleDownloadCV } from "../../utils/cvUtils";
 import "./Home.css";
 
 function Home() {
   const { t, i18n } = useTranslation();
 
   const handleContactMe = () => {
-    console.log("redirect to contact me section ");
+    const section = document.getElementById("contactMe");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
@@ -36,7 +39,11 @@ function Home() {
                 isContactBtn={true}
                 extraStyle={"me-2 me-md-4 mb-3 mb-md-0 mt-3 mt-lg-3 mt-xxl-5 "}
               />
-              <PrimaryBtn label={t("DownloadCV")} onClick={handleDownloadCV} extraStyle={"mt-3 mt-lg-3 mt-xxl-5"} />
+              <PrimaryBtn
+                label={t("DownloadCV")}
+                onClick={handleDownloadCV}
+                extraStyle={"mt-3 mt-lg-3 mt-xxl-5"}
+              />
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2  mt-5 pt-3 pt-md-0  image-content col-home">
