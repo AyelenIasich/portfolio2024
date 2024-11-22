@@ -1,0 +1,38 @@
+.selfie-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.selfie-image {
+  width: 85%;
+}
+
+.line {
+  background-color: #d7d7d7;
+  height: 2px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: 0 none;
+}
+
+.about-subtitle {
+  font-weight: 600;
+}
+
+.about-subtitle2 {
+  font-weight: 600;
+  color: #4b4b4b;
+}
+
+.about-text {
+  font-weight: 600;
+  color: #757575;
+  line-height: 1.8;
+}
+
+.container-about-me {
+  transform: translateY(-40px);
+}

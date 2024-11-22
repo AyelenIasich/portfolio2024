@@ -36,7 +36,11 @@
   "errorEmail":"Por favor, ingresa su email", 
   "errorMessageField":"Por favor, escribe su mensaje", 
   "errorValidateEmail":"Por favor, ingrese un email válido", 
-  "AboutMeTitle":"Sobre mí"
+  "AboutMeTitle":"Sobre mí",
+  "AboutMeSubtitle1" :"¡Bienvenidos, soy Aye!",
+  "AboutMeSubtitle2": "Desarrolladora Full Stack y autodidacta al tiempo completo",
+  "AboutMeDescription1":"Vivo en Ushuaia y soy Desarrolladora Full Stack, apasionada por crear aplicaciones web y móviles que ofrezcan soluciones completas y experiencias excepcionales. Descubrí la programación durante la pandemia y desde entonces dedico largas horas a perfeccionar mis habilidades en el front-end y back-end.",
+  "AboutMeDescription2":"Mi curiosidad y disciplina me han permitido crecer rápidamente como profesional y enfrentar desafíos con creatividad e innovación. Disfruto abordar proyectos que combinen tecnología y diseño, desarrollando interfaces intuitivas y funcionalidades robustas."
 
 
 }

@@ -36,5 +36,9 @@
   "errorEmail":"Please, enter your email",
   "errorMessageField":"Please, write your message", 
   "errorValidateEmail":"Please, enter a validate email", 
-  "AboutMeTitle":"About me"
+  "AboutMeTitle":"About me", 
+  "AboutMeSubtitle1":"Welcome, I'm Aye!",
+  "AboutMeSubtitle2":"Full Stack Developer and a dedicated self-learner", 
+  "AboutMeDescription1":"I live in Ushuaia and I’m a Full Stack Developer passionate about creating web and mobile applications that provide complete solutions and exceptional experiences. I discovered programming during the pandemic, and since then, I’ve spent countless hours honing my skills in both front-end and back-end development.",
+  "AboutMeDescription2":"My curiosity and discipline have helped me grow quickly as a professional, tackling challenges with creativity and innovation. I enjoy working on projects that merge technology and design, building intuitive interfaces and robust functionalities."
 }

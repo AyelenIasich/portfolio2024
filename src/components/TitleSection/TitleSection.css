@@ -21,5 +21,17 @@
   bottom: 0;
   height: 4px;
   width: 70px;
-  background:linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
+  background: linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
+}
+
+
+
+@media screen and (max-width: 730px) {
+  .title-background {
+    font-size: 3rem;
+  }
+  .title-foreground {
+    font-size: 2rem;
+    transform: translateY(-65px);
+  }
 }

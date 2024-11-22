@@ -1,0 +1,27 @@
+
+
+.force-two-lines {
+  word-break: break-word;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #5b4486;
+}
+
+.description-number {
+  color: #757575;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  display: flex; 
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-violet{
+background-color: #5b4486;
+}
