@@ -1,7 +1,7 @@
 import React from "react";
 import "./TextArea.css";
 
-function TextArea({ onChange, value, placeholder, label }) {
+function TextArea({ onChange, value, placeholder, label, name }) {
   return (
     <>
       <label className="label-textarea py-3 pt-lg-4 ">{label}</label>
@@ -11,6 +11,7 @@ function TextArea({ onChange, value, placeholder, label }) {
         value={value}
         onChange={onChange}
         rows={4}
+        name={name}
       ></textarea>
     </>
   );

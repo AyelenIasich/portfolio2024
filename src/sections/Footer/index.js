@@ -75,7 +75,7 @@ function Footer() {
         {/* Last section */}
         <div className="row pt-5 pt-lg-3">
           <div className="col-12 text-center">
-            <p>
+            <p className="fs-6">
               {t("MadeWithLove")}  <HeartIcon className="pb-1 heart" />
               {t("MadeWithLove2")}
             </p>

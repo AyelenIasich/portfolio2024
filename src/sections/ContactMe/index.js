@@ -1,14 +1,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ReactComponent as BGContactMe } from "../../assets/svg/contact-austraunt2.svg";
-
-import "./ContactMe.css";
 import Form from "../../components/Form";
+import "./ContactMe.css";
 
 function ContactMe() {
   const { t, i18n } = useTranslation();
+
+
   return (
-    <section className="section-contact p-0">
+    <section className="section-contact p-0 ">
       <div className="cardForm">
         <div className="container-fluid bg-contact-me p-0">
           <div className="row m-0">

@@ -6,6 +6,7 @@ function FormButton({ onClick, label, extraStyle }) {
     <button
       onClick={onClick}
       className={`form-btn ${extraStyle ? extraStyle : ""}`}
+      type="submit"
     >
       {label}
     </button>
