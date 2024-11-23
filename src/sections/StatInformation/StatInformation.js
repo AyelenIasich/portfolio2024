@@ -10,9 +10,9 @@ function StatInformation() {
     <div className="container-fluid stat-container py-5">
       <div className="row">
         <div className="col  stats-row">
-          <StatCard number={1.8} label={t("NumberExperience")} />
-          <StatCard number={"8 +"} label={t("NumberProjects")} />
-          <StatCard number={"8 +"} label={t("NumberHappyClients")} />
+          <StatCard number={1.8} label={t("NumberExperience")} isDecimal={true} showPlusSign={false}/>
+          <StatCard number={8} label={t("NumberProjects")} />
+          <StatCard number={8} label={t("NumberHappyClients")} />
         </div>
       </div>
     </div>
