@@ -1,27 +1,41 @@
-
-
-.force-two-lines {
-  word-break: break-word;
-}
-
-.number {
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #5b4486;
-}
-
-.description-number {
-  color: #757575;
-  font-weight: 600;
+.circle-container {
+  border: 4px solid white;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex; 
+  color: white;
+  margin: 10px;
+  background-color: rgba(188, 166, 229, 0.2);
 }
 
-.bg-green{
-    background-color: green;
+.circle-number {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
 }
 
-.bg-violet{
-background-color: #5b4486;
+.circle-label {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .circle-container {
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+  }
+  .circle-label {
+    font-size: 0.8rem;
+  }
+  .circle-number {
+    font-size: 1rem;
+  }
+
 }

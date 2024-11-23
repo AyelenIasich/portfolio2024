@@ -1,0 +1,18 @@
+.stat-container {
+  background: linear-gradient(90deg, #523c7b 0%, #7c62ad 36%, #dcd1f1 100%);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media screen and (max-width: 628px) {
+  .stats-row  {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

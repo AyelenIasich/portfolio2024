@@ -7,6 +7,7 @@ import Footer from "../sections/Footer";
 import AboutMe from "../sections/AboutMe/AboutMe";
 
 import "../i18n/i18n";
+import StatInformation from "../sections/StatInformation/StatInformation";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Home/>
       <AboutMe/>
+      <StatInformation/>
       <ContactMe/>
       <Footer/>
       <LanguageButton />
