@@ -1,7 +1,7 @@
 .selfie-container {
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .selfie-image {
@@ -19,20 +19,25 @@
 }
 
 .about-subtitle {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .about-subtitle2 {
-  font-weight: 600;
+  font-weight: 500;
   color: #4b4b4b;
 }
 
 .about-text {
   font-weight: 600;
   color: #757575;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .container-about-me {
   transform: translateY(-40px);
+}
+@media screen and (max-width: 445px) {
+  .about-text {
+    font-size: 0.9rem;
+  }
 }

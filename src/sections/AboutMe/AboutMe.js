@@ -1,9 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "./AboutMe.css";
 import TitleSection from "../../components/TitleSection/TitleSection";
 import AboutMeSelfie from "../../assets/png/AboutMeSelfie.png";
-import StatCard from "../../components/StatCard/StatCard";
+import "./AboutMe.css";
 
 function AboutMe() {
   const { t, i18n } = useTranslation();
@@ -24,18 +23,14 @@ function AboutMe() {
               </div>
               <div className="col about-description text-start pt-5 pt-lg-0 ps-4">
                 <h3 className="about-subtitle">{t("AboutMeSubtitle1")}</h3>
-                <h5 className="about-subtitle2">{t("AboutMeSubtitle2")}</h5>
+                <h5 className="about-subtitle2 pt-3">
+                  {t("AboutMeSubtitle2")}
+                </h5>
                 <hr className="line"></hr>
                 <p className="about-text">{t("AboutMeDescription1")}</p>
                 <p className="about-text">{t("AboutMeDescription2")}</p>
-                {/* <div className="row">
-                  <div className="col-6 col-lg-4">
-                    <StatCard number={"1.8"} label={"Years of experience"} />
-                  </div>
-                  <div className="col-6 col-lg-4">
-                    <StatCard number={"5+"} label={"Success Projects"} />
-                  </div>
-                </div> */}
+                <p className="about-text">{t("AboutMeDescription4")}</p>
+                <p className="about-text">{t("AboutMeDescription3")}</p>
               </div>
             </div>
           </div>

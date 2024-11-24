@@ -10,6 +10,8 @@
   gap: 50px;
 }
 
+
+
 @media screen and (max-width: 628px) {
   .stats-row  {
     flex-direction: column;
