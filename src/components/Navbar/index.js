@@ -6,16 +6,12 @@ import PrimaryBtn from "../Buttons/PrimaryBtn";
 import "./Navbar.css";
 import SocialLinks from "./SocialLinks";
 import MobileSocialLink from "./SocialLinks/MobileSocialLink";
+import linksNavbarData from "../../Data/linksNavbarData";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
 
-  const linkSectionList = [
-    { itemName: t("about"), itemLink: "#aboutMe" },
-    { itemName: t("experience"), itemLink: "#experience" },
-    { itemName: t("projects"), itemLink: "#projects" },
-    { itemName: t("skills"), itemLink: "#" },
-  ];
+  const linkSectionList = linksNavbarData(t);
 
   const handleHireMe = () => {
     const section = document.getElementById("contactMe");

@@ -10,8 +10,8 @@ function Experience() {
   const experiences = experienceData(t);
 
   return (
-    <section className="container" id="experience">
-      <div className="row">
+    <section className="container pt-3" id="experience">
+      <div className="row ">
         <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("ExperienceTitle")} />
         </div>

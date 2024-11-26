@@ -12,7 +12,6 @@ const experienceData = (t) => [
     description: t("descriptionExperience1"),
     technologies: t("techExperience1"),
     toolMethologies: [t("toolExperience1a"), t("toolExperience1b"), t("toolExperience1c")],
-
   },
   {
     logo: GobiernoTDF,
@@ -24,7 +23,6 @@ const experienceData = (t) => [
     description: t("descriptionExperience2"),
     technologies: t("techExperience2"),
     toolMethologies: [t("toolExperience2")],
-
   },
 ];
 
