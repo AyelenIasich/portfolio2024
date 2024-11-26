@@ -5,19 +5,14 @@ import { ReactComponent as HeartIcon } from "../../assets/svg/heartIcon.svg";
 import { handleDownloadCV } from "../../utils/cvUtils"; 
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 import FooterSocialLinks from "../../components/FooterSocialLinks/FooterSocialLinks";
+import linksSectionsData from "../../Data/linksSectionsData";
+
 import "./Footer.css";
 
 function Footer() {
   const { t, i18n } = useTranslation();
+  const FooterNavigationLinks = linksSectionsData(t);
 
-  const FooterNavigationLinks = [
-    { itemName: t("about"), itemLink: "#aboutMe" },
-    { itemName: t("services"), itemLink: "#" },
-    { itemName: t("proyects"), itemLink: "#" },
-    { itemName: t("experience"), itemLink: "#" },
-    { itemName: t("skills"), itemLink: "#" },
-    { itemName: t("recommendations"), itemLink: "#" },
-  ];
 
   return (
     <footer className="container-fluid footer-bg ">

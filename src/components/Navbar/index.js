@@ -12,8 +12,8 @@ function Navbar() {
 
   const linkSectionList = [
     { itemName: t("about"), itemLink: "#aboutMe" },
-    { itemName: t("projects"), itemLink: "#" },
-    { itemName: t("experience"), itemLink: "#" },
+    { itemName: t("experience"), itemLink: "#experience" },
+    { itemName: t("projects"), itemLink: "#projects" },
     { itemName: t("skills"), itemLink: "#" },
   ];
 

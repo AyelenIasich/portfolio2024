@@ -45,7 +45,33 @@
   "AboutMeDescription4":"Disfruto abordar proyectos que combinen tecnología y diseño, desarrollando interfaces intuitivas y funcionalidades robustas.",
   "NumberExperience":"Años de experiencia", 
   "NumberProjects":"Proyectos Exitosos",
-  "NumberHappyClients":"Clientes Felices"
+  "NumberHappyClients":"Clientes Felices", 
+  "ProjectsTitle":"Proyectos", 
+  "ExperienceTitle": "Experiencia", 
+  "modalityTitle":"Modalidad:", 
+  "roleExperience1":"Desarrolladora Full Stack",
+  "roleExperience2":"Desarrolladora Full Stack",
+  "modalityOnSite":"Presencial",
+  "modalityRemote":"Remoto", 
+  "periodExperience1":"Jun. 2023 - Sept. 2024",  
+  "periodLongExperience1":"Junio 2023 - Septiembre 2024",
+  "descriptionExperience1":"Desarrollo y mantenimiento de aplicaciones web y móviles.",
+  "periodExperience2":"May 2023 - Jun. 2024",
+  "periodLongExperience2":"Mayo 2023 - Junio. 2024",
+  "descriptionExperience2":"Desarrollo y mantenimiento de aplicaciones web.",
+  "moreLink":"Ver más",
+  "periodSubtitle":"Período", 
+  "positionSubtitle":"Puesto", 
+  "responsibilities":"Responsabilidades", 
+  "technologies":"Tecnologías utilizadas",
+  "toolMethodologies":"Herramientas y metodologías",
+  "techExperience1":"PHP (CodeIgniter, Laravel), React, React Native, Strapi v3, MySQL, PostgreSQL, Figma",
+  "techExperience2":"GeneXus, Python, MySQL", 
+  "toolExperience1a": "Clockify (gestión de tiempo)",
+  "toolExperience1b": "Scrum (metodología ágil)",
+  "toolExperience1c": "Jira (gestión de proyectos)",
+  "toolExperience2": "Odoo (gestión de proyectos)"
+
 
 
 }

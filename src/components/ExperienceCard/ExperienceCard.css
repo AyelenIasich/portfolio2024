@@ -1,0 +1,115 @@
+.purple-card {
+  border: 2px solid #f2edfa;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.logo-img-container {
+  display: flex;
+  align-items: center;
+  filter: grayscale(100%);
+  justify-content: center;
+}
+
+.logo-img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.period {
+  text-align: right;
+  color: #a1a1a1;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.company {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.role {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.modality {
+  color: #7e7d7d;
+}
+
+.card-description {
+  color: #7e7d7d;
+  font-weight: 500;
+}
+
+.more-btn {
+  cursor: pointer;
+  font-weight: 500;
+  color: #383838;
+  display: inline-block;
+}
+
+.more-btn:hover {
+  color: var(--hover-main);
+}
+
+.icon-arrow-right {
+  color: var(--purple-icon);
+  font-weight: 600;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .company {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .period {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .logo-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .modality {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .card-description {
+    font-size: 0.9rem;
+  }
+  .more-btn {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .period {
+    text-align: left;
+  }
+
+}
+

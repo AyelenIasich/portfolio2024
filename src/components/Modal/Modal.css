@@ -1,0 +1,24 @@
+.modal {
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-title{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.exp-header{
+  display: flex;
+  justify-content: space-between;
+
+}
+

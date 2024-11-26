@@ -1,0 +1,16 @@
+.exp-subtitle{
+    font-weight: 600;
+    color: #000000;
+}
+
+.exp-answer{
+    font-weight: 500;
+    color: #A1A1A1;
+}
+
+.tools-list{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
