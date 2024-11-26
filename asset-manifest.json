@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio2024/static/css/main.efefcb0f.css",
-    "main.js": "/portfolio2024/static/js/main.f5cd8517.js",
+    "main.js": "/portfolio2024/static/js/main.048a1773.js",
     "static/js/453.40d470f4.chunk.js": "/portfolio2024/static/js/453.40d470f4.chunk.js",
     "static/media/contact-austraunt2.svg": "/portfolio2024/static/media/contact-austraunt2.bbb6c490bde4ff6e3b30b261eb522986.svg",
     "static/media/ayeIasich.png": "/portfolio2024/static/media/ayeIasich.c8849b982e009b955030.png",
@@ -17,11 +17,11 @@
     "static/media/envelope.svg": "/portfolio2024/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/portfolio2024/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
     "main.efefcb0f.css.map": "/portfolio2024/static/css/main.efefcb0f.css.map",
-    "main.f5cd8517.js.map": "/portfolio2024/static/js/main.f5cd8517.js.map",
+    "main.048a1773.js.map": "/portfolio2024/static/js/main.048a1773.js.map",
     "453.40d470f4.chunk.js.map": "/portfolio2024/static/js/453.40d470f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.efefcb0f.css",
-    "static/js/main.f5cd8517.js"
+    "static/js/main.048a1773.js"
   ]
 }
