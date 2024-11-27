@@ -9,6 +9,7 @@ import StatInformation from "../sections/StatInformation/StatInformation";
 import Projects from "../sections/Projects/Projects";
 import "../i18n/i18n";
 import Experience from "../sections/Experience/Experience";
+import SkillBanner from "../sections/SkillBanner/SkillBanner";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <AboutMe/>
       <StatInformation/>
       <Experience/>
-      {/* <Projects/> */}
+      <SkillBanner/>
+      <Projects/>
       <ContactMe/>
       <Footer/>
       <LanguageButton />

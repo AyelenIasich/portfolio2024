@@ -1,0 +1,67 @@
+.marquee-container {
+  overflow: hidden; /* Oculta los elementos fuera del área visible */
+  position: relative;
+  width: 100%;
+  height: 100px; /* Ajusta según tus necesidades */
+  background-color: #fff; /* Fondo del carrusel */
+}
+
+.marquee {
+  display: flex;
+  gap: 100px; 
+  will-change: transform; 
+}
+
+.scroll-right{
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-inverse{
+  animation: scrollInverse 20s linear infinite;
+}
+
+.marquee-item {
+  height: 70px; 
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollInverse {
+  0% {
+    transform: translateX(-50%); 
+  }
+  100% {
+    transform: translateX(0%); 
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+
+  .marquee-item {
+    height: 40px; 
+  }
+  .marquee {
+    gap: 50px; 
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .marquee-item {
+    height: 50px; 
+  }
+  .marquee {
+    gap: 60px; 
+  }
+}
