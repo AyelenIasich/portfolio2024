@@ -12,6 +12,7 @@ function useForm() {
     message: "",
   });
   const [formError, setFormError] = useState({ field: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useRef();
 
   // Notifications
@@ -20,8 +21,8 @@ function useForm() {
       icon: "success",
       title: t("successSendEmail"),
       text: t("thankYouMessage"),
-      showConfirmButton: false,
-      timer: 2000,
+      showConfirmButton: true,
+      confirmButtonText: t("closeSuccessNoti"),
     });
   };
 
@@ -62,6 +63,7 @@ function useForm() {
 
   const handleSubmitEmail = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     if (!validateFields()) {
       return;
@@ -79,9 +81,12 @@ function useForm() {
           notifySuccess();
           form.current.reset();
           setFormData({ user_name: "", user_email: "", message: "" });
+          setIsSubmitting(false);
         },
         (error) => {
           notifyError();
+          setIsSubmitting(false);
+
           console.error("FAILED...", error.text);
         }
       );
@@ -93,6 +98,7 @@ function useForm() {
     handleChange,
     handleSubmitEmail,
     form,
+    isSubmitting,
   };
 }
 

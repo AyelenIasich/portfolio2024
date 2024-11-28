@@ -7,7 +7,7 @@ import "./Form.css";
 
 function Form({ t }) {
 
-  const { formData, formError, handleChange, handleSubmitEmail, form } =
+  const { formData, formError, handleChange, handleSubmitEmail, form , isSubmitting} =
     useForm();
 
   return (
@@ -34,7 +34,7 @@ function Form({ t }) {
         onChange={handleChange}
         error={formError.message}
       />
-      <FormButton label={t("FormBtn")} />
+      <FormButton label={isSubmitting ? t("formBtnWait") : t("FormBtn")} />
     </form>
   );
 }
