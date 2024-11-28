@@ -32,13 +32,13 @@ function SkillBanner() {
   ];
   const technologies2 = [
     // Frontend
-    { src: Angular, alt: "Angular" },
+    // { src: Angular, alt: "Angular" },
 
     // Backend
     { src: Php, alt: "PHP" },
     { src: Laravel, alt: "Laravel" },
     { src: Django, alt: "Django" },
-    { src: Java, alt: "Java" },
+    // { src: Java, alt: "Java" },
 
     // Database
     { src: PostgreSQL, alt: "PostgreSQL" },
