@@ -64,7 +64,7 @@ function Recognitions() {
         <ModalPhoto handleCloseModal={closePhotoModal}>
           <div className="container py-4">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12 p-0">
                 <img
                   src={RecogntionImage}
                   alt="Reconocimiento Innovus"

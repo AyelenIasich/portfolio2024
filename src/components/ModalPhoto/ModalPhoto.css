@@ -11,3 +11,14 @@
     width: 100%;
   }
 }
+
+.modal-photo-content {
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* .modal-content-photo{
+  background: hsl(0 0% 100% / 0.1) !important;
+  backdrop-filter: blur(1rem);
+  box-shadow: rgba(0, 0, 0, 0.5);
+} */
