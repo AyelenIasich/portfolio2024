@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.57b79704.css",
-    "main.js": "/static/js/main.7dc7ba59.js",
+    "main.css": "/static/css/main.fa58fb63.css",
+    "main.js": "/static/js/main.d17ec6d5.js",
     "static/js/453.40d470f4.chunk.js": "/static/js/453.40d470f4.chunk.js",
     "static/media/contact-austraunt2.svg": "/static/media/contact-austraunt2.bbb6c490bde4ff6e3b30b261eb522986.svg",
     "static/media/ayeIasich.png": "/static/media/ayeIasich.c8849b982e009b955030.png",
     "static/media/AboutMeSelfie.png": "/static/media/AboutMeSelfie.69c6ed811f4f7e1c9e34.png",
     "static/media/Gobierno-TDF.jpg": "/static/media/Gobierno-TDF.ff35cae60b6b3aa7bda2.jpg",
+    "static/media/ReconocimientoInnovus.jpg": "/static/media/ReconocimientoInnovus.aa252dab5f1a6cd32a51.jpg",
     "static/media/react-native.png": "/static/media/react-native.07d9e407d4e491c548d5.png",
     "static/media/php.png": "/static/media/php.4990580e9b615aeebb1f.png",
     "static/media/react-js.png": "/static/media/react-js.3bf6fb4b18b1f904676d.png",
@@ -29,12 +30,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.2585ac91c8831f47aa7b081d62c28e23.svg",
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
-    "main.57b79704.css.map": "/static/css/main.57b79704.css.map",
-    "main.7dc7ba59.js.map": "/static/js/main.7dc7ba59.js.map",
+    "main.fa58fb63.css.map": "/static/css/main.fa58fb63.css.map",
+    "main.d17ec6d5.js.map": "/static/js/main.d17ec6d5.js.map",
     "453.40d470f4.chunk.js.map": "/static/js/453.40d470f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57b79704.css",
-    "static/js/main.7dc7ba59.js"
+    "static/css/main.fa58fb63.css",
+    "static/js/main.d17ec6d5.js"
   ]
 }
