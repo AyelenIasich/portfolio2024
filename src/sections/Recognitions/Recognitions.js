@@ -25,7 +25,7 @@ function Recognitions() {
   return (
     <section className="container pt-3 pb-xxl-5" id="recognitions">
       <div className="row ">
-        <div className="col-12 text-center pt-lg-5 pt-xxl-5 mt-xxl-3">
+      <div className="col-12 text-center pt-lg-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("RecognitionsTitle")} />
         </div>
         <div className="container-recog">
@@ -47,7 +47,7 @@ function Recognitions() {
               <div className="col-12 col-md-8 col-lg-7 pt-5 pt-lg-4">
                 <div className="row">
                   <div className="quote col-12">
-                    <div class="quote-container">
+                  <div class="quote-container">
                       <blockquote>
                         <p>{t("RecognitionQuote")}</p>
                         <footer>— {t("RecognitionQuoteOwner")}</footer>
