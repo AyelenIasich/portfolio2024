@@ -7,9 +7,10 @@ import Footer from "../sections/Footer";
 import AboutMe from "../sections/AboutMe/AboutMe";
 import StatInformation from "../sections/StatInformation/StatInformation";
 import Projects from "../sections/Projects/Projects";
-import "../i18n/i18n";
 import Experience from "../sections/Experience/Experience";
 import SkillBanner from "../sections/SkillBanner/SkillBanner";
+import Recognitions from "../sections/Recognitions/Recognitions";
+import "../i18n/i18n";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <StatInformation/>
       <Experience/>
       <SkillBanner/>
-      <Projects/>
+      {/* <Projects/> */}
+      <Recognitions/>
       <ContactMe/>
       <Footer/>
       <LanguageButton />

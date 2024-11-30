@@ -6,9 +6,10 @@
   "services": "Services",
   "projects": "Projects",
   "experience": "Experience",
+  "Education": "Education",
   "skills": "Skills",
   "proyects": "Proyects",
-  "recommendations": "Recommendations",
+  "recommendations": "Recognitions",
   "DownloadCV": "Download CV",
   "ScrollDown": "Scroll Down",
   "LetsTalk": "Let's talk",
@@ -33,7 +34,7 @@
   "errorSendEmail": "Failed to send the message",
   "errorMessage": "There was a problem sending your message. Please try again.",
   "retryButton": "Try Again",
-  "closeSuccessNoti": "Got it", 
+  "closeSuccessNoti": "Got it",
   "errorName": "Please, enter your name",
   "errorEmail": "Please, enter your email",
   "errorMessageField": "Please, write your message",
@@ -72,5 +73,10 @@
   "toolExperience1a": "Clockify (time management)",
   "toolExperience1b": "Scrum (agile methodology)",
   "toolExperience1c": "Jira (project management)",
-  "toolExperience2": "Odoo (project management)"
+  "toolExperience2": "Odoo (project management)",
+  "RecognitionsTitle": "Recognitions",
+  "RecognitionsSubtitle1": "In recognition of my performance at Innovus Software, I was honored with a certificate for my dedication, hard work, and contributions to the development of key projects for the company. This achievement reinforces my commitment to excellence in software development.",
+  "RecognitionQuote": "Her dedication and devotion to work are truly exemplary. Ayelén embodies a commitment to excellence and consistently raises the standard of our projects.",
+  "RecognitionQuoteOwner":"Innovus Software, LinkedIn Post"
+
 }

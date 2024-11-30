@@ -1,0 +1,13 @@
+.modal-photo {
+  max-width: 90%;
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 95%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
