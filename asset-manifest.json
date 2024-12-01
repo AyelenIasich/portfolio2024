@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d8859eb.css",
-    "main.js": "/static/js/main.d82303c5.js",
+    "main.css": "/static/css/main.e79dbc4c.css",
+    "main.js": "/static/js/main.adc3ebe8.js",
     "static/js/453.40d470f4.chunk.js": "/static/js/453.40d470f4.chunk.js",
+    "static/media/politecnico.png": "/static/media/politecnico.f09d28feb9f9e1808850.png",
     "static/media/contact-austraunt2.svg": "/static/media/contact-austraunt2.bbb6c490bde4ff6e3b30b261eb522986.svg",
     "static/media/ayeIasich.png": "/static/media/ayeIasich.c8849b982e009b955030.png",
+    "static/media/yoProgramo.png": "/static/media/yoProgramo.4ad6f14441b1ef8413da.png",
     "static/media/AboutMeSelfie.png": "/static/media/AboutMeSelfie.69c6ed811f4f7e1c9e34.png",
+    "static/media/EFCertificate.png": "/static/media/EFCertificate.01e84c3d3ddcd32146ae.png",
     "static/media/Gobierno-TDF.jpg": "/static/media/Gobierno-TDF.ff35cae60b6b3aa7bda2.jpg",
     "static/media/ReconocimientoInnovus.jpg": "/static/media/ReconocimientoInnovus.aa252dab5f1a6cd32a51.jpg",
+    "static/media/ipesfa.png": "/static/media/ipesfa.9f96ac874ac9d98acfa9.png",
+    "static/media/certificadoGenexus.jpg": "/static/media/certificadoGenexus.78370bc2810c0453479a.jpg",
     "static/media/react-native.png": "/static/media/react-native.07d9e407d4e491c548d5.png",
     "static/media/php.png": "/static/media/php.4990580e9b615aeebb1f.png",
     "static/media/react-js.png": "/static/media/react-js.3bf6fb4b18b1f904676d.png",
@@ -15,6 +20,7 @@
     "static/media/Laravel.png": "/static/media/Laravel.8b2939ca7ad8851c40a2.png",
     "static/media/mysql.png": "/static/media/mysql.7d8d571e5629923eaf74.png",
     "static/media/angular.png": "/static/media/angular.8013820280e76cf99595.png",
+    "static/media/UTNBaLogo.png": "/static/media/UTNBaLogo.1afb4ba1596af7d4b808.png",
     "static/media/java.png": "/static/media/java.f5dd86c3ef6ef3f85acf.png",
     "static/media/django.png": "/static/media/django.559d0c6161a6fb950f02.png",
     "static/media/figma.png": "/static/media/figma.72fbc535ebe253a5dbc4.png",
@@ -30,12 +36,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.2585ac91c8831f47aa7b081d62c28e23.svg",
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
-    "main.1d8859eb.css.map": "/static/css/main.1d8859eb.css.map",
-    "main.d82303c5.js.map": "/static/js/main.d82303c5.js.map",
+    "main.e79dbc4c.css.map": "/static/css/main.e79dbc4c.css.map",
+    "main.adc3ebe8.js.map": "/static/js/main.adc3ebe8.js.map",
     "453.40d470f4.chunk.js.map": "/static/js/453.40d470f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d8859eb.css",
-    "static/js/main.d82303c5.js"
+    "static/css/main.e79dbc4c.css",
+    "static/js/main.adc3ebe8.js"
   ]
 }
