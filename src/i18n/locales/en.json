@@ -94,5 +94,7 @@
   "IpesTitle": "English Teaching Degree (Incomplete)",
   "IpesPeriod": "2015 - 2021",
   "EFTitle": "English Level: C2 Proficient",
-  "EFPeriod": "Nov 19, 2020"
+  "EFPeriod": "Nov 19, 2020",
+  "BtnShowMore": "Show more",
+  "ShowingResults": "Showing {{current}} of {{total}} results"
 }

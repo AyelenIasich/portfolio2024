@@ -12,9 +12,6 @@ function EducationCard({
   titleEducation,
   period,
   description,
-  periodLong,
-  technologies,
-  toolMethologies,
   isShowCertification = false,
   certificate,
 }) {
@@ -40,13 +37,13 @@ function EducationCard({
           <div className="col-9 col-lg-10">
             <div className="card-header pb-2">
               <h3 className="institute m-0">{institute}</h3>
-              <span className="period-education d-none d-lg-block">
+              <p className="period-education d-none d-lg-block m-0">
                 {period}
-              </span>
+              </p>
             </div>
             <div className="card-content">
-              <div className="titleEducation">{titleEducation}</div>
-              <div className="period d-lg-none pt-2">{period}</div>
+              <p className="titleEducation m-0">{titleEducation}</p>
+              <p className="period d-lg-none pt-2 m-0">{period}</p>
               {description && (
                 <div className="description-education pt-2 ">{description}</div>
               )}
