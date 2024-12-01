@@ -10,6 +10,7 @@ import Projects from "../sections/Projects/Projects";
 import Experience from "../sections/Experience/Experience";
 import SkillBanner from "../sections/SkillBanner/SkillBanner";
 import Recognitions from "../sections/Recognitions/Recognitions";
+import Education from "../sections/Education/Education";
 import "../i18n/i18n";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <SkillBanner/>
       {/* <Projects/> */}
       <Recognitions/>
+      <Education/>
       <ContactMe/>
       <Footer/>
       <LanguageButton />

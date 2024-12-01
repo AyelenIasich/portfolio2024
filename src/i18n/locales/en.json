@@ -77,6 +77,22 @@
   "RecognitionsTitle": "Recognitions",
   "RecognitionsSubtitle1": "In recognition of my performance at Innovus Software, I was honored with a certificate for my dedication, hard work, and contributions to the development of key projects for the company. This achievement reinforces my commitment to excellence in software development.",
   "RecognitionQuote": "Her dedication and devotion to work are truly exemplary. Ayelén embodies a commitment to excellence and consistently raises the standard of our projects.",
-  "RecognitionQuoteOwner":"Innovus Software, LinkedIn Post"
-
+  "RecognitionQuoteOwner": "Innovus Software, LinkedIn Post",
+  "EducationTitle": "Education",
+  "PolitecnicoTitle": "Technician in Data Science and Artificial Intelligence (in progress)",
+  "PolitecnicoDescription": "Expected skills: Python, Machine Learning, Data Analysis, Big Data",
+  "SeeCertification": "See certification",
+  "UTNBaTitle": "Junior Full Stack Web Profile",
+  "UTNBaDescription": "Technologies: PHP, Laravel, Angular, MySQL",
+  "UTNBaPeriod": "Aug. 2022 - Dec. 2022",
+  "GenexusTitle": "Certified Genexus Technician",
+  "GenexusDescription": "Technology: Genexus",
+  "GenexusPeriod": "2022 Cohort",
+  "ArgProgramaDescription": "Technologies: JavaScript, Angular, Java, MySQL",
+  "ArgProgramaTitle": "Junior Full Stack Web Profile",
+  "ArgProgramaPeriod": "2022 Cohort",
+  "IpesTitle": "English Teaching Degree (Incomplete)",
+  "IpesPeriod": "2015 - 2021",
+  "EFTitle": "English Level: C2 Proficient",
+  "EFPeriod": "Nov 19, 2020"
 }

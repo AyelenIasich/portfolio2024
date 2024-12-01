@@ -23,7 +23,7 @@ function Recognitions() {
   };
 
   return (
-    <section className="container pt-3 pb-xxl-5" id="recognitions">
+    <section className="container pt-5 pt-md-3 pb-xxl-5" id="recognitions">
       <div className="row ">
       <div className="col-12 text-center pt-lg-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("RecognitionsTitle")} />
