@@ -1,5 +1,6 @@
 .modal {
-  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-dialog {
@@ -7,19 +8,13 @@
   margin: 1.75rem auto;
 }
 
-.modal-content {
-  padding: 20px;
-  
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
-.modal-title{
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.exp-header{
+.exp-header {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
-

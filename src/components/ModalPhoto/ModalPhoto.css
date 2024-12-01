@@ -6,7 +6,7 @@
 
 @media (max-width: 768px) {
   .modal-dialog {
-    max-width: 95%;
+    max-width: 98%;
     margin: 0 auto;
     width: 100%;
   }
@@ -17,8 +17,22 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* .modal-content-photo{
+.modal-content-photo{
   background: hsl(0 0% 100% / 0.1) !important;
   backdrop-filter: blur(1rem);
   box-shadow: rgba(0, 0, 0, 0.5);
-} */
+  border: none;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+
+.btn-photo-modal{
+  color: antiquewhite !important;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.modal-title-photo{
+  font-size: 1.1rem;
+  font-weight: 500;
+}

@@ -61,7 +61,7 @@ function Recognitions() {
         </div>
       </div>
       {showPhotoModal && (
-        <ModalPhoto handleCloseModal={closePhotoModal}>
+        <ModalPhoto handleCloseModal={closePhotoModal} title={t("RecognitionsTitle")}>
           <div className="container py-4">
             <div className="row">
               <div className="col-12 p-0">

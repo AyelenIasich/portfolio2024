@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaGlobeAmericas } from "react-icons/fa";
+import { HiTranslate } from "react-icons/hi";
 import "./LanguageButton.css";
 
 function LanguageButton() {
@@ -14,7 +14,7 @@ function LanguageButton() {
   return (
     <div onClick={toggleLanguage}  className="language-btn">
       <div type="button" className="btn-lang">
-        <FaGlobeAmericas className="icon-lang"/>
+        <HiTranslate  className="icon-lang"/>
       </div>
     </div>
   );
