@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import TitleSection from "../../components/TitleSection/TitleSection";
 import EducationCard from "../../components/EducationCard/EducationCard";
@@ -6,15 +6,24 @@ import educationData from "../../Data/educationData";
 import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
 
 import "./Education.css";
+import EmptyEducationCard from "../../components/EmptyEducationCard/EmptyEducationCard";
 
 function Education() {
   const { t } = useTranslation();
-  const education = educationData(t);
   const [visibleItems, setiVisibleItems] = useState(4);
+  const [isLoading, setIsLoading] = useState(true);
+  const [education, setEducation] = useState([]);
+
+  useEffect(() => {
+    const educationInfo = educationData(t);
+    setEducation(educationInfo);
+    setIsLoading(false);
+  }, []);
 
   const handleShowMore = () => {
     setiVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
   };
+
   return (
     <section className="container pt-3 mt-md-5" id="education">
       <div className="row ">
@@ -31,9 +40,13 @@ function Education() {
             </p>
           </div>
           <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
-            {education.slice(0, visibleItems).map((ed, index) => (
-              <EducationCard key={index} {...ed} />
-            ))}
+            {isLoading
+              ? Array.from({ length: 4 }).map((_, index) => (
+                  <EmptyEducationCard key={index} />
+                ))
+              : education.map((ed, index) => (
+                  <EducationCard key={index} {...ed} />
+                ))}
             {visibleItems < education.length && (
               <div className="col-12 text-center">
                 <SecondaryBtn
