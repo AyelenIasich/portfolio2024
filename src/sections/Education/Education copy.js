@@ -30,6 +30,7 @@ function Education() {
         <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("EducationTitle")} />
         </div>
+        <div className="education-content">
           <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
             <p className="results-counter">
               {t("ShowingResults", {
@@ -59,6 +60,7 @@ function Education() {
             )}
           </div>
         </div>
+      </div>
     </section>
   );
 }

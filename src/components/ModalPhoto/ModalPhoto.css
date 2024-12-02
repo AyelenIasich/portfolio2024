@@ -13,8 +13,7 @@
 }
 
 .modal-photo-content {
-  backdrop-filter: blur(1rem);
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 .modal-content-photo{
@@ -36,3 +35,4 @@
   font-size: 1.1rem;
   font-weight: 500;
 }
+
