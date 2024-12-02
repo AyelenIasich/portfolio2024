@@ -5,6 +5,7 @@ import Modal from "../Modal/Modal";
 import ExperienceModal from "../ExperienceModal/ExperienceModal";
 import "./EducationCard.css";
 import ModalPhoto from "../ModalPhoto/ModalPhoto";
+import ImageSkeleton from "../ImageSkeleton/ImageSkeleton";
 
 function EducationCard({
   logo,
@@ -18,6 +19,7 @@ function EducationCard({
   const { t } = useTranslation();
 
   const [showExperienceModal, setShowExperienceModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const openEducationModal = () => {
     setShowExperienceModal(true);
@@ -27,6 +29,10 @@ function EducationCard({
     setShowExperienceModal(false);
   };
 
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+  
   return (
     <>
       <div className="purple-card mb-4 py-lg-4 px-lg-4">
@@ -37,9 +43,7 @@ function EducationCard({
           <div className="col-9 col-lg-10">
             <div className="card-header pb-2">
               <h3 className="institute m-0">{institute}</h3>
-              <p className="period-education d-none d-lg-block m-0">
-                {period}
-              </p>
+              <p className="period-education d-none d-lg-block m-0">{period}</p>
             </div>
             <div className="card-content">
               <p className="titleEducation m-0">{titleEducation}</p>
@@ -61,17 +65,11 @@ function EducationCard({
       </div>
       {showExperienceModal && (
         <ModalPhoto handleCloseModal={closeEducationModal} title={institute}>
-          <div className="container py-4">
-            <div className="row">
-              <div className="col-12 p-0">
-                <img
-                  src={certificate}
-                  alt="certificate"
-                  className="recog-img"
-                />
-              </div>
-            </div>
-          </div>
+          <ImageSkeleton
+            isLoading={isLoading}
+            certificate={certificate}
+            handleImageLoad={handleImageLoad}
+          />
         </ModalPhoto>
       )}
     </>
