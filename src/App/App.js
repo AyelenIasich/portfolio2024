@@ -10,25 +10,42 @@ import Projects from "../sections/Projects/Projects";
 import Experience from "../sections/Experience/Experience";
 import SkillBanner from "../sections/SkillBanner/SkillBanner";
 import Recognitions from "../sections/Recognitions/Recognitions";
+import Certifications from "../sections/Certifications/Certifications";
+import AllCertifications from "../sections/AllCertifications/AllCertifications";
+
 import Education from "../sections/Education/Education";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "../i18n/i18n";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home/>
-      <AboutMe/>
-      <StatInformation/>
-      <Experience/>
-      <SkillBanner/>
-      {/* <Projects/> */}
-      <Recognitions/>
-      <Education/>
-      <ContactMe/>
-      <Footer/>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Home />
+              <AboutMe />
+              <StatInformation />
+              <Experience />
+              <SkillBanner />
+              {/* <Projects /> */}
+              <Recognitions />
+              <Certifications />
+              <Education />
+              <ContactMe />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route path="/all-certifications" element={<AllCertifications />} />
+      </Routes>
       <LanguageButton />
-    </>
+    </Router>
   );
 }
 

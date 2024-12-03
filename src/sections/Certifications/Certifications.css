@@ -1,0 +1,18 @@
+.btn-show-certifications {
+  border: 1.8px solid #523c7b;
+  color: #523c7b;
+  font-weight: 600;
+  box-shadow: none;
+  width: auto;
+  
+}
+
+.results-counter {
+  text-align: right;
+  color: #757575;
+  font-weight: 600;
+}
+
+.education-content {
+  transform: translateY(-30px);
+}

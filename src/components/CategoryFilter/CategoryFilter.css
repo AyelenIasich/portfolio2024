@@ -1,0 +1,19 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .category-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .results-counter {
+    text-align: right;
+    color: #757575;
+    font-weight: 600;
+  }
