@@ -15,6 +15,7 @@ import Certifications from "../sections/Certifications/Certifications";
 import AllCertifications from "../sections/AllCertifications/AllCertifications";
 import Education from "../sections/Education/Education";
 import "../i18n/i18n";
+import Testimonials from "../sections/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Recognitions />
               <Education />
               <Certifications />
+              <Testimonials/>
               <ContactMe />
               <Footer />
             </>

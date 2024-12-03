@@ -24,8 +24,6 @@
   background: linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
 }
 
-
-
 @media screen and (max-width: 730px) {
   .title-background {
     font-size: 2.5rem;

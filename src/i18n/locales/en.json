@@ -135,8 +135,13 @@
   "Infrastructure&OS":"Infrastructure & SO",
   "Programming&&Logic":"Programming & Logic",
   "ShowAll":"View all", 
-  "FilterLabel":"Filter by:"
-
-
+  "FilterLabel":"Filter by:",
+  "WhatPeopleSay":"WHAT PEOPLE SAY",
+  "Testimonials":"Testimonials",
+  "Testimonial-feedback1-1": "I worked alongside Ayelén on the same team within the Secretariat of Digital Government. She is very intelligent, creative, and deeply dedicated to her work",
+  "Testimonial-feedback1-2": "I wish her success wherever she chooses to work. 👍",
+  "Testimonial-feedback2-1": "I had the pleasure of working with Ayelén on the same team within the Secretariat of Digital Government. She is a very intelligent, fun, and committed person.",
+  "Testimonial-feedback2-2": "I have no doubt that any company would be fortunate to have her on their team.",
+  "Testimonial-role2": "IT Recruiter || Functional Analyst || Primary School Teacher"
 
 }
