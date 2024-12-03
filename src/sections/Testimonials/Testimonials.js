@@ -11,7 +11,7 @@ function Testimonials() {
   return (
     <section className="container pt-3 pt-xxl-5  mt-xxl-5 pb-5 mb-xxl-5" id="experience">
       <div className="row ">
-        <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3 mb-2 mb-xxl-5">
+        <div className="col-12 text-center pt-5 pt-xxl-5 mt-5 mt-xxl-3 mb-2 mb-xxl-5">
           <h5 className="testimonial-subtitle">{t("WhatPeopleSay")}</h5>
           <h2 className="testimonial-title">{t("Testimonials")}</h2>
         </div>

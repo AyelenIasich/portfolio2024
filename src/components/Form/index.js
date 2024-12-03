@@ -7,8 +7,7 @@ import "./Form.css";
 
 function Form({ t }) {
 
-  const { formData, formError, handleChange, handleSubmitEmail, form , isSubmitting} =
-    useForm();
+  const { formData, formError, handleChange, handleSubmitEmail, form , isSubmitting} = useForm();
 
   return (
     <form ref={form} onSubmit={handleSubmitEmail} className="px-2 py-5">

@@ -19,20 +19,29 @@
 }
 
 .testimonial-feedback {
-  font-size: 16px;
+  font-size: 1rem;
   color: #757575;
   margin-bottom: 15px;
   line-height: 1.7;
   font-weight: 500;
 }
 
+.testimonial-linkeind{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+}
+
 .testimonial-name {
+  color: #000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .testimonial-role {
   color: #a1a1a1;
+  font-size: 0.9rem;
 }
 .testimonial-line {
   background-color: #d7d7d7;

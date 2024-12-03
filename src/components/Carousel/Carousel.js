@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import { IoLogoLinkedin } from "react-icons/io";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -35,15 +36,22 @@ function Carousel({ testimonials }) {
               />
             </div>
 
-            <div className="testimonial-content col-12 col-lg-8 col-xxl-9 pt-md-2" >
-              <p className="testimonial-feedback pt-3 m-0 pt-md-0">{testimonial.feedback1}</p>
-              {testimonial.feedback2 &&(
-              <p className="testimonial-feedback m-0 pt-md-0">{testimonial.feedback2}</p>
-
+            <div className="testimonial-content col-12 col-lg-8 col-xxl-9 pt-md-2">
+              <p className="testimonial-feedback pt-3 m-0 pt-md-0">
+                {testimonial.feedback1}
+              </p>
+              {testimonial.feedback2 && (
+                <p className="testimonial-feedback m-0 pt-md-0">
+                  {testimonial.feedback2}
+                </p>
               )}
               <hr className="testimonial-line"></hr>
-              <h3 className="testimonial-name">{testimonial.name}</h3>
-              <p className="testimonial-role">{testimonial.title}</p>
+              <a className="testimonial-linkeind" href={testimonial.linkelind}>
+                <h3 className="testimonial-name m-0 pe-2">{testimonial.name}</h3>
+                <IoLogoLinkedin className="social-icon linkedin" />
+              </a>
+
+              <p className="testimonial-role pt-2">{testimonial.title}</p>
             </div>
           </div>
         </SwiperSlide>

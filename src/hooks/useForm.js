@@ -66,6 +66,7 @@ function useForm() {
     setIsSubmitting(true);
 
     if (!validateFields()) {
+      setIsSubmitting(false);
       return;
     }
 

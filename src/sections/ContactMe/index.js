@@ -5,8 +5,7 @@ import Form from "../../components/Form";
 import "./ContactMe.css";
 
 function ContactMe() {
-  const { t, i18n } = useTranslation();
-
+  const { t } = useTranslation();
 
   return (
     <section className="section-contact p-0 pt-5" id="contactMe" >
