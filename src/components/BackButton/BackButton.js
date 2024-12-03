@@ -5,15 +5,18 @@ import "./BackButton.css";
 
 function BackButton({ handleGoBack }) {
   const { t } = useTranslation();
-    
+
   const GoBack = () => {
     handleGoBack();
   };
 
   return (
-    <button onClick={GoBack} className="back-button mb-4">
-      <FaArrowLeft className="back-icon" /> <span className="ps-2 ">{t("GoBack")}</span>
-    </button>
+    <div className="back-button-container">
+      <button onClick={GoBack} className="back-button my-3 mb-md-4 ms-3 ms-md-0">
+        <FaArrowLeft className="back-icon" />{" "}
+        <span className="ps-2 ">{t("GoBack")}</span>
+      </button>
+    </div>
   );
 }
 

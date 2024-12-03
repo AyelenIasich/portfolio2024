@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LanguageButton from "../components/LanguageButton";
 import Navbar from "../components/Navbar";
 import Home from "../sections/Home";
@@ -12,10 +13,7 @@ import SkillBanner from "../sections/SkillBanner/SkillBanner";
 import Recognitions from "../sections/Recognitions/Recognitions";
 import Certifications from "../sections/Certifications/Certifications";
 import AllCertifications from "../sections/AllCertifications/AllCertifications";
-
 import Education from "../sections/Education/Education";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import "../i18n/i18n";
 
 function App() {
@@ -34,14 +32,13 @@ function App() {
               <SkillBanner />
               {/* <Projects /> */}
               <Recognitions />
-              <Certifications />
               <Education />
+              <Certifications />
               <ContactMe />
               <Footer />
             </>
           }
         />
-
         <Route path="/all-certifications" element={<AllCertifications />} />
       </Routes>
       <LanguageButton />

@@ -85,3 +85,9 @@
     align-self: center;
   }
 }
+
+@media (min-width: 1400px) {
+  .description{
+    font-size: 1.1rem;
+  }
+}

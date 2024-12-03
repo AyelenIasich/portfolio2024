@@ -32,16 +32,15 @@ function AllCertifications() {
     }, 100);
   };
 
-  const categoriesCertificates = [
-    "FrontendDevelopment",
-    "Infrastructure&OS",
-    "Programming&&Logic",
-  ];
+  const categories = categoriesCertificates(t).map((category) => ({
+    key: Object.keys(category)[0],
+    value: Object.values(category)[0],
+  }));
 
   const filteredCertifications =
-  selectedCategory === "all"
-    ? certifications
-    : certifications.filter((cert) => cert.category === selectedCategory);
+    selectedCategory === "all"
+      ? certifications
+      : certifications.filter((cert) => cert.category === selectedCategory);
 
   return (
     <section className="container mb-5" id="AllCertifications">
@@ -49,25 +48,17 @@ function AllCertifications() {
         <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto pt-5">
           <BackButton handleGoBack={handleGoBackCertificate} />
         </div>
-        <div className="col-12 text-center ">
+        <div className="col-12 text-center pt-4 pt-md-0">
           <TitleSection t={t} title={t("CertificationTitle")} />
         </div>
         <div className="col-12 col-md-10 col-lg-9 col-xxl-8 mx-auto">
-          {/*Category filter */}
           <CategoryFilter
-            categories={categoriesCertificates}
+            categories={categories}
             selectedCategory={selectedCategory}
             onCategoryChange={setSelectedCategory}
           />
         </div>
-        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
-          <p className="results-counter">
-            {t("ShowingResults", {
-              current: Math.min(visibleItems, filteredCertifications.length),
-              total: filteredCertifications.length,
-            })}
-          </p>
-        </div>
+
         <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
           {filteredCertifications
             ? filteredCertifications
@@ -76,7 +67,16 @@ function AllCertifications() {
             : Array.from({ length: 4 }).map((_, index) => (
                 <EmptyEducationCard key={index} />
               ))}
-
+        </div>
+        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
+          <p className="label-category ">
+            {t("ShowingResults", {
+              current: Math.min(visibleItems, filteredCertifications.length),
+              total: filteredCertifications.length,
+            })}
+          </p>
+        </div>
+        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
           {visibleItems < filteredCertifications.length && (
             <div className="col-12 text-center">
               <SecondaryBtn

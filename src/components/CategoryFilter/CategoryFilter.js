@@ -1,26 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import "./CategoryFilter.css"
+import { RiArrowDropDownLine } from "react-icons/ri";
+import "./CategoryFilter.css";
 
 function CategoryFilter({ categories, selectedCategory, onCategoryChange }) {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
 
+  const handleCategoryClick = (categoryKey) => {
+    onCategoryChange(categoryKey);
+    setIsOpen(false);
+  };
   return (
-    <div className="filter-container">
-      <label htmlFor="categoryFilter" className="results-counter">{t("FilterLabel")}</label>
-      <select
-        id="categoryFilter"
-        value={selectedCategory}
-        onChange={(e) => onCategoryChange(e.target.value)}
-        className="category-select"
-      >
-        <option value="all">{t("ShowAll")}</option>
-        {categories.map((category, index) => (
-          <option key={index} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
+    <div className="container-category-filter">
+    <p className="label-category pe-3">{t("FilterLabel")}</p>
+      <div className="dropdown-container">
+        <div className="dropdown-selected" onClick={() => setIsOpen(!isOpen)}>
+          {categories.find((cat) => cat.key === selectedCategory)?.value ||
+            t("ShowAll")}
+          <span className={`dropdown-arrow ${isOpen ? "open" : ""}`}>
+            <RiArrowDropDownLine className="arrow-dropdown" />
+          </span>
+        </div>
+        {isOpen && (
+          <div className="dropdown-options">
+            {categories.map((category) => (
+              <div
+                key={category.key}
+                className="dropdown-option"
+                onClick={() => handleCategoryClick(category.key)}
+              >
+                {category.value}
+              </div>
+            ))}
+            <div
+              className="dropdown-option"
+              onClick={() => handleCategoryClick("all")}
+            >
+              {t("ShowAll")}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
