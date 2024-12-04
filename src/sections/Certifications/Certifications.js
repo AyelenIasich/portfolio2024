@@ -27,7 +27,7 @@ function Certifications() {
   };
 
   return (
-    <section className="container pt-3 mt-md-5" id="certifications">
+    <section className="container pt-5 mt-md-5" id="certifications">
       <div className="row ">
         <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("CertificationTitle")} />
