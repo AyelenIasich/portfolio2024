@@ -21,8 +21,8 @@ function Home() {
 
   return (
     <section className="home-section">
-      <BgHomeSVG className="background-svg d-none d-lg-block" />
-      <BgHomeMobile className="background-svg  d-lg-none" />
+      <BgHomeSVG className="background-svg d-none d-xl-block" />
+      <BgHomeMobile className="background-svg  d-xl-none" />
       <div className="container d-flex  align-items-center justify-content-center ">
         <div className="row content-row ">
           <div className="col-12 col-lg-6 align-self-center justify-content-center order-2 text-content col-home ">

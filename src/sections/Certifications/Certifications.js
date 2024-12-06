@@ -40,7 +40,7 @@ function Certifications() {
             })}
           </p>
         </div>
-        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
+        <div className="col-12 col-md-10 col-lg-10 col-xxl-8  mx-auto">
           {certificationsPreview
             ? certificationsPreview
                 .slice(0, visibleItems)

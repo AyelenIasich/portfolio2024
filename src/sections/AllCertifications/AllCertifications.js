@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { categoriesCertificates } from "../../Data/certificationData";
 import TitleSection from "../../components/TitleSection/TitleSection";
 import EducationCard from "../../components/EducationCard/EducationCard";
 import certificationData from "../../Data/certificationData";
-import { categoriesCertificates } from "../../Data/certificationData";
 import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
 import EmptyEducationCard from "../../components/EmptyEducationCard/EmptyEducationCard";
-import { useNavigate } from "react-router-dom";
-import "./AllCertifications.css";
 import BackButton from "../../components/BackButton/BackButton";
 import CategoryFilter from "../../components/CategoryFilter/CategoryFilter";
+import ResultCounter from "../../components/ResultCounter/ResultCounter";
+import "./AllCertifications.css";
 
 function AllCertifications() {
   const { t } = useTranslation();
@@ -68,14 +69,10 @@ function AllCertifications() {
                 <EmptyEducationCard key={index} />
               ))}
         </div>
-        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
-          <p className="label-category ">
-            {t("ShowingResults", {
-              current: Math.min(visibleItems, filteredCertifications.length),
-              total: filteredCertifications.length,
-            })}
-          </p>
-        </div>
+
+        {/* Cards displaying */}
+        <ResultCounter visibleItems={visibleItems} list={filteredCertifications} />
+
         <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
           {visibleItems < filteredCertifications.length && (
             <div className="col-12 text-center">

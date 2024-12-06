@@ -164,5 +164,8 @@
   "ProgrammingLanguages": "Programming Languages",
   "Databases": "Databases",
   "Frameworks&Libraries": "Frameworks & Libraries",
-  "DevelopmentTools": "Development Tools"
+  "DevelopmentTools": "Development Tools",
+  "ShowMoreInfoProyect": "Learn more",
+  "PersonalProjects": "Personal Proyects",
+  "MarioProject": "My first personal project inspired by classic Mario, developed with Kaboom.js and CSS, marked the beginning of my passion for programming."
 }

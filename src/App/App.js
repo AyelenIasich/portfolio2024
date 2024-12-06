@@ -32,7 +32,7 @@ function App() {
               <StatInformation />
               <Experience />
               <SkillBanner />
-              {/* <Projects /> */}
+              <Projects />
               <Recognitions />
               <Education />
               <Certifications />

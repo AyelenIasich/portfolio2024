@@ -15,7 +15,7 @@ function Experience() {
         <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("ExperienceTitle")} />
         </div>
-        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
+        <div className="col-12 col-md-10 col-lg-10 col-xxl-8  mx-auto">
         {experiences.map((exp, index)=>(
             <ExperienceCard  key={index} {...exp}/>
         ))}
