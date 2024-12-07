@@ -191,6 +191,9 @@
  "UshuaiaCulturaDescription2":"Tanto el frontend como el backend están desarrollados con Laravel, utilizando una base de datos MySQL", 
   "UshuaiaCulturaListTitle":"Las diferentes capas del proyecto están desplegadas en servidores independientes:",
   "UshuaiaCulturaListItem1":"Frontend y backend: Deploy en Digital Ocean (+ Spaces).",
-  "UshuaiaCulturaListItem2":"Base de datos: Clever Cloud."
+  "UshuaiaCulturaListItem2":"Base de datos: Clever Cloud.",
+  "MaquetadoUshuaiaPeriod":"Ago. 2022 - Dic. 2022",
+  "MaquetadoUshuaiaTitle":"Ushuaia Cultura - Maquetado",
+  "MaquetadoUshuaiaCulturaDescription":"Maquetado en Figma del proyecto ‘Ushuaia Cultura’ para el curso Full Stack en la UTN.BA. Diseño visual detallado para la planificación de la futura aplicación web."
   
 }

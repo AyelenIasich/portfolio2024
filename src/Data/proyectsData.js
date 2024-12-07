@@ -99,9 +99,10 @@ const proyectsData = (t) => [
     period: "Nov. 2023 - Dic. 2023",
     description:
       "Como diseñadora UX/UI en Innovus para el proyecto Marketchain, creé una interfaz adaptable y centrada en la experiencia del usuario, optimizada para escritorio y dispositivos móviles, facilitando el intercambio de productos y servicios con criptomonedas.",
-    linkMoreInfo: "#",
     linkWeb:
       "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
+    isShowBtns: true,
+    isShowMoreInfo: false,
   },
   {
     image: Fotografia,
@@ -178,26 +179,23 @@ const proyectsData = (t) => [
     linkWeb: "https://ushuaiacultura.com/",
     isShowBtns: false,
     isShowModalPhotoProject: true,
-    paragraphModal0: t("UshuaiaCulturaDescription0"), 
-    paragraphModal1: t("UshuaiaCulturaDescription1"), 
-    listTitle:t("UshuaiaCulturaListTitle"), 
-    listItem:[t("UshuaiaCulturaListItem1"), t("UshuaiaCulturaListItem2")], 
-
+    paragraphModal0: t("UshuaiaCulturaDescription0"),
+    paragraphModal1: t("UshuaiaCulturaDescription1"),
+    listTitle: t("UshuaiaCulturaListTitle"),
+    listItem: [t("UshuaiaCulturaListItem1"), t("UshuaiaCulturaListItem2")],
   },
   {
     image: MaquetadoUshuaiaCultura,
     category: t("WebDesign"),
     categoryFilter: "WebDesign",
-    title: "Ushuaia Cultura - Maquetado",
+    title: t("MaquetadoUshuaiaTitle"),
     tech: [{ name: "Figma", icon: FigmaLogo }],
-    period: "Aug. 2022 - Dec. 2022",
-    description:
-      "Maquetado de mi proyecto final en la UTN.BA para el curso de desarrollo full stack. Destaca la implementación del diseño en Figma, ofreciendo una vista previa visual de la interfaz planificada para la futura aplicación",
+    period: t("MaquetadoUshuaiaPeriod"),
+    description: t("MaquetadoUshuaiaCulturaDescription"),
     linkWeb:
       "https://www.figma.com/design/4EvogqNwZCvWFTgwyjzJ6b/Untitled?node-id=0-1&t=noaW0pU4gBkHIM7u-0",
     isShowMoreInfo: false,
     isShowBtns: true,
-
   },
   {
     image: Portfolio2022,
@@ -220,12 +218,15 @@ const proyectsData = (t) => [
     linkWeb: "https://ayeleniasichmyportfolio.web.app/",
     isArgentinaPrograma: true,
     isShowModalPhotoProject: true,
-    paragraphModal0: t("ArgentinaProgramaDescription0"), 
-    paragraphModal1: t("ArgentinaProgramaDescription1"), 
-    listTitle:t("ArgentinaProgramaDescription2"), 
-    listItem:[t("ArgentinaProgramaDescription3"), t("ArgentinaProgramaDescription4"), t("ArgentinaProgramaDescription5")], 
-    paragraphModal2:t("ArgentinaProgramaDescription6"), 
- 
+    paragraphModal0: t("ArgentinaProgramaDescription0"),
+    paragraphModal1: t("ArgentinaProgramaDescription1"),
+    listTitle: t("ArgentinaProgramaDescription2"),
+    listItem: [
+      t("ArgentinaProgramaDescription3"),
+      t("ArgentinaProgramaDescription4"),
+      t("ArgentinaProgramaDescription5"),
+    ],
+    paragraphModal2: t("ArgentinaProgramaDescription6"),
   },
   {
     image: PiedraPapelTijera,
