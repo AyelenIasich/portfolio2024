@@ -3,14 +3,16 @@ import { useTranslation } from "react-i18next";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import "./CategoryFilter.css";
 
-function CategoryFilter({ categories, selectedCategory, onCategoryChange }) {
+function CategoryFilter({ categories, selectedCategory, onCategoryChange , setVisibleItem}) {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCategoryClick = (categoryKey) => {
     onCategoryChange(categoryKey);
+    setVisibleItem(4);
     setIsOpen(false);
   };
+  
   return (
     <div className="container-category-filter">
     <p className="label-category pe-3">{t("FilterLabel")}</p>

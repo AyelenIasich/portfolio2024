@@ -68,10 +68,14 @@ function AllCertifications() {
             : Array.from({ length: 4 }).map((_, index) => (
                 <EmptyEducationCard key={index} />
               ))}
+              
+          {/* Cards displaying */}
+          <ResultCounter
+            visibleItems={visibleItems}
+            list={filteredCertifications}
+            total={certifications}
+          />
         </div>
-
-        {/* Cards displaying */}
-        <ResultCounter visibleItems={visibleItems} list={filteredCertifications} />
 
         <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
           {visibleItems < filteredCertifications.length && (

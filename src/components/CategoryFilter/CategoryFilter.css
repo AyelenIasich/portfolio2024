@@ -63,16 +63,14 @@
   border-bottom-right-radius: 5px;
 }
 
-.container-category-filter {
-  display: flex;
-  align-items: center;
-}
-
 .label-category {
   color: #757575;
   font-weight: 600;
 }
 
-
-
-
+@media screen and (min-width: 991px) {
+  .container-category-filter {
+    display: flex;
+    align-items: center;
+  }
+}

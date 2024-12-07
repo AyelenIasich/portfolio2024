@@ -8,6 +8,7 @@ import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
 import EmptyEducationCard from "../../components/EmptyEducationCard/EmptyEducationCard";
 import { useNavigate } from "react-router-dom";
 import "./Certifications.css";
+import ResultCounter from "../../components/ResultCounter/ResultCounter";
 
 function Certifications() {
   const { t } = useTranslation();
@@ -32,14 +33,7 @@ function Certifications() {
         <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("CertificationTitle")} />
         </div>
-        <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
-          <p className="results-counter">
-            {t("ShowingResults", {
-              current: Math.min(visibleItems, certificationsPreview.length),
-              total: certifications.length,
-            })}
-          </p>
-        </div>
+
         <div className="col-12 col-md-10 col-lg-10 col-xxl-8  mx-auto">
           {certificationsPreview
             ? certificationsPreview
@@ -48,6 +42,13 @@ function Certifications() {
             : Array.from({ length: 4 }).map((_, index) => (
                 <EmptyEducationCard key={index} />
               ))}
+
+          {/* Cards displaying */}
+          <ResultCounter
+            visibleItems={visibleItems}
+            list={certificationsPreview}
+            total={certifications}
+          />
 
           {visibleItems < certifications.length && (
             <div className="col-12 text-center">

@@ -49,35 +49,8 @@ function SkillBanner() {
     { src: Genexus, alt: "Genexus" },
   ];
 
-  const technologies = [
-    // Frontend
-    { src: JavaScript, alt: "JavaScript" },
-    { src: Typescript, alt: "Typescript" },
-    { src: ReactJs, alt: "React.js" },
-    { src: ReactNative, alt: "React Native" },
-    { src: Css, alt: "CSS3" },
-    { src: Sass, alt: "SASS" },
-    { src: Bootstrap, alt: "Bootstrap" },
-    { src: Figma, alt: "Figma" },
-    { src: Angular, alt: "Angular" },
-
-    // Backend
-    { src: Php, alt: "PHP" },
-    { src: Laravel, alt: "Laravel" },
-    { src: Django, alt: "Django" },
-    { src: Java, alt: "Java" },
-
-    // Database
-    { src: PostgreSQL, alt: "PostgreSQL" },
-    { src: Mysql, alt: "MySQL" },
-
-    // CMS and others
-    { src: Strapi, alt: "Strapi" },
-    { src: Genexus, alt: "Genexus" },
-  ];
-
   return (
-    <div className="container-fluid my-5 py-lg-3">
+    <div className="container-fluid pt-5 pt-lg-5 my-5 pb-lg-3">
       <Marquee technologies={technologies1} />
       <Marquee technologies={technologies2} isLeft={true}/>
     </div>

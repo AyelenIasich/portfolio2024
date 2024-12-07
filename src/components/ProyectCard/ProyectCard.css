@@ -1,8 +1,26 @@
-.proyect-btns{
-  display: flex;
-  /* justify-content: space-between;s */
+
+.skeleton-project-img {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f2f2f2 50%, #e0e0e0 75%);
+  animation: loading 1.5s infinite ease-in-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-size: 200% 100%;
 }
 
+@keyframes loading {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+.proyect-btns {
+  display: flex;
+}
 
 .logo-proyect-container {
   background: linear-gradient(180deg, #a385db 0%, #523c7c 68%, #312726 100%);
@@ -16,12 +34,6 @@
   color: #312726;
   font-weight: 600;
 }
-
-/* .logo-proyect {
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-} */
 
 .logo-proyect {
   width: 100%;
@@ -57,6 +69,11 @@
     border-top-right-radius: 20px;
     border-bottom-left-radius: 00px;
   }
+  .skeleton-project-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 .period-proyect {
@@ -69,6 +86,7 @@
 .description-proyect {
   color: #a1a1a1;
   font-weight: 400;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 
@@ -78,11 +96,33 @@
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 730px) {
-  .description-proyect {
-    font-size: 0.9rem;
-  }
+.web-btn {
+  width: 150px;
+  height: 38px;
+  border-radius: 15px;
+  background-color: white;
+  color: #000000;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; 
+  font-size: 0.9rem;
 }
+
+.web-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.web-btn-icon {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
 
 @media screen and (max-width: 730px) {
   .proyect-title {
@@ -93,15 +133,19 @@
   }
   .period-proyect {
     font-size: 0.8rem;
-    /* text-align: start; */
+    text-align: start;
   }
 
   .alertProyect {
     font-size: 0.8rem;
   }
-  .proyect-btns{
+  .proyect-btns {
     display: flex;
     justify-content: space-between;
+  }
+  .web-btn{
+    width: 100%;
+    font-size: 1rem;
   }
 }
 

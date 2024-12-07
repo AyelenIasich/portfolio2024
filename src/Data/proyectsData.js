@@ -100,13 +100,13 @@ const proyectsData = (t) => [
     description:
       "Como diseñadora UX/UI en Innovus para el proyecto Marketchain, creé una interfaz adaptable y centrada en la experiencia del usuario, optimizada para escritorio y dispositivos móviles, facilitando el intercambio de productos y servicios con criptomonedas.",
     linkMoreInfo: "#",
-    linkWeb: "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
-
+    linkWeb:
+      "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
   },
   {
     image: Fotografia,
     category: t("WebDevelopment"),
-    categoryFilter:  "WebDevelopment",
+    categoryFilter: "WebDevelopment",
     title: "Cursos de fotografía (Innovus)",
     tech: [
       { name: "PHP", icon: PhpLogo },
@@ -135,7 +135,7 @@ const proyectsData = (t) => [
   {
     image: SeekerParking,
     category: t("WebDevelopment"),
-    categoryFilter:  "WebDevelopment",
+    categoryFilter: "WebDevelopment",
     title: "Seeker Parking (Innovus)",
     tech: [
       { name: "PHP", icon: PhpLogo },
@@ -149,7 +149,7 @@ const proyectsData = (t) => [
   {
     image: Telefonia,
     category: t("WebDevelopment"),
-    categoryFilter:  "WebDevelopment",
+    categoryFilter: "WebDevelopment",
     title: "Telefonia (SGD)",
     tech: [
       { name: "Django", icon: DjangoLogo },
@@ -169,31 +169,40 @@ const proyectsData = (t) => [
       { name: "Laravel", icon: LaravelLogo },
       { name: "MySQL", icon: MySQLLogo },
       { name: "Digital Ocean", icon: DigitalOcean },
+      { name: "Clever Cloud", icon: CleverCloud },
     ],
-    period: "Aug. 2022 - Dec. 2022",
-    description:
-      "Proyecto final del curso full stack UTN.BA. Aplicación web dinamica con arquitectura distribuida. Deploy: Digital Ocean ( + Spaces) y Clever Cloud",
+    period: t("UshuaiaCulturaPeriod"),
+    description: t("UshuaiaCulturaDescription"),
     linkMoreInfo: "#",
     linkRepoFrontend: "https://github.com/AyelenIasich/Ushuaia_Cultura",
     linkWeb: "https://ushuaiacultura.com/",
+    isShowBtns: false,
+    isShowModalPhotoProject: true,
+    paragraphModal0: t("UshuaiaCulturaDescription0"), 
+    paragraphModal1: t("UshuaiaCulturaDescription1"), 
+    listTitle:t("UshuaiaCulturaListTitle"), 
+    listItem:[t("UshuaiaCulturaListItem1"), t("UshuaiaCulturaListItem2")], 
+
   },
   {
     image: MaquetadoUshuaiaCultura,
-    category: t("WebDevelopment"),
-    categoryFilter:"PersonalProjects",
+    category: t("WebDesign"),
+    categoryFilter: "WebDesign",
     title: "Ushuaia Cultura - Maquetado",
     tech: [{ name: "Figma", icon: FigmaLogo }],
     period: "Aug. 2022 - Dec. 2022",
     description:
       "Maquetado de mi proyecto final en la UTN.BA para el curso de desarrollo full stack. Destaca la implementación del diseño en Figma, ofreciendo una vista previa visual de la interfaz planificada para la futura aplicación",
-    linkMoreInfo: "#",
-    linkWeb: "https://www.figma.com/design/4EvogqNwZCvWFTgwyjzJ6b/Untitled?node-id=0-1&t=noaW0pU4gBkHIM7u-0",
+    linkWeb:
+      "https://www.figma.com/design/4EvogqNwZCvWFTgwyjzJ6b/Untitled?node-id=0-1&t=noaW0pU4gBkHIM7u-0",
+    isShowMoreInfo: false,
+    isShowBtns: true,
 
   },
   {
     image: Portfolio2022,
     category: t("WebDevelopment"),
-    categoryFilter:"PersonalProjects",
+    categoryFilter: "PersonalProjects",
     title: "Argentina Programa #YoProgramo",
     tech: [
       { name: "Angular", icon: AngularLogo },
@@ -202,63 +211,133 @@ const proyectsData = (t) => [
       { name: "Railway", icon: Railway },
       { name: "Clever Cloud", icon: CleverCloud },
     ],
-    period: "Ene. 2022 - Aug. 2022",
-    description:
-      "Proyecto final del Curso de Desarrollo Web Full Stack. Es una aplicación web full stack con arquitectura distribuida.",
-    linkMoreInfo: "#",
+    period: t("ArgentinaProgramaPeriod"),
+    description: t("ArgentinaProgramaPreviewDescription"),
+    linkMoreInfo: "/ArgentinaProgramaProject",
+    isShowBtns: false,
     linkRepoFrontend: "https://github.com/AyelenIasich/PortfolioFrontEnd",
     linkRepoBackend: "https://github.com/AyelenIasich/portfolio-BackEnd",
     linkWeb: "https://ayeleniasichmyportfolio.web.app/",
+    isArgentinaPrograma: true,
+    isShowModalPhotoProject: true,
+    paragraphModal0: t("ArgentinaProgramaDescription0"), 
+    paragraphModal1: t("ArgentinaProgramaDescription1"), 
+    listTitle:t("ArgentinaProgramaDescription2"), 
+    listItem:[t("ArgentinaProgramaDescription3"), t("ArgentinaProgramaDescription4"), t("ArgentinaProgramaDescription5")], 
+    paragraphModal2:t("ArgentinaProgramaDescription6"), 
+ 
   },
   {
     image: PiedraPapelTijera,
     category: t("WebDevelopment"),
-    categoryFilter:"PersonalProjects",
-    title: "Piedra, Papel y Tijera",
+    categoryFilter: "PersonalProjects",
+    title: t("RockPaperScissors"),
     tech: [
       { name: "Javascript", icon: JsLogo },
       { name: "Bootstrap", icon: BootstrapLogo },
       { name: "CSS", icon: CssLogo },
     ],
     period: "Mar. 2023",
-    description:
-      "Desarrollo de pequeño proyecto para repasar conceptos fundamentales de JavaScript, animación con css y responsive design. Diseño propio.",
-    linkMoreInfo: "#",
-    linkRepoFrontend: "https://github.com/AyelenIasich/piedrapapeltijera.github.io",
+    description: t("RockPaperScissorsDescription"),
+    isShowMoreInfo: false,
+    isShowBtns: true,
+    linkRepoFrontend:
+      "https://github.com/AyelenIasich/piedrapapeltijera.github.io",
     linkWeb: "https://ayeleniasich.github.io/piedrapapeltijera.github.io/",
   },
   {
     image: MarioFirstGame,
     category: t("WebDevelopment"),
     categoryFilter: "PersonalProjects",
-    title: "Réplica del clásico Mario",
+    title: t("MarioTitle"),
     tech: [
       { name: "Kaboom.js", icon: JsLogo },
       { name: "CSS", icon: CssLogo },
     ],
-    period: "Mar. 2022",
+    period: t("MarioPeriod"),
     description: t("MarioProject"),
-    isShowMoreInfo:false,
+    isShowMoreInfo: false,
     linkRepoFrontend: "https://github.com/AyelenIasich/miprimerjuego.github.io",
     linkWeb: "https://ayeleniasich.github.io/miprimerjuego.github.io/",
-    alertProyect:"Importante, solo funciona en web con el teclado.",
-    isShowBtns:true
+    alertProyect: t("MarioAlert"),
+    isShowBtns: true,
   },
 ];
 
 export const categoriesProyects = (t) => [
   {
-    "WebDevelopment":  t("WebDevelopment"),
+    WebDevelopment: t("WebDevelopment"),
   },
   {
-    "MobileDevelopment":   t("MobileDevelopment"),
+    MobileDevelopment: t("MobileDevelopment"),
   },
   {
-    "PersonalProjects":  t("PersonalProjects"), 
-  },{
-    "WebDesign": t("WebDesign"), 
-  }
-  
+    PersonalProjects: t("PersonalProjects"),
+  },
+  {
+    WebDesign: t("WebDesign"),
+  },
+];
+
+export const previewProjectsData = (t) => [
+  {
+    image: Yazta,
+    category: t("MobileDevelopment"),
+    categoryFilter: "MobileDevelopment",
+    title: "Yazta Mx & Yazta Pro (Innovus)",
+    tech: [
+      { name: "React Native", icon: ReactNativeLogo },
+      { name: "Strapi", icon: StrapiLogo },
+      { name: "AWS", icon: AWS },
+      { name: "PostgreSQL", icon: PostgreSQLLogo },
+    ],
+    period: "Nov. 2023 - Oct. 2024",
+    description:
+      'Actualmente, colaboro en el proyecto "Yazta", una aplicación en React Native y Strapi v3 para Android e iOS. Trabajo con mis compañeros para garantizar un desarrollo exitoso de la aplicación móvil.',
+    linkMoreInfo: "#",
+  },
+  {
+    image: Nietos,
+    category: t("WebDevelopment"),
+    categoryFilter: "WebDevelopment",
+    title: "Nietos (Innovus)",
+    tech: [
+      { name: "Laravel", icon: LaravelLogo },
+      { name: "MySQL", icon: MySQLLogo },
+    ],
+    period: "Oct. 2023 - Marzo. 2024",
+    description:
+      'Contribuí al proyecto "Nietos" en Innovus, una aplicación para gestionar pedidos de un restaurante. Desempeñé el rol de desarrolladora full stack utilizando Laravel, colaborando efectivamente en un equipo para asegurar el éxito del proyecto',
+    linkMoreInfo: "#",
+  },
+  {
+    image: SymbioXr,
+    category: t("WebDevelopment"),
+    categoryFilter: "WebDevelopment",
+    title: "Symbioxr (Innovus)",
+    tech: [
+      { name: "React.js", icon: ReactJsLogo },
+      { name: "Node.js", icon: Node },
+      { name: "MongoDB", icon: MongoDB },
+    ],
+    period: "Oct. 2023 - Dic. 2023",
+    description:
+      'Actualmente, colaboro en el proyecto "Yazta", una aplicación en React Native y Strapi v3 para Android e iOS. Trabajo con mis compañeros para garantizar un desarrollo exitoso de la aplicación móvil.',
+    linkMoreInfo: "#",
+  },
+  {
+    image: MarcketChain,
+    category: t("WebDesign"),
+    categoryFilter: "WebDesign",
+    title: "MarketChain (Innovus)",
+    tech: [{ name: "Figma", icon: FigmaLogo }],
+    period: "Nov. 2023 - Dic. 2023",
+    description:
+      "Como diseñadora UX/UI en Innovus para el proyecto Marketchain, creé una interfaz adaptable y centrada en la experiencia del usuario, optimizada para escritorio y dispositivos móviles, facilitando el intercambio de productos y servicios con criptomonedas.",
+    linkMoreInfo: "#",
+    linkWeb:
+      "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
+  },
 ];
 
 export default proyectsData;

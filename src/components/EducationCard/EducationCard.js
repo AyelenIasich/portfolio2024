@@ -20,7 +20,9 @@ function EducationCard({
 
   const [showExperienceModal, setShowExperienceModal] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
   const openEducationModal = () => {
     setShowExperienceModal(true);
   };
@@ -29,9 +31,7 @@ function EducationCard({
     setShowExperienceModal(false);
   };
 
-  const handleImageLoad = () => {
-    setIsLoading(false);
-  };
+
   
   return (
     <>

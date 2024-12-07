@@ -17,6 +17,8 @@ import Education from "../sections/Education/Education";
 import Testimonials from "../sections/Testimonials/Testimonials";
 import Technologies from "../sections/Technologies/Technologies";
 import "../i18n/i18n";
+import AllProjects from "../sections/AllProjects/AllProjects";
+import Fotografia from "../sections/Fotografia/Fotografia";
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
           }
         />
         <Route path="/all-certifications" element={<AllCertifications />} />
+        <Route path="/all-projects" element={<AllProjects />} />
+        <Route path="/Fotografia" element={<Fotografia />} />
       </Routes>
       <LanguageButton />
     </Router>

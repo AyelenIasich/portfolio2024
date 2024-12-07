@@ -5,11 +5,6 @@
   box-shadow: none;
 }
 
-.results-counter {
-  text-align: right;
-  color: #757575;
-  font-weight: 600;
-}
 
 .education-content{
     transform: translateY(-30px);

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import { TbWorld } from "react-icons/tb";
-import "./ProyectCard.css";
 import Badges from "../Badges/Badges";
+import "./ProyectCard.css";
+import ModalPhoto from "../ModalPhoto/ModalPhoto";
+import ImageSkeleton from "../ImageSkeleton/ImageSkeleton";
+import ModalContent from "../ModalContent/ModalContent";
 
 function ProyectCard({
   image,
@@ -16,69 +20,161 @@ function ProyectCard({
   tech,
   description2,
   alertProyect,
-  linkRepoFrontend, 
-  linkWeb, 
+  linkRepoFrontend,
+  linkWeb,
   isShowBtns = false,
+  linkMoreInfo,
+  isArgentinaPrograma = false,
+  isShowModalPhotoProject = false,
+  paragraphModal0,
+  paragraphModal1,
+  listTitle,
+  listItem,
+  paragraphModal2,
 }) {
   const { t } = useTranslation();
+  const [isProjLoading, setIsProjLoading] = useState(true);
 
+  const handleProjectImageLoad = () => {
+    setIsProjLoading(false);
+  };
+
+  const navigate = useNavigate();
+
+  const handleMoreInfo = () => {
+    if (isShowModalPhotoProject) {
+      openModal();
+    }
+    // navigate(linkMoreInfo);
+    // setTimeout(() => {
+    //   const section = document.getElementById(linkMoreInfo);
+    //   if (section) {
+    //     section.scrollIntoView({ behavior: "smooth" });
+    //   }
+    // }, 100);
+  };
+  const [showProjectModal, setShowProjectModal] = useState(false);
+
+  const openModal = () => {
+    setShowProjectModal(true);
+  };
+
+  const closeModal = () => {
+    setShowProjectModal(false);
+  };
+
+  const [showProjectPhotoModal, setShowProjectPhotoModal] = useState(false);
+
+  const openModalPhotoProjectModal = () => {
+    setShowProjectPhotoModal(true);
+  };
+
+  const closeModalPhotoProject = () => {
+    setShowProjectPhotoModal(false);
+  };
+
+  const [isPgLoading, setIsPgLoading] = useState(true);
+
+  const handleImageProjectLoad = () => {
+    setIsPgLoading(false);
+  };
   return (
-    <div className="proyect-card  mb-5 ">
-      <div className="row">
-        <div className="col-12 col-lg-5">
-          <div className="logo-proyect-container w-100 h-100  ps-lg-4 pt-lg-4 pb-lg-4 pe-lg-0 pt-3 px-3 ">
-            <img src={image} alt={`${title} logo`} className="logo-proyect" />
+    <>
+      <div className="proyect-card  mb-4 ">
+        <div className="row">
+          <div className="col-12 col-lg-5">
+            {/* Project image */}
+            <div className="logo-proyect-container w-100 h-100  ps-lg-4 pt-lg-4 pb-lg-4 pe-lg-0 pt-3 px-3 ">
+              {isProjLoading && <div className="skeleton-project-img "></div>}
+              <img
+                src={image}
+                alt={`${title} logo`}
+                className="logo-proyect"
+                onLoad={handleProjectImageLoad}
+                onClick={openModalPhotoProjectModal}
+              />
+            </div>
           </div>
-        </div>
-        <div className="col-12 col-lg-7 py-lg-4 px-lg-4 px-5  py-4">
-          <div className="card-header pb-2">
-            <p className="category-proyect m-0">{category}</p>
-            <p className="period-proyect d-none d-lg-block m-0 pe-lg-3">
-              {period}
-            </p>
-          </div>
-          <div className="card-content ">
-            <h3 className="proyect-title pt-2 m-0 pb-3">{title}</h3>
+          <div className="col-12 col-lg-7 py-lg-4 py-4">
+            <div className="card-header pb-2 px-3">
+              <p className="category-proyect m-0">{category}</p>
+              <p className="period-proyect d-none d-lg-block m-0 pe-lg-3">
+                {period}
+              </p>
+            </div>
+            <div className="card-content px-3 ">
+              <h3 className="proyect-title pt-2 m-0 pb-3">{title}</h3>
+              {/* Badges technologies */}
+              <Badges tech={tech} />
 
-            <Badges tech={tech} />
+              <p className="period-proyect d-lg-none pt-3 m-0">{period}</p>
 
-            {description && (
-              <div className="description-proyect pt-4 pb-2 pt-md-4">
-                {description}
-              </div>
-            )}
-            {description2 && (
-              <div className="description-proyect pb-2">{description2}</div>
-            )}
-            {alertProyect && (
-              <div className="alertProyect pb-2 pt-0">{alertProyect}</div>
-            )}
-            <p className="period-proyect d-lg-none pt-2 m-0">{period}</p>
+              {description && (
+                <div className="description-proyect pt-3 pb-2 pt-md-4">
+                  {description}
+                </div>
+              )}
+              {description2 && (
+                <div className="description-proyect pb-2">{description2}</div>
+              )}
+              {alertProyect && (
+                <div className="alertProyect pb-2 pt-0">{alertProyect}</div>
+              )}
 
-            {isShowMoreInfo && (
-              <div className="more-btn pt-2">
-                <p className="m-0">
-                  {t("ShowMoreInfoProyect")}{" "}
-                  <FaArrowRightLong className="icon-arrow-right" />
-                </p>
-              </div>
-            )}
-            {isShowBtns && (
-              <div className="proyect-btns align-items-center mt-3 ">
-                <a className="nav-link bg-mobile-social me-3 " href={linkRepoFrontend}>
-                  <IoLogoGithub className="bg-mobile-icon github" />{" "}
-                  <span className="">Github</span>
-                </a>
-                <a className="nav-link bg-mobile-social" href={linkWeb} >
-                  <TbWorld className="bg-mobile-icon linkedin" />{" "}
-                  <span className="">Pruébalo</span>
-                </a>
-              </div>
-            )}
+              {isShowBtns && (
+                <div className="proyect-btns align-items-center mt-3 ">
+                  {linkRepoFrontend && (
+                    <a
+                      className="nav-link  me-3  web-btn"
+                      href={linkRepoFrontend}
+                    >
+                      <IoLogoGithub className="web-btn-icon" />{" "}
+                      <span className="">Github</span>
+                    </a>
+                  )}
+                  <a className="nav-link  web-btn" href={linkWeb}>
+                    <TbWorld className="web-btn-icon" />{" "}
+                    <span className="">{t("btnTry")}</span>
+                  </a>
+                </div>
+              )}
+
+              {isShowMoreInfo && (
+                <div className="more-btn pt-2" onClick={handleMoreInfo}>
+                  <p className="m-0">
+                    {t("ShowMoreInfoProyect")}{" "}
+                    <FaArrowRightLong className="icon-arrow-right" />
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      {showProjectModal && (
+        <ModalPhoto handleCloseModal={closeModal}>
+          <ModalContent
+            title={title}
+            paragraphModal0={paragraphModal0}
+            paragraphModal1={paragraphModal1}
+            listTitle={listTitle}
+            listItem={listItem}
+            paragraphModal2={paragraphModal2}
+            linkRepoFrontend={linkRepoFrontend}
+            linkWeb={linkWeb}
+          />
+        </ModalPhoto>
+      )}
+      {showProjectPhotoModal && (
+        <ModalPhoto handleCloseModal={closeModalPhotoProject}>
+          <ImageSkeleton
+            isLoading={isPgLoading}
+            certificate={image}
+            handleImageLoad={handleImageProjectLoad}
+          />
+        </ModalPhoto>
+      )}
+    </>
   );
 }
 

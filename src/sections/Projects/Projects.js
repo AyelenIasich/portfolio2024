@@ -1,31 +1,30 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import TitleSection from "../../components/TitleSection/TitleSection";
-import proyectsData, { categoriesProyects } from "../../Data/proyectsData";
+import proyectsData, { previewProjectsData } from "../../Data/proyectsData";
 import ProyectCard from "../../components/ProyectCard/ProyectCard";
 import ResultCounter from "../../components/ResultCounter/ResultCounter";
 import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
-import CategoryFilter from "../../components/CategoryFilter/CategoryFilter";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const { t } = useTranslation();
-  const proyects = proyectsData(t);
+  const navigate = useNavigate();
+
+  const proyectsPreview = previewProjectsData(t);
+  const proyectsAll = proyectsData(t);
+
   const [visibleProjects, setVisibleProjects] = useState(4);
-  const [selectedProjCategory, setSelectedProjCategory] = useState("all");
 
-  const filteredProjects =
-    selectedProjCategory === "all"
-      ? proyects
-      : proyects.filter((proj) => proj.categoryFilter === selectedProjCategory);
-
-  const handleShowProjects = () => {
-    setVisibleProjects((prevVisibleItems) => prevVisibleItems + 3);
+  const handleShowAllProjects = () => {
+    navigate("/all-projects");
+    setTimeout(() => {
+      const section = document.getElementById("allProjects");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
-
-  const categoriesProject = categoriesProyects(t).map((category) => ({
-    key: Object.keys(category)[0],
-    value: Object.values(category)[0],
-  }));
 
   return (
     <section className="container pt-3" id="projects">
@@ -35,35 +34,26 @@ function Projects() {
         </div>
 
         <div className="col-12 col-md-10 col-lg-10 col-xxl-10  mx-auto">
-        {/* DROPDOWN WITH CATEGORIES */}
-          <CategoryFilter
-            categories={categoriesProject}
-            selectedCategory={selectedProjCategory}
-            onCategoryChange={setSelectedProjCategory}
-          />
+          {/* PROJECTS CARDS LIST */}
+          {proyectsPreview.map((proyect, index) => (
+            <ProyectCard key={index} {...proyect} />
+          ))}
 
           {/* Cards displaying */}
           <ResultCounter
             visibleItems={visibleProjects}
-            list={filteredProjects}
+            list={proyectsAll}
+            total={proyectsAll}
           />
-          {/* PROJECTS CARDS LIST */}
-          {filteredProjects.slice(0, visibleProjects).map((proyect, index) => (
-            <ProyectCard key={index} {...proyect} />
-          ))}
 
           {/* BTN SHOW MORE RESULTS */}
-          <div className="col-12 col-md-10 col-lg-9 col-xxl-8  mx-auto">
-            {visibleProjects < filteredProjects.length && (
-              <div className="col-12 text-center">
-                <SecondaryBtn
-                  label={t("BtnShowMore")}
-                  onClick={handleShowProjects}
-                  isContactBtn={false}
-                  extraStyle="btn-show-more"
-                />
-              </div>
-            )}
+          <div className="col-12 text-center">
+            <SecondaryBtn
+              label={t("btnSeeProjects")}
+              onClick={handleShowAllProjects}
+              isContactBtn={false}
+              extraStyle="btn-show-certifications px-5 "
+            />
           </div>
         </div>
       </div>
