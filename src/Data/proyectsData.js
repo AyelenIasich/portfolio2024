@@ -55,6 +55,7 @@ const proyectsData = (t) => [
       { name: "Strapi", icon: StrapiLogo },
       { name: "AWS", icon: AWS },
       { name: "PostgreSQL", icon: PostgreSQLLogo },
+      { name: "CSS", icon: CssLogo },
     ],
     period: "Nov. 2023 - Oct. 2024",
     description:
@@ -69,11 +70,24 @@ const proyectsData = (t) => [
     tech: [
       { name: "Laravel", icon: LaravelLogo },
       { name: "MySQL", icon: MySQLLogo },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
-    period: "Oct. 2023 - Marzo. 2024",
-    description:
-      'Contribuí al proyecto "Nietos" en Innovus, una aplicación para gestionar pedidos de un restaurante. Desempeñé el rol de desarrolladora full stack utilizando Laravel, colaborando efectivamente en un equipo para asegurar el éxito del proyecto',
-    linkMoreInfo: "#",
+    period: "Oct. 2023 - Mar. 2024",
+    description: t("NietosDescription"),
+    paragraphModal0: t("NietosDescription0"),
+    paragraphModal1: t("NietosDescription1"),
+    paragraphModal2: t("NietosDescription2"),
+    paragraphModal3: t("NietosDescription3"),
+    // Herramientas y metodologías utilizadas:
+    listTitle: t("SeekerParkingTitleList"),
+    listItem: [
+      t("SeekerParkingListItem1"),
+      t("SeekerParkingListItem2"),
+      t("SeekerParkingListItem3"),
+    ],
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
   },
   {
     image: SymbioXr,
@@ -84,11 +98,24 @@ const proyectsData = (t) => [
       { name: "React.js", icon: ReactJsLogo },
       { name: "Node.js", icon: Node },
       { name: "MongoDB", icon: MongoDB },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
-    period: "Oct. 2023 - Dic. 2023",
-    description:
-      'Actualmente, colaboro en el proyecto "Yazta", una aplicación en React Native y Strapi v3 para Android e iOS. Trabajo con mis compañeros para garantizar un desarrollo exitoso de la aplicación móvil.',
-    linkMoreInfo: "#",
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+    period: t("SymbioxrPeriod"),
+    description: t("SymbioxrDescription"),
+    paragraphModal0: t("SymbioxrDescription0"),
+    paragraphModal1: t("SymbioxrDescription1"),
+    paragraphModal2: t("SymbioxrDescription2"),
+    paragraphModal3: t("SymbioxrDescription3"),
+    // Herramientas y metodologías utilizadas:
+    listTitle: t("SeekerParkingTitleList"),
+    listItem: [
+      t("SeekerParkingListItem1"),
+      t("SeekerParkingListItem2"),
+      t("SeekerParkingListItem3"),
+    ],
   },
   {
     image: MarcketChain,
@@ -96,9 +123,8 @@ const proyectsData = (t) => [
     categoryFilter: "WebDesign",
     title: "MarketChain (Innovus)",
     tech: [{ name: "Figma", icon: FigmaLogo }],
-    period: "Nov. 2023 - Dic. 2023",
-    description:
-      "Como diseñadora UX/UI en Innovus para el proyecto Marketchain, creé una interfaz adaptable y centrada en la experiencia del usuario, optimizada para escritorio y dispositivos móviles, facilitando el intercambio de productos y servicios con criptomonedas.",
+    period: t("MarketChainPeriod"),
+    description: t("MarketChainDescription"),
     linkWeb:
       "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
     isShowBtns: true,
@@ -108,15 +134,24 @@ const proyectsData = (t) => [
     image: Fotografia,
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
-    title: "Cursos de fotografía (Innovus)",
+    title: t("FotografiaTitle"),
     tech: [
       { name: "PHP", icon: PhpLogo },
       { name: "MySQL", icon: MySQLLogo },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
     period: "Oct. 2023",
-    description:
-      "Como desarrolladora full stack y diseñadora en Innovus, lideré el proyecto de una landing de cursos de fotografía. Desde el diseño hasta la implementación con PHP y MySQL, creé una experiencia atractiva, optimizando la presencia online de la marca.",
-    linkMoreInfo: "#",
+    description: t("FotografiaDescription"),
+
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+    paragraphModal0: t("FotografiaDescription0"),
+    paragraphModal1: t("FotografiaDescription1"),
+    listItem: [
+      t("FotografiaListItem1"),
+      t("FotografiaListItem2"),
+    ],
   },
 
   {
@@ -127,11 +162,14 @@ const proyectsData = (t) => [
     tech: [
       { name: "Laravel", icon: LaravelLogo },
       { name: "MySQL", icon: MySQLLogo },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
     period: "Dic. 2023",
-    description:
-      "Como miembro del equipo en Innovus, participé en el proyecto Celigourmet mejorando visualmente su interfaz. Implementé el rediseño con PHP, trabajando en estrecha colaboración con un compañero para lograr una integración suave en la aplicación.",
-    linkMoreInfo: "#",
+    description: t("CeligourmetDescription"),
+    isShowBtns: false,
+    isShowModalPhotoProject: false,
+    isShowMoreInfo: false,
   },
   {
     image: SeekerParking,
@@ -141,25 +179,41 @@ const proyectsData = (t) => [
     tech: [
       { name: "PHP", icon: PhpLogo },
       { name: "MySQL", icon: MySQLLogo },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
+      { name: "Figma", icon: FigmaLogo },
     ],
-    period: "Jun. 2023 - Oct. 2023",
-    description:
-      "En Innovus, contribuí como desarrolladora full stack en el proyecto 'Seeker Parking', utilizando PHP CodeIgniter. Además, desempeñé un papel clave al sugerir mejoras en la experiencia del usuario y el diseño, optimizando el proyecto globalmente.",
-    linkMoreInfo: "#",
+    period: t("SeekerParkingPeriod"),
+    description: t("SeekerParkingDescription"),
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+    paragraphModal0: t("SeekerParkingDescription0"),
+    paragraphModal1: t("SeekerParkingDescription1"),
+    paragraphModal2: t("SeekerParkingDescription2"),
+    paragraphModal3: t("SeekerParkingDescription3"),
+    listTitle: t("SeekerParkingTitleList"),
+    listItem: [
+      t("SeekerParkingListItem1"),
+      t("SeekerParkingListItem2"),
+      t("SeekerParkingListItem3"),
+    ],
   },
   {
     image: Telefonia,
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
-    title: "Telefonia (SGD)",
+    title: "Telefonía (SGD)",
     tech: [
       { name: "Django", icon: DjangoLogo },
       { name: "MySQL", icon: MySQLLogo },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
     period: "May. 2023 - Jun. 2023",
-    description:
-      "En la Secretaria de Gobierno Digital contribui al proyecto de telefonia, proyecto desarrollado con django es un crud para procesamiento de datos ",
-    linkMoreInfo: "#",
+    description: t("TelefoniaDescription"),
+    isShowBtns: false,
+    isShowModalPhotoProject: false,
+    isShowMoreInfo: false,
   },
   {
     image: UshuaiaCultura,
@@ -226,7 +280,7 @@ const proyectsData = (t) => [
       t("ArgentinaProgramaDescription4"),
       t("ArgentinaProgramaDescription5"),
     ],
-    paragraphModal2: t("ArgentinaProgramaDescription6"),
+    paragraphModal6: t("ArgentinaProgramaDescription6"),
   },
   {
     image: PiedraPapelTijera,
@@ -267,16 +321,16 @@ const proyectsData = (t) => [
 
 export const categoriesProyects = (t) => [
   {
-    WebDevelopment: t("WebDevelopment"),
-  },
-  {
     MobileDevelopment: t("MobileDevelopment"),
   },
   {
-    PersonalProjects: t("PersonalProjects"),
+    WebDevelopment: t("WebDevelopment"),
   },
   {
     WebDesign: t("WebDesign"),
+  },
+  {
+    PersonalProjects: t("PersonalProjects"),
   },
 ];
 

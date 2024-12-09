@@ -11,6 +11,10 @@ function ModalContent({
   listTitle,
   listItem,
   paragraphModal2,
+  paragraphModal3,
+  paragraphModal4,
+  paragraphModal5,
+  paragraphModal6,
   linkRepoFrontend,
   linkWeb,
 }) {
@@ -24,15 +28,19 @@ function ModalContent({
         <div className="col-12 mx-auto">
           <p>{paragraphModal0}</p>
           {paragraphModal1 && <p>{paragraphModal1}</p>}
-          {listTitle && <p>{listTitle}</p>}
+          {paragraphModal2 && <p>{paragraphModal2}</p>}
+          {paragraphModal3 && <p>{paragraphModal3}</p>}
+          {paragraphModal4 && <p>{paragraphModal4}</p>}
+          {listTitle && <p className="list-title">{listTitle}</p>}
           {listItem && (
             <ul>
               {listItem.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className="pt-2">{item}</li>
               ))}
             </ul>
           )}
-          {paragraphModal2 && <p>{paragraphModal2}</p>}
+          {paragraphModal5&& <p>{paragraphModal5}</p>}
+          {paragraphModal6&& <p>{paragraphModal6}</p>}
 
           <div className="proyect-btns align-items-center mt-5 mt-md-4 text-center ">
             {linkRepoFrontend && (
@@ -41,11 +49,12 @@ function ModalContent({
                 <span className="">Github</span>
               </a>
             )}
-
-            <a className="nav-link  web-btn" href={linkWeb}>
-              <TbWorld className="web-btn-icon" />{" "}
-              <span className="">{t("btnTry")}</span>
-            </a>
+            {linkWeb && (
+              <a className="nav-link  web-btn" href={linkWeb}>
+                <TbWorld className="web-btn-icon" />{" "}
+                <span className="">{t("btnTry")}</span>
+              </a>
+            )}
           </div>
         </div>
       </div>

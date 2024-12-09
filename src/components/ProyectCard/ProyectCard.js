@@ -31,6 +31,10 @@ function ProyectCard({
   listTitle,
   listItem,
   paragraphModal2,
+  paragraphModal3,
+  paragraphModal4,
+  paragraphModal5,
+  paragraphModal6,
 }) {
   const { t } = useTranslation();
   const [isProjLoading, setIsProjLoading] = useState(true);
@@ -85,7 +89,7 @@ function ProyectCard({
           <div className="col-12 col-lg-5">
             {/* Project image */}
             <div className="logo-proyect-container w-100 h-100  ps-lg-4 pt-lg-4 pb-lg-4 pe-lg-0 pt-3 px-3 ">
-              {isProjLoading && <div className="skeleton-project-img "></div>}
+              {isProjLoading && <div className="skeleton-project-img1 "></div>}
               <img
                 src={image}
                 alt={`${title} logo`}
@@ -160,6 +164,10 @@ function ProyectCard({
             listTitle={listTitle}
             listItem={listItem}
             paragraphModal2={paragraphModal2}
+            paragraphModal3={paragraphModal3}
+            paragraphModal4={paragraphModal4}
+            paragraphModal5={paragraphModal5}
+            paragraphModal6={paragraphModal6}
             linkRepoFrontend={linkRepoFrontend}
             linkWeb={linkWeb}
           />
