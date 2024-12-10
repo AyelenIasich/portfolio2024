@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cbb77e3.css",
-    "main.js": "/static/js/main.26e5bfad.js",
+    "main.css": "/static/css/main.d15f904e.css",
+    "main.js": "/static/js/main.36f643af.js",
     "static/js/453.addf49e5.chunk.js": "/static/js/453.addf49e5.chunk.js",
     "static/media/Marcket-Chain.jpg": "/static/media/Marcket-Chain.bd95a916bbe02ae37d12.jpg",
     "static/media/yazta.jpg": "/static/media/yazta.c502706e0fe1aaef3368.jpg",
@@ -10,7 +10,6 @@
     "static/media/contact-austraunt2.svg": "/static/media/contact-austraunt2.bbb6c490bde4ff6e3b30b261eb522986.svg",
     "static/media/PiedraPapelTijera.png": "/static/media/PiedraPapelTijera.9bb3b2bbd10ed5c745d0.png",
     "static/media/PreWorkLinux.png": "/static/media/PreWorkLinux.d98e062a40b9b3c0b925.png",
-    "static/media/JorgeIasich.jpg": "/static/media/JorgeIasich.3f2b9962faf21ed51a28.jpg",
     "static/media/AngularComponentesCertificate.png": "/static/media/AngularComponentesCertificate.b5e269a261842aea34bc.png",
     "static/media/seeker-Parking.jpg": "/static/media/seeker-Parking.af9d24d5c8d1f37a64a0.jpg",
     "static/media/FuncionesEstructuresControlCertificate.png": "/static/media/FuncionesEstructuresControlCertificate.b302cab495c28226535c.png",
@@ -80,12 +79,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.2585ac91c8831f47aa7b081d62c28e23.svg",
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
-    "main.5cbb77e3.css.map": "/static/css/main.5cbb77e3.css.map",
-    "main.26e5bfad.js.map": "/static/js/main.26e5bfad.js.map",
+    "main.d15f904e.css.map": "/static/css/main.d15f904e.css.map",
+    "main.36f643af.js.map": "/static/js/main.36f643af.js.map",
     "453.addf49e5.chunk.js.map": "/static/js/453.addf49e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cbb77e3.css",
-    "static/js/main.26e5bfad.js"
+    "static/css/main.d15f904e.css",
+    "static/js/main.36f643af.js"
   ]
 }
