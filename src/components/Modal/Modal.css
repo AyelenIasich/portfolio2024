@@ -1,6 +1,6 @@
 .modal {
-  backdrop-filter: blur(1rem);
-  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1.9rem);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-dialog {

@@ -9,6 +9,7 @@ import "./ProyectCard.css";
 import ModalPhoto from "../ModalPhoto/ModalPhoto";
 import ImageSkeleton from "../ImageSkeleton/ImageSkeleton";
 import ModalContent from "../ModalContent/ModalContent";
+import YaztaContent from "../../sections/Fotografia/YaztaContent";
 
 function ProyectCard({
   image,
@@ -37,6 +38,12 @@ function ProyectCard({
   paragraphModal5,
   paragraphModal6,
   isYazta = false,
+  sectionTitle1,
+  sectionTitle2,
+  contributions,
+  quality,
+  sectionTitle3,
+  isYaztaModalContent = false,
 }) {
   const { t } = useTranslation();
   const [isProjLoading, setIsProjLoading] = useState(true);
@@ -52,12 +59,12 @@ function ProyectCard({
       openModal();
     } else if (isYazta === true) {
       navigate(linkMoreInfo);
-      // setTimeout(() => {
-      //   const section = document.getElementById(linkMoreInfo);
-      //   if (section) {
-      //     section.scrollIntoView({ behavior: "smooth" });
-      //   }
-      // }, 100);
+      setTimeout(() => {
+        const section = document.getElementById(linkMoreInfo);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
     }
   };
   const [showProjectModal, setShowProjectModal] = useState(false);
@@ -160,20 +167,29 @@ function ProyectCard({
       </div>
       {showProjectModal && (
         <ModalPhoto handleCloseModal={closeModal}>
-          <ModalContent
-            title={title2}
-            paragraphModal0={paragraphModal0}
-            paragraphModal1={paragraphModal1}
-            listTitle={listTitle}
-            listItem={listItem}
-            paragraphModal2={paragraphModal2}
-            paragraphModal3={paragraphModal3}
-            paragraphModal4={paragraphModal4}
-            paragraphModal5={paragraphModal5}
-            paragraphModal6={paragraphModal6}
-            linkRepoFrontend={linkRepoFrontend}
-            linkWeb={linkWeb}
-          />
+          {isYaztaModalContent ? (
+            <YaztaContent />
+          ) : (
+            <ModalContent
+              title={title2}
+              paragraphModal0={paragraphModal0}
+              paragraphModal1={paragraphModal1}
+              listTitle={listTitle}
+              listItem={listItem}
+              paragraphModal2={paragraphModal2}
+              paragraphModal3={paragraphModal3}
+              paragraphModal4={paragraphModal4}
+              paragraphModal5={paragraphModal5}
+              paragraphModal6={paragraphModal6}
+              linkRepoFrontend={linkRepoFrontend}
+              linkWeb={linkWeb}
+              sectionTitle1={sectionTitle1}
+              sectionTitle2={sectionTitle2}
+              contributions={contributions}
+              quality={quality}
+              sectionTitle3={sectionTitle3}
+            />
+          )}
         </ModalPhoto>
       )}
       {showProjectPhotoModal && (

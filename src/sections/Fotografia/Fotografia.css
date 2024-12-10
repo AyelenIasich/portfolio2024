@@ -27,5 +27,8 @@
   .section-subtitle {
     font-size: 0.9rem;
   }
-
+  .section-title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }

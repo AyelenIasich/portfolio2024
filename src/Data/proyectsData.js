@@ -9,15 +9,11 @@ import Portfolio2022 from "../assets/proyects/Portfolio2022.jpg";
 import UshuaiaCultura from "../assets/proyects/UshuaiaCultura.jpg";
 import MarioFirstGame from "../assets/proyects/MarioFirstGame.jpg";
 import MaquetadoUshuaiaCultura from "../assets/proyects/MaquetadoUshuaiaCultura.jpg";
-import JorgeIasich from "../assets/proyects/JorgeIasich.jpg";
 import PiedraPapelTijera from "../assets/proyects/PiedraPapelTijera.png";
 import Telefonia from "../assets/proyects/Telefonia.jpg";
 
 import JsLogo from "../assets/png/tech/js.png";
-import TsLogo from "../assets/png/tech/typescript.png";
 import PhpLogo from "../assets/png/tech/php.png";
-import PythonLogo from "../assets/png/tech/python.jpg";
-import JavaLogo from "../assets/png/tech/java.png";
 import CssLogo from "../assets/png/tech/css-3.png";
 import MySQLLogo from "../assets/png/tech/mysql.png";
 import PostgreSQLLogo from "../assets/png/tech/postgreSQL.png";
@@ -27,15 +23,9 @@ import AngularLogo from "../assets/png/tech/angular.png";
 import LaravelLogo from "../assets/png/tech/Laravel.png";
 import BootstrapLogo from "../assets/png/tech/bootstrap-1.png";
 import StrapiLogo from "../assets/png/tech/strapi.png";
-import SassLogo from "../assets/png/tech/sass.png";
 import DjangoLogo from "../assets/png/tech/dj.png";
-import GithubLogo from "../assets/png/tech/github.png";
 import DockerLogo from "../assets/png/tech/docker.png";
 import FigmaLogo from "../assets/png/tech/figma.png";
-import ClockifyLogo from "../assets/png/tech/clockify.png";
-import JiraLogo from "../assets/png/tech/jira.png";
-import ScrumLogo from "../assets/png/tech/scrum.png";
-import GenexusLogo from "../assets/png/tech/genexus.jpg";
 import AWS from "../assets/png/tech/AWS.png";
 import MongoDB from "../assets/png/tech/MongoDB.png";
 import Node from "../assets/png/tech/node.png";
@@ -58,13 +48,33 @@ const proyectsData = (t) => [
       { name: "PostgreSQL", icon: PostgreSQLLogo },
       { name: "CSS", icon: CssLogo },
       { name: "Figma", icon: FigmaLogo },
-
     ],
     period: "Nov. 2023 - Oct. 2024",
     description: t("YaztaDescription"),
     linkMoreInfo: "/yaztaproject",
     isYazta: true,
     isShowModalPhotoProject: false,
+  },
+  {
+    image: Yazta,
+    category: t("MobileDevelopment"),
+    categoryFilter: "MobileDevelopment",
+    title: "Yazta Mx & Yazta Pro (Innovus)",
+    title2: "Yazta Mx & Yazta Pro",
+    tech: [
+      { name: "React Native", icon: ReactNativeLogo },
+      { name: "Strapi", icon: StrapiLogo },
+      { name: "AWS", icon: AWS },
+      { name: "PostgreSQL", icon: PostgreSQLLogo },
+      { name: "CSS", icon: CssLogo },
+      { name: "Figma", icon: FigmaLogo },
+    ],
+    period: "Nov. 2023 - Oct. 2024",
+    description: t("YaztaDescription"),
+    linkMoreInfo: "/yaztaproject",
+    isYazta: false,
+    isShowModalPhotoProject: true,
+    isYaztaModalContent:true
   },
   {
     image: Nietos,
@@ -80,10 +90,16 @@ const proyectsData = (t) => [
     ],
     period: "Oct. 2023 - Mar. 2024",
     description: t("NietosDescription"),
+    sectionTitle1: t("NietosSectioTitle1"),
     paragraphModal0: t("NietosDescription0"),
-    paragraphModal1: t("NietosDescription1"),
-    paragraphModal2: t("NietosDescription2"),
-    paragraphModal3: t("NietosDescription3"),
+    sectionTitle2: t("NietosSectioTitle2"),
+    contributions: [
+      t("NietosContribution1"),
+      t("NietosContribution2"),
+      t("NietosContribution3"),
+    ],
+    sectionTitle3: t("NietosSectionTitle3"),
+    quality: [t("NietosQA1"), t("NietosQA2")],
     // Herramientas y metodologías utilizadas:
     listTitle: t("SeekerParkingTitleList"),
     listItem: [
@@ -355,7 +371,6 @@ export const previewProjectsData = (t) => [
       { name: "PostgreSQL", icon: PostgreSQLLogo },
       { name: "CSS", icon: CssLogo },
       { name: "Figma", icon: FigmaLogo },
-
     ],
     period: "Nov. 2023 - Oct. 2024",
     description: t("YaztaDescription"),
@@ -377,10 +392,16 @@ export const previewProjectsData = (t) => [
     ],
     period: "Oct. 2023 - Mar. 2024",
     description: t("NietosDescription"),
+    sectionTitle1: t("NietosSectioTitle1"),
     paragraphModal0: t("NietosDescription0"),
-    paragraphModal1: t("NietosDescription1"),
-    paragraphModal2: t("NietosDescription2"),
-    paragraphModal3: t("NietosDescription3"),
+    sectionTitle2: t("NietosSectioTitle2"),
+    contributions: [
+      t("NietosContribution1"),
+      t("NietosContribution2"),
+      t("NietosContribution3"),
+    ],
+    sectionTitle3: t("NietosSectionTitle3"),
+    quality: [t("NietosQA1"), t("NietosQA2")],
     // Herramientas y metodologías utilizadas:
     listTitle: t("SeekerParkingTitleList"),
     listItem: [

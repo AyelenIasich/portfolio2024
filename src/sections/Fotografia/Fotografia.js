@@ -47,9 +47,9 @@ function Fotografia() {
   const apps = [t("YaztaDescriptionYaztaMx"), t("YaztaDescriptionYaztaPro")];
 
   return (
-    <section className="container mb-5" id="ArgentinaProgramaProject">
-      <div className="row ">
-        <div className="col-12 col-md-10 col-lg-10 col-xxl-9  mx-auto pt-5">
+    <section className="container mb-5" id="yaztaproject">
+      <div className="row px-2">
+        <div className="col-12 col-md-10 col-lg-10 col-xxl-9  mx-auto  pt-5">
           <BackButton handleGoBack={handleGoBackArgentinaPrograma} />
         </div>
         <div className="col-12 text-center pt-4 pt-md-0 pb-3">
@@ -59,7 +59,6 @@ function Fotografia() {
         <div className="col-12 col-md-10 col-lg-10 col-xxl-9  mx-auto">
           <div className="col-12 mx-auto">
             {/* SECTION DESCRIPTION PROJECT  */}
-
             <h5 className="section-title content-description pt-3 pb-3">
               {t("YaztaDescriptionSubtitle")}
             </h5>
@@ -78,6 +77,15 @@ function Fotografia() {
                 />
               ))}
             </ul>
+
+            {/* TECH SECTION */}
+            <h5 className="section-title content-description pt-3 pb-3">
+              {t("YaztaTechnologiesTitle")}
+            </h5>
+            <p
+              className="content-description"
+              dangerouslySetInnerHTML={{ __html: t("YaztaTechnologies") }}
+            />
 
             {/* ROL SECTION */}
             <h5 className="section-title content-description pt-3 pb-3">
@@ -216,7 +224,7 @@ function Fotografia() {
             />
             {/* Tools */}
             <h6 className="section-title content-description pt-3 pb-2">
-              7. {t("toolMethodologies")}
+              8. {t("toolMethodologies")}
             </h6>
             {tools && (
               <ul>

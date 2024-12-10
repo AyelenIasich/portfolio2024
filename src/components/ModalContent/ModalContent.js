@@ -17,6 +17,11 @@ function ModalContent({
   paragraphModal6,
   linkRepoFrontend,
   linkWeb,
+  sectionTitle1,
+  sectionTitle2,
+  contributions,
+  sectionTitle3,
+  quality,
 }) {
   const { t } = useTranslation();
   return (
@@ -26,20 +31,71 @@ function ModalContent({
           <h4 className="title-proj">{title}</h4>
         </div>
         <div className="col-12 mx-auto">
-          <p className="content-description">{paragraphModal0}</p>
-          {paragraphModal1 && (
-            <p className="content-description">{paragraphModal1}</p>
+          {sectionTitle1 && (
+            <h5 className="section-title content-description pt-3 pb-2">
+              {sectionTitle1}
+            </h5>
           )}
+          <p className="content-description" dangerouslySetInnerHTML={{ __html:paragraphModal0 }}/>
+          {paragraphModal1 && (
+            <p className="content-description"  dangerouslySetInnerHTML={{ __html:paragraphModal1 }}/>
+          )}
+
+          {sectionTitle2 && (
+            <>
+              <h5 className="section-title content-description pt-3 pb-1">
+                {sectionTitle2}
+              </h5>
+
+              <ul>
+                {contributions.map((contribution, index) => (
+                  <li
+                    key={index}
+                    className="pt-2 content-description"
+                    dangerouslySetInnerHTML={{
+                      __html: contribution,
+                    }}
+                  />
+                ))}
+              </ul>
+            </>
+          )}
+
+          {sectionTitle3 && (
+            <>
+              <h5 className="section-title content-description pt-3 pb-1">
+                {sectionTitle3}
+              </h5>
+
+              <ul>
+                {quality.map((qa, index) => (
+                  <li
+                    key={index}
+                    className="pt-2 content-description"
+                    dangerouslySetInnerHTML={{
+                      __html: qa,
+                    }}
+                  />
+                ))}
+              </ul>
+            </>
+          )}
+
           {paragraphModal2 && (
-            <p className="content-description">{paragraphModal2}</p>
+            <p className="content-description"  dangerouslySetInnerHTML={{ __html:paragraphModal2 }}/>
           )}
           {paragraphModal3 && (
-            <p className="content-description">{paragraphModal3}</p>
+            <p className="content-description"  dangerouslySetInnerHTML={{ __html:paragraphModal3 }}/>
           )}
           {paragraphModal4 && (
-            <p className="content-description">{paragraphModal4}</p>
+            <p className="content-description"  dangerouslySetInnerHTML={{ __html:paragraphModal4 }}/>
           )}
-          {listTitle && <p className="list-title">{listTitle}</p>}
+          {listTitle && (
+            <h5 className="section-title content-description pt-3 pb-1">
+              {listTitle}
+            </h5>
+          )}
+
           {listItem && (
             <ul>
               {listItem.map((item, index) => (
@@ -47,17 +103,17 @@ function ModalContent({
                   key={index}
                   className="pt-2 content-description"
                   dangerouslySetInnerHTML={{
-                    __html: item ,
+                    __html: item,
                   }}
                 />
               ))}
             </ul>
           )}
           {paragraphModal5 && (
-            <p className="content-description">{paragraphModal5}</p>
+            <p className="content-description" dangerouslySetInnerHTML={{ __html:paragraphModal5 }}/>
           )}
           {paragraphModal6 && (
-            <p className="content-description">{paragraphModal6}</p>
+            <p className="content-description" dangerouslySetInnerHTML={{ __html:paragraphModal6 }}/>
           )}
 
           <div className="proyect-btns align-items-center mt-5 mt-md-4 text-center ">
