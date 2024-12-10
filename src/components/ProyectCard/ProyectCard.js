@@ -15,6 +15,7 @@ function ProyectCard({
   isShowMoreInfo = true,
   description,
   title,
+  title2,
   period,
   category,
   tech,
@@ -35,6 +36,7 @@ function ProyectCard({
   paragraphModal4,
   paragraphModal5,
   paragraphModal6,
+  isYazta = false,
 }) {
   const { t } = useTranslation();
   const [isProjLoading, setIsProjLoading] = useState(true);
@@ -48,14 +50,15 @@ function ProyectCard({
   const handleMoreInfo = () => {
     if (isShowModalPhotoProject) {
       openModal();
+    } else if (isYazta === true) {
+      navigate(linkMoreInfo);
+      // setTimeout(() => {
+      //   const section = document.getElementById(linkMoreInfo);
+      //   if (section) {
+      //     section.scrollIntoView({ behavior: "smooth" });
+      //   }
+      // }, 100);
     }
-    // navigate(linkMoreInfo);
-    // setTimeout(() => {
-    //   const section = document.getElementById(linkMoreInfo);
-    //   if (section) {
-    //     section.scrollIntoView({ behavior: "smooth" });
-    //   }
-    // }, 100);
   };
   const [showProjectModal, setShowProjectModal] = useState(false);
 
@@ -158,7 +161,7 @@ function ProyectCard({
       {showProjectModal && (
         <ModalPhoto handleCloseModal={closeModal}>
           <ModalContent
-            title={title}
+            title={title2}
             paragraphModal0={paragraphModal0}
             paragraphModal1={paragraphModal1}
             listTitle={listTitle}

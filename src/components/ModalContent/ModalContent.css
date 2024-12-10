@@ -6,4 +6,18 @@
 
 .list-title {
   font-weight: 700;
+  font-size: 0.9rem;
+
+}
+.content-description {
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 991px) {
+  .content-description {
+    font-size: 0.85rem;
+  }
+  .title-proj {
+    font-size: 1.5rem;
+  }
 }

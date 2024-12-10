@@ -22,25 +22,43 @@ function ModalContent({
   return (
     <div className="container mb-5" id="ArgentinaProgramaProject">
       <div className="row ">
-        <div className="col-12 text-center pt-4 pt-md-0 pb-4">
+        <div className="col-12 text-center pt-4 pt-md-0 pb-3">
           <h4 className="title-proj">{title}</h4>
         </div>
         <div className="col-12 mx-auto">
-          <p>{paragraphModal0}</p>
-          {paragraphModal1 && <p>{paragraphModal1}</p>}
-          {paragraphModal2 && <p>{paragraphModal2}</p>}
-          {paragraphModal3 && <p>{paragraphModal3}</p>}
-          {paragraphModal4 && <p>{paragraphModal4}</p>}
+          <p className="content-description">{paragraphModal0}</p>
+          {paragraphModal1 && (
+            <p className="content-description">{paragraphModal1}</p>
+          )}
+          {paragraphModal2 && (
+            <p className="content-description">{paragraphModal2}</p>
+          )}
+          {paragraphModal3 && (
+            <p className="content-description">{paragraphModal3}</p>
+          )}
+          {paragraphModal4 && (
+            <p className="content-description">{paragraphModal4}</p>
+          )}
           {listTitle && <p className="list-title">{listTitle}</p>}
           {listItem && (
             <ul>
               {listItem.map((item, index) => (
-                <li key={index} className="pt-2">{item}</li>
+                <li
+                  key={index}
+                  className="pt-2 content-description"
+                  dangerouslySetInnerHTML={{
+                    __html: item ,
+                  }}
+                />
               ))}
             </ul>
           )}
-          {paragraphModal5&& <p>{paragraphModal5}</p>}
-          {paragraphModal6&& <p>{paragraphModal6}</p>}
+          {paragraphModal5 && (
+            <p className="content-description">{paragraphModal5}</p>
+          )}
+          {paragraphModal6 && (
+            <p className="content-description">{paragraphModal6}</p>
+          )}
 
           <div className="proyect-btns align-items-center mt-5 mt-md-4 text-center ">
             {linkRepoFrontend && (

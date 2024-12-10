@@ -1,15 +1,31 @@
 .title-page {
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.title-page::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 70px;
+  background: linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+  .section-subtitle {
+    font-size: 0.9rem;
   }
-  
-  .title-page::before {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    width: 70px;
-    background: linear-gradient(90deg, #aa3cc6 0%, #521d60 100%);
-  }
-  
+
+}

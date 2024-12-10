@@ -50,23 +50,28 @@ const proyectsData = (t) => [
     category: t("MobileDevelopment"),
     categoryFilter: "MobileDevelopment",
     title: "Yazta Mx & Yazta Pro (Innovus)",
+    title2: "Yazta Mx & Yazta Pro",
     tech: [
       { name: "React Native", icon: ReactNativeLogo },
       { name: "Strapi", icon: StrapiLogo },
       { name: "AWS", icon: AWS },
       { name: "PostgreSQL", icon: PostgreSQLLogo },
       { name: "CSS", icon: CssLogo },
+      { name: "Figma", icon: FigmaLogo },
+
     ],
     period: "Nov. 2023 - Oct. 2024",
-    description:
-      'Actualmente, colaboro en el proyecto "Yazta", una aplicación en React Native y Strapi v3 para Android e iOS. Trabajo con mis compañeros para garantizar un desarrollo exitoso de la aplicación móvil.',
-    linkMoreInfo: "#",
+    description: t("YaztaDescription"),
+    linkMoreInfo: "/yaztaproject",
+    isYazta: true,
+    isShowModalPhotoProject: false,
   },
   {
     image: Nietos,
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
     title: "Nietos (Innovus)",
+    title2: "Nietos",
     tech: [
       { name: "Laravel", icon: LaravelLogo },
       { name: "MySQL", icon: MySQLLogo },
@@ -94,6 +99,7 @@ const proyectsData = (t) => [
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
     title: "Symbioxr (Innovus)",
+    title2: "Symbioxr",
     tech: [
       { name: "React.js", icon: ReactJsLogo },
       { name: "Node.js", icon: Node },
@@ -135,6 +141,7 @@ const proyectsData = (t) => [
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
     title: t("FotografiaTitle"),
+    title2: t("FotografiaTitle2"),
     tech: [
       { name: "PHP", icon: PhpLogo },
       { name: "MySQL", icon: MySQLLogo },
@@ -148,10 +155,7 @@ const proyectsData = (t) => [
     isShowMoreInfo: true,
     paragraphModal0: t("FotografiaDescription0"),
     paragraphModal1: t("FotografiaDescription1"),
-    listItem: [
-      t("FotografiaListItem1"),
-      t("FotografiaListItem2"),
-    ],
+    listItem: [t("FotografiaListItem1"), t("FotografiaListItem2")],
   },
 
   {
@@ -176,6 +180,7 @@ const proyectsData = (t) => [
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
     title: "Seeker Parking (Innovus)",
+    title2: "Seeker Parking (Innovus)",
     tech: [
       { name: "PHP", icon: PhpLogo },
       { name: "MySQL", icon: MySQLLogo },
@@ -220,6 +225,7 @@ const proyectsData = (t) => [
     category: t("WebDevelopment"),
     categoryFilter: "PersonalProjects",
     title: "Ushuaia Cultura",
+    title2: "Ushuaia Cultura",
     tech: [
       { name: "Laravel", icon: LaravelLogo },
       { name: "MySQL", icon: MySQLLogo },
@@ -256,6 +262,7 @@ const proyectsData = (t) => [
     category: t("WebDevelopment"),
     categoryFilter: "PersonalProjects",
     title: "Argentina Programa #YoProgramo",
+    title2: "Argentina Programa",
     tech: [
       { name: "Angular", icon: AngularLogo },
       { name: "Springboot", icon: Springboot },
@@ -340,45 +347,78 @@ export const previewProjectsData = (t) => [
     category: t("MobileDevelopment"),
     categoryFilter: "MobileDevelopment",
     title: "Yazta Mx & Yazta Pro (Innovus)",
+    title2: "Yazta Mx & Yazta Pro",
     tech: [
       { name: "React Native", icon: ReactNativeLogo },
       { name: "Strapi", icon: StrapiLogo },
       { name: "AWS", icon: AWS },
       { name: "PostgreSQL", icon: PostgreSQLLogo },
+      { name: "CSS", icon: CssLogo },
+      { name: "Figma", icon: FigmaLogo },
+
     ],
     period: "Nov. 2023 - Oct. 2024",
-    description:
-      'Actualmente, colaboro en el proyecto "Yazta", una aplicación en React Native y Strapi v3 para Android e iOS. Trabajo con mis compañeros para garantizar un desarrollo exitoso de la aplicación móvil.',
-    linkMoreInfo: "#",
+    description: t("YaztaDescription"),
+    linkMoreInfo: "/yaztaproject",
+    isYazta: true,
+    isShowModalPhotoProject: false,
   },
   {
     image: Nietos,
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
     title: "Nietos (Innovus)",
+    title2: "Nietos",
     tech: [
       { name: "Laravel", icon: LaravelLogo },
       { name: "MySQL", icon: MySQLLogo },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
-    period: "Oct. 2023 - Marzo. 2024",
-    description:
-      'Contribuí al proyecto "Nietos" en Innovus, una aplicación para gestionar pedidos de un restaurante. Desempeñé el rol de desarrolladora full stack utilizando Laravel, colaborando efectivamente en un equipo para asegurar el éxito del proyecto',
-    linkMoreInfo: "#",
+    period: "Oct. 2023 - Mar. 2024",
+    description: t("NietosDescription"),
+    paragraphModal0: t("NietosDescription0"),
+    paragraphModal1: t("NietosDescription1"),
+    paragraphModal2: t("NietosDescription2"),
+    paragraphModal3: t("NietosDescription3"),
+    // Herramientas y metodologías utilizadas:
+    listTitle: t("SeekerParkingTitleList"),
+    listItem: [
+      t("SeekerParkingListItem1"),
+      t("SeekerParkingListItem2"),
+      t("SeekerParkingListItem3"),
+    ],
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
   },
   {
     image: SymbioXr,
     category: t("WebDevelopment"),
     categoryFilter: "WebDevelopment",
     title: "Symbioxr (Innovus)",
+    title2: "Symbioxr",
     tech: [
       { name: "React.js", icon: ReactJsLogo },
       { name: "Node.js", icon: Node },
       { name: "MongoDB", icon: MongoDB },
+      { name: "Bootstrap", icon: BootstrapLogo },
+      { name: "CSS", icon: CssLogo },
     ],
-    period: "Oct. 2023 - Dic. 2023",
-    description:
-      'Actualmente, colaboro en el proyecto "Yazta", una aplicación en React Native y Strapi v3 para Android e iOS. Trabajo con mis compañeros para garantizar un desarrollo exitoso de la aplicación móvil.',
-    linkMoreInfo: "#",
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+    period: t("SymbioxrPeriod"),
+    description: t("SymbioxrDescription"),
+    paragraphModal0: t("SymbioxrDescription0"),
+    paragraphModal1: t("SymbioxrDescription1"),
+    paragraphModal2: t("SymbioxrDescription2"),
+    paragraphModal3: t("SymbioxrDescription3"),
+    // Herramientas y metodologías utilizadas:
+    listTitle: t("SeekerParkingTitleList"),
+    listItem: [
+      t("SeekerParkingListItem1"),
+      t("SeekerParkingListItem2"),
+      t("SeekerParkingListItem3"),
+    ],
   },
   {
     image: MarcketChain,
@@ -386,12 +426,12 @@ export const previewProjectsData = (t) => [
     categoryFilter: "WebDesign",
     title: "MarketChain (Innovus)",
     tech: [{ name: "Figma", icon: FigmaLogo }],
-    period: "Nov. 2023 - Dic. 2023",
-    description:
-      "Como diseñadora UX/UI en Innovus para el proyecto Marketchain, creé una interfaz adaptable y centrada en la experiencia del usuario, optimizada para escritorio y dispositivos móviles, facilitando el intercambio de productos y servicios con criptomonedas.",
-    linkMoreInfo: "#",
+    period: t("MarketChainPeriod"),
+    description: t("MarketChainDescription"),
     linkWeb:
       "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
+    isShowBtns: true,
+    isShowMoreInfo: false,
   },
 ];
 

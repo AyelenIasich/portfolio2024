@@ -47,7 +47,8 @@ function App() {
         />
         <Route path="/all-certifications" element={<AllCertifications />} />
         <Route path="/all-projects" element={<AllProjects />} />
-        <Route path="/Fotografia" element={<Fotografia />} />
+        {/* <Route path="/Fotografia" element={<Fotografia />} /> */}
+        <Route path="/yaztaproject" element={<Fotografia />} />
       </Routes>
       <LanguageButton />
     </Router>
