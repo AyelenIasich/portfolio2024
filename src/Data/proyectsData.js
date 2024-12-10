@@ -35,26 +35,26 @@ import CleverCloud from "../assets/png/tech/CleverCloud.png";
 import Railway from "../assets/png/tech/railway.png";
 
 const proyectsData = (t) => [
-  {
-    image: Yazta,
-    category: t("MobileDevelopment"),
-    categoryFilter: "MobileDevelopment",
-    title: "Yazta Mx & Yazta Pro (Innovus)",
-    title2: "Yazta Mx & Yazta Pro",
-    tech: [
-      { name: "React Native", icon: ReactNativeLogo },
-      { name: "Strapi", icon: StrapiLogo },
-      { name: "AWS", icon: AWS },
-      { name: "PostgreSQL", icon: PostgreSQLLogo },
-      { name: "CSS", icon: CssLogo },
-      { name: "Figma", icon: FigmaLogo },
-    ],
-    period: "Nov. 2023 - Oct. 2024",
-    description: t("YaztaDescription"),
-    linkMoreInfo: "/yaztaproject",
-    isYazta: true,
-    isShowModalPhotoProject: false,
-  },
+  // {
+  //   image: Yazta,
+  //   category: t("MobileDevelopment"),
+  //   categoryFilter: "MobileDevelopment",
+  //   title: "Yazta Mx & Yazta Pro (Innovus)",
+  //   title2: "Yazta Mx & Yazta Pro",
+  //   tech: [
+  //     { name: "React Native", icon: ReactNativeLogo },
+  //     { name: "Strapi", icon: StrapiLogo },
+  //     { name: "AWS", icon: AWS },
+  //     { name: "PostgreSQL", icon: PostgreSQLLogo },
+  //     { name: "CSS", icon: CssLogo },
+  //     { name: "Figma", icon: FigmaLogo },
+  //   ],
+  //   period: "Nov. 2023 - Oct. 2024",
+  //   description: t("YaztaDescription"),
+  //   linkMoreInfo: "/yaztaproject",
+  //   isYazta: true,
+  //   isShowModalPhotoProject: false,
+  // },
   {
     image: Yazta,
     category: t("MobileDevelopment"),
@@ -375,8 +375,9 @@ export const previewProjectsData = (t) => [
     period: "Nov. 2023 - Oct. 2024",
     description: t("YaztaDescription"),
     linkMoreInfo: "/yaztaproject",
-    isYazta: true,
-    isShowModalPhotoProject: false,
+    isYazta: false,
+    isShowModalPhotoProject: true,
+    isYaztaModalContent:true
   },
   {
     image: Nietos,

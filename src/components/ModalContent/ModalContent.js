@@ -27,12 +27,12 @@ function ModalContent({
   return (
     <div className="container mb-5" id="ArgentinaProgramaProject">
       <div className="row ">
-        <div className="col-12 text-center pt-4 pt-md-0 pb-3">
+        <div className="col-12 text-center pt-3 pt-md-0 pb-3">
           <h4 className="title-proj">{title}</h4>
         </div>
         <div className="col-12 mx-auto">
           {sectionTitle1 && (
-            <h5 className="section-title content-description pt-3 pb-2">
+            <h5 className="section-title content-description pt-1 pb-2">
               {sectionTitle1}
             </h5>
           )}

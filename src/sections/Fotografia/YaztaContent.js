@@ -42,7 +42,7 @@ function YaztaContent() {
         <h4 className="title-proj">Yazta Mx & Yazta Pro</h4>
       </div>
 
-      <div className="col-12 col-xxl-11  mx-auto">
+      <div className="col-12 col-xxl-11 px-4 mx-auto">
         <div className="col-12 mx-auto">
           {/* SECTION DESCRIPTION PROJECT  */}
           <h5 className="section-title content-description pt-3 pb-3">
