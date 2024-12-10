@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      const redirectTo = window.location.pathname;
-      window.location.href = `${window.location.origin}${redirectTo}`;
+      if (window.location.pathname !== "/") {
+        window.location.replace("/");
+      }
     </script>
   </head>
   <body>
