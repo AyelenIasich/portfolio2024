@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d15f904e.css",
-    "main.js": "/static/js/main.c1311804.js",
+    "main.css": "/static/css/main.58cffe4f.css",
+    "main.js": "/static/js/main.09614bdb.js",
     "static/js/453.addf49e5.chunk.js": "/static/js/453.addf49e5.chunk.js",
     "static/media/Marcket-Chain.jpg": "/static/media/Marcket-Chain.bd95a916bbe02ae37d12.jpg",
     "static/media/yazta.jpg": "/static/media/yazta.c502706e0fe1aaef3368.jpg",
@@ -79,12 +79,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.2585ac91c8831f47aa7b081d62c28e23.svg",
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
-    "main.d15f904e.css.map": "/static/css/main.d15f904e.css.map",
-    "main.c1311804.js.map": "/static/js/main.c1311804.js.map",
+    "main.58cffe4f.css.map": "/static/css/main.58cffe4f.css.map",
+    "main.09614bdb.js.map": "/static/js/main.09614bdb.js.map",
     "453.addf49e5.chunk.js.map": "/static/js/453.addf49e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d15f904e.css",
-    "static/js/main.c1311804.js"
+    "static/css/main.58cffe4f.css",
+    "static/js/main.09614bdb.js"
   ]
 }
