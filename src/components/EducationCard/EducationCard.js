@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaArrowRightLong } from "react-icons/fa6";
-import Modal from "../Modal/Modal";
-import ExperienceModal from "../ExperienceModal/ExperienceModal";
-import "./EducationCard.css";
 import ModalPhoto from "../ModalPhoto/ModalPhoto";
 import ImageSkeleton from "../ImageSkeleton/ImageSkeleton";
+import SkeletonImage1 from "../SkeletonImage/SkeletonImage1";
+import "./EducationCard.css";
 
 function EducationCard({
   logo,
@@ -30,15 +29,25 @@ function EducationCard({
   const closeEducationModal = () => {
     setShowExperienceModal(false);
   };
+  const [isEducationLoading, setIsEducationLoading] = useState(true);
 
+  const handleImageEducationLoad = () => {
+    setIsEducationLoading(false);
+  };
 
-  
   return (
     <>
       <div className="purple-card mb-4 py-lg-4 px-lg-4">
         <div className="row">
           <div className="col-3 col-lg-2 logo-img-container  ">
-            <img src={logo} alt={`${institute} logo`} className="logo-img" />
+          <SkeletonImage1
+              isLoading={isEducationLoading}
+              image={logo}
+              handleImageLoad={handleImageEducationLoad}
+              alt={`${institute} logo`}
+              imageStyle={"logo-img"}
+              skeletonStyle={"logo-skeleton-education"}
+            />
           </div>
           <div className="col-9 col-lg-10">
             <div className="card-header pb-2">

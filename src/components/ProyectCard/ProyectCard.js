@@ -99,13 +99,16 @@ function ProyectCard({
           <div className="col-12 col-lg-5">
             {/* Project image */}
             <div className="logo-proyect-container w-100 h-100  ps-lg-4 pt-lg-4 pb-lg-4 pe-lg-0 pt-3 px-3 ">
-              {isProjLoading && <div className="skeleton-project-img1 "></div>}
+              {isProjLoading && <div className="skeleton-container ">
+                <div className="skeleton-project-img1 "></div>
+              </div>}
               <img
                 src={image}
                 alt={`${title} logo`}
                 className="logo-proyect"
                 onLoad={handleProjectImageLoad}
                 onClick={openModalPhotoProjectModal}
+                loading="lazy"
               />
             </div>
           </div>

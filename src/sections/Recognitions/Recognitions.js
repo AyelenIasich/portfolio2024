@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import TitleSection from "../../components/TitleSection/TitleSection";
 import RecogntionImage from "../../assets/png/ReconocimientoInnovus.jpg";
 import ModalPhoto from "../../components/ModalPhoto/ModalPhoto";
-
+import SkeletonImage1 from "../../components/SkeletonImage/SkeletonImage1";
 import "./Recognitions.css";
 
 function Recognitions() {
@@ -21,11 +21,15 @@ function Recognitions() {
   const handleShowPhoto = () => {
     openPhotoModal();
   };
+  const [isRecognitionLoading, setIsRecognitionLoading] = useState(true);
 
+  const handleImagRecognitionLoad = () => {
+    setIsRecognitionLoading(false);
+  };
   return (
     <section className="container pt-5 pt-md-3 pb-xxl-5" id="recognitions">
       <div className="row ">
-      <div className="col-12 text-center pt-lg-5 pt-xxl-5 mt-xxl-3">
+        <div className="col-12 text-center pt-lg-5 pt-xxl-5 mt-xxl-3">
           <TitleSection t={t} title={t("RecognitionsTitle")} />
         </div>
         <div className="container-recog">
@@ -38,16 +42,18 @@ function Recognitions() {
                 className="col-12 col-md-4 col-lg-5 recog-content"
                 onClick={handleShowPhoto}
               >
-                <img
-                  src={RecogntionImage}
-                  alt="Reconocimiento Innovus"
-                  className="recog-img"
+                <SkeletonImage1
+                  isLoading={isRecognitionLoading}
+                  image={RecogntionImage}
+                  handleImageLoad={handleImagRecognitionLoad}
+                  alt={"Reconocimiento Innovus"}
+                  imageStyle={"recog-img"}
                 />
               </div>
               <div className="col-12 col-md-8 col-lg-7 pt-5 pt-lg-4">
                 <div className="row">
                   <div className="quote col-12">
-                  <div class="quote-container">
+                    <div class="quote-container">
                       <blockquote>
                         <p>{t("RecognitionQuote")}</p>
                         <footer>— {t("RecognitionQuoteOwner")}</footer>
@@ -61,7 +67,10 @@ function Recognitions() {
         </div>
       </div>
       {showPhotoModal && (
-        <ModalPhoto handleCloseModal={closePhotoModal} title={t("RecognitionsTitle")}>
+        <ModalPhoto
+          handleCloseModal={closePhotoModal}
+          title={t("RecognitionsTitle")}
+        >
           <div className="container py-4">
             <div className="row">
               <div className="col-12 p-0">
@@ -69,6 +78,7 @@ function Recognitions() {
                   src={RecogntionImage}
                   alt="Reconocimiento Innovus"
                   className="recog-img"
+                   loading="lazy"
                 />
               </div>
             </div>

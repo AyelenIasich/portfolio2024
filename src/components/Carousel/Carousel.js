@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import { IoLogoLinkedin } from "react-icons/io";
+import SkeletonImage1 from "../SkeletonImage/SkeletonImage1";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +11,11 @@ import "swiper/css/pagination";
 import "./Carousel.css";
 
 function Carousel({ testimonials }) {
+  const [isCarouselLoading, setIsCarouselLoading] = useState(true);
+
+  const handleImageCarouselLoad = () => {
+    setIsCarouselLoading(false);
+  };
   return (
     <Swiper
       modules={[Navigation, Pagination]}
@@ -28,11 +34,13 @@ function Carousel({ testimonials }) {
         <SwiperSlide key={index}>
           <div className="testimonial-card m-2 m-md-5 row">
             <div className="col-12 col-lg-4 col-xxl-3 testimonial-image-wrapper pt-2">
-              <img
-                src={testimonial.image}
+              <SkeletonImage1
+                isLoading={isCarouselLoading}
+                image={testimonial.image}
+                handleImageLoad={handleImageCarouselLoad}
                 alt={testimonial.name}
-                className="testimonial-image "
-                loading="lazy"
+                imageStyle={"testimonial-image"}
+                skeletonStyle={"logo-skeleton-carousel"}
               />
             </div>
 
@@ -47,7 +55,9 @@ function Carousel({ testimonials }) {
               )}
               <hr className="testimonial-line"></hr>
               <a className="testimonial-linkeind" href={testimonial.linkelind}>
-                <h3 className="testimonial-name m-0 pe-2">{testimonial.name}</h3>
+                <h3 className="testimonial-name m-0 pe-2">
+                  {testimonial.name}
+                </h3>
                 <IoLogoLinkedin className="social-icon linkedin" />
               </a>
 

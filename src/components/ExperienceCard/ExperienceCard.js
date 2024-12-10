@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Modal from "../Modal/Modal";
 import ExperienceModal from "../ExperienceModal/ExperienceModal";
+import SkeletonImage1 from "../../components/SkeletonImage/SkeletonImage1";
 import "./ExperienceCard.css";
 
 function ExperienceCard({
@@ -27,13 +28,26 @@ function ExperienceCard({
   const closeExperienceModal = () => {
     setShowExperienceModal(false);
   };
+  
+  const [isExperienceLoading, setIsExperienceLoading] = useState(true);
+
+  const handleImageExperienceLoad = () => {
+    setIsExperienceLoading(false);
+  };
 
   return (
     <>
       <div className="purple-card mb-5 py-lg-4 px-lg-4">
         <div className="row">
           <div className="col-3 col-lg-3 logo-img-container  ">
-            <img src={logo} alt={`${company} logo`} className="logo-img" />
+          <SkeletonImage1
+              isLoading={isExperienceLoading}
+              image={logo}
+              handleImageLoad={handleImageExperienceLoad}
+              alt={`${company} logo`}
+              imageStyle={"logo-img"}
+              skeletonStyle={"logo-skeleton"}
+            />
           </div>
           <div className="col-9 col-lg-9">
             <div className="card-header pb-2">

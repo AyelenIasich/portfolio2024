@@ -1,3 +1,7 @@
+.logo-skeleton {
+  height: 120px;
+  width: 120px;
+}
 .purple-card {
   border: 2px solid #f2edfa;
   border-radius: 20px;
@@ -105,11 +109,12 @@
   }
 }
 
-
 @media screen and (max-width: 991px) {
   .period {
     text-align: left;
   }
-
+  .logo-skeleton {
+    height: 50px;
+    width: 90px;
+  }
 }
-

@@ -26,11 +26,10 @@
   font-weight: 500;
 }
 
-.testimonial-linkeind{
+.testimonial-linkeind {
   display: flex;
   align-items: center;
   text-decoration: none;
-
 }
 
 .testimonial-name {
@@ -62,9 +61,14 @@
 }
 
 @media (max-width: 768px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: none; 
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
-  
+}
+
+.logo-skeleton-carousel {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}

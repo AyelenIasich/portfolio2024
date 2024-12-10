@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ReactComponent as BgHomeSVG } from "../../assets/svg/bg-home-alt8.svg";
 import { ReactComponent as BgHomeMobile } from "../../assets/svg/bg-home-mobile3.svg";
@@ -7,16 +7,23 @@ import ScrollDown from "../../components/ScrollDown";
 import PrimaryBtn from "../../components/Buttons/PrimaryBtn";
 import SecondaryBtn from "../../components/Buttons/SecondaryBtn";
 import { handleDownloadCV } from "../../utils/cvUtils";
+import SkeletonImage1 from "../../components/SkeletonImage/SkeletonImage1";
 import "./Home.css";
 
 function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const handleContactMe = () => {
     const section = document.getElementById("contactMe");
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+  };
+
+  const [isSelfie1Loading, setIsSelfie1Loading] = useState(true);
+
+  const handleImageHomeLoad = () => {
+    setIsSelfie1Loading(false);
   };
 
   return (
@@ -31,7 +38,6 @@ function Home() {
             </h1>
             <h2 className="job-position">FULL STACK DEVELOPER</h2>
             <p className="description pt-4">{t("descriptionHome")}</p>
-            {/* <div className="button-group pt-3 pt-lg-3 pt-xxl-5 pb-3  d-flex flex-column align-items-center d-sm-block justify-content-sm-start "> */}
             <div className="button-group pb-3 d-flex d-md-block justify-content-center justify-md-content-start ">
               <SecondaryBtn
                 label={t("LetsTalk")}
@@ -47,10 +53,12 @@ function Home() {
             </div>
           </div>
           <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2  mt-5 pt-3 pt-md-0  image-content col-home">
-            <img
-              src={ayeIasich}
-              alt="Ayelen Iasich selfie"
-              className="profile-image"
+            <SkeletonImage1
+              isLoading={isSelfie1Loading}
+              image={ayeIasich}
+              handleImageLoad={handleImageHomeLoad}
+              alt={"Ayelen Iasich selfie"}
+              imageStyle={"profile-image"}
             />
           </div>
           <div className="scroll-down-container">
