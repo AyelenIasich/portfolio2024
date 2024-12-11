@@ -12,7 +12,7 @@ function ImageSkeleton({ isLoading, certificate, handleImageLoad }) {
             alt="certificate"
             className={`recog-img ${isLoading ? "hidden" : ""}`}
             onLoad={handleImageLoad}
-            loading="lazy"
+            // loading="lazy"
           />
         </div>
       </div>
