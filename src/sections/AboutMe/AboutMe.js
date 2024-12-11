@@ -30,10 +30,10 @@ function AboutMe() {
             </div>
             <div className="col about-description text-start pt-5 pt-lg-0 ps-4 pe-4 ">
               <h3 className="about-subtitle">{t("AboutMeSubtitle1")}</h3>
-              <h5 className="about-subtitle2 pt-3">{t("AboutMeSubtitle2")}</h5>
+              <h5 className="about-subtitle2 pt-2">{t("AboutMeSubtitle2")}</h5>
               <hr className="line"></hr>
               <p className="about-text">{t("AboutMeDescription1")}</p>
-              <p className="about-text">{t("AboutMeDescription5")}</p>
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t("AboutMeDescription5")}}/>
               <p className="about-text">{t("AboutMeDescription4")}</p>
               <p className="about-text">{t("AboutMeDescription3")}</p>
             </div>

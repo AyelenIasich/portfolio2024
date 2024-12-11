@@ -37,18 +37,18 @@ function Home() {
               <span className="name">Ayelén</span> Iasich
             </h1>
             <h2 className="job-position">FULL STACK DEVELOPER</h2>
-            <p className="description pt-4">{t("descriptionHome2")}</p>
+            <p className="description pt-4">{t("descriptionHome3")}</p>
             <div className="button-group pb-3 d-flex d-md-block justify-content-center justify-md-content-start ">
               <SecondaryBtn
                 label={t("LetsTalk")}
                 onClick={handleContactMe}
                 isContactBtn={true}
-                extraStyle={"me-2 me-md-4 mb-3 mb-md-0 mt-3 mt-lg-3 mt-xxl-5 "}
+                extraStyle={"me-2 me-md-4 mb-3 mb-md-0 mt-3 mt-lg-3 mt-xxl-4 "}
               />
               <PrimaryBtn
                 label={t("DownloadCV")}
                 onClick={handleDownloadCV}
-                extraStyle={"mt-3 mt-lg-3 mt-xxl-5"}
+                extraStyle={"mt-3 mt-lg-3 mt-xxl-4"}
               />
             </div>
           </div>
