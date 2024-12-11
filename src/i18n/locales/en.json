@@ -42,14 +42,14 @@
   "AboutMeTitle": "About me",
   "AboutMeSubtitle1": "Welcome, I'm Aye!",
   "AboutMeSubtitle2": "Full Stack Developer and a dedicated self-learner",
-  "AboutMeDescription1": "I live in Ushuaia (Argentina) and I’m a Full Stack Developer passionate about creating web and mobile applications that provide complete solutions and exceptional experiences.",
+  "AboutMeDescription1": "I live in Ushuaia, Argentina, and I am passionate about designing and developing web and mobile applications that provide comprehensive solutions and exceptional experiences.",
   "AboutMeDescription2": "I discovered programming during the pandemic, and since then, I’ve spent countless hours honing my skills in both front-end and back-end development.",
   "AboutMeDescription3": "My curiosity and discipline have helped me grow quickly as a professional, tackling challenges with creativity and innovation.",
-  "AboutMeDescription4": "I enjoy working on projects that merge technology and design, building intuitive interfaces and robust functionalities.",
+  "AboutMeDescription4": "I enjoy working on projects that combine technology and design, creating intuitive interfaces and robust functionalities.",
   "NumberExperience": "Years of Experience",
   "NumberProjects": "Success Projects",
   "NumberHappyClients": "Happy Clients",
-  "ProjectsTitle": "Proyects",
+  "ProjectsTitle": "Projects",
   "ExperienceTitle": "Experience",
   "modalityTitle": "Modality:",
   "roleExperience1": "Full Stack Developer",
@@ -166,7 +166,7 @@
   "Frameworks&Libraries": "Frameworks & Libraries",
   "DevelopmentTools": "Development Tools",
   "ShowMoreInfoProyect": "Learn more",
-  "PersonalProjects": "Personal Proyects",
+  "PersonalProjects": "Personal Projects",
   "MarioProject": "My first personal project inspired by classic Mario, developed with Kaboom.js and CSS, marked the beginning of my passion for programming.",
   "MarioAlert": "Important: It only works on the web with a keyboard",
   "MarioPeriod": "Mar. 2022",
@@ -199,7 +199,7 @@
   "MarketChainDescription": "I designed the UX/UI design for MarketChain, an Innovus project enabling the exchange of products and services with cryptocurrencies. The design features an adaptive and intuitive interface optimized for desktop and mobile devices.",
   "TelefoniaDescription": "I contributed as a developer to the ‘Telefonía’ project, a CRUD application built with Django and MySQL for the Secretariat of Digital Government. This application optimize the management of telephone information through key modules such as billing, locations, and services.",
   "CeligourmetDescription": "As a Full Stack Developer at Innovus, I worked on the 'Celigourmet' project, redesigning its visual interface with Bootstrap and CSS. I collaborated with a teammate to ensure seamless integration and an enhanced user experience",
-  
+
   "SeekerParkingPeriod": "Jun. 2023 - Oct. 2023",
   "SeekerParkingDescription": "As a Full Stack Developer at Innovus, I worked on Seeker Parking, an app built with PHP CodeIgniter to manage parking at the Movistar Arena. I implemented features like Mercado Pago integration and optimized the user experience and project design.",
   "SeekerParkingDescription0": "At Innovus, I worked as a Full Stack Developer on the Seeker Parking project, an application built with <strong>PHP CodeIgniter</strong> to manage <strong>parking at the Movistar Arena</strong> in Buenos Aires, Argentina.",
@@ -210,9 +210,9 @@
   "SeekerParkingListItem1": "<strong>Clockify:</strong> Time tracking for assigned tasks",
   "SeekerParkingListItem2": "<strong>Jira:</strong> Task management, prioritization, progress tracking, and testing processes",
   "SeekerParkingListItem3": "<strong>Scrum:</strong> An agile methodology essential for effective teamwork coordination",
- 
+
   "SymbioxrPeriod": "Oct. 2023 - Dec. 2023",
-  "SymbioxrDescription": "I contributed to the development of 'Symbioxr,' a Full Stack app designed to manage student experiences in virtual reality simulators for high-risk tasks. I worked on the frontend design and <strong>collaborated remotely</strong> to implement key improvements in the user experience.",
+  "SymbioxrDescription": "I contributed to the development of 'Symbioxr,' a Full Stack app designed to manage student experiences in virtual reality simulators for high-risk tasks. I worked on the frontend design and collaborated remotely to implement key improvements in the user experience.",
   "SymbioxrDescription0": "At Innovus, I worked as a Full Stack Developer on the Symbioxr project, an application built with <strong>React.js</strong> for the frontend, <strong>Node.js</strong> for the backend, and <strong>MongoDB</strong> as the database.",
   "SymbioxrDescription1": "This application manages data collected from student experiences using virtual reality simulators for high-risk tasks.",
   "SymbioxrDescription2": "My main role focused on the <strong>frontend</strong>, where I designed and developed significant improvements to the user interface and experience.",
@@ -282,5 +282,8 @@
   "Rolyazta": "3. My Role in the Project",
   "RolyaztaDescription": "My role included <strong>technical development</strong>, <strong>maintenance</strong>, and <strong>app publishing</strong>, as well as strategic implementation to improve user experience and ensure the platform’s success.",
   "YaztaTechnologiesTitle": "2. Technologies:",
-  "YaztaTechnologies": "<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (database), <strong>AWS</strong> (servers)"
+  "YaztaTechnologies": "<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (database), <strong>AWS</strong> (servers)",
+  "descriptionHome2": "Passionate about designing and developing web and mobile applications. With international experience, I collaborate with teams to solve complex challenges and deliver scalable solutions using technologies like React.js, React Native, and Laravel.",
+  "descriptionHome3": "Passionate about designing and developing web and mobile applications. With international experience, I collaborate with teams to solve complex challenges and deliver scalable solutions", 
+  "AboutMeDescription5":"I have experience in international projects, working with tools like React.js, React Native, and Laravel, and I collaborate with teams to solve complex challenges and create scalable solutions."
 }

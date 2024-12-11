@@ -42,10 +42,11 @@
   "AboutMeTitle": "Sobre mí",
   "AboutMeSubtitle1": "¡Bienvenidos, soy Aye!",
   "AboutMeSubtitle2": "Desarrolladora Full Stack y autodidacta al tiempo completo",
-  "AboutMeDescription1": "Vivo en Ushuaia (Argentina) y soy Desarrolladora Full Stack, apasionada por crear aplicaciones web y móviles que ofrezcan soluciones completas y experiencias excepcionales.",
-  "AboutMeDescription2": "Descubrí la programación durante la pandemia y desde entonces dedico largas horas a perfeccionar mis habilidades en el front-end y back-end.",
+  "AboutMeDescription1": "Vivo en Ushuaia, Argentina, y me apasiona diseñar y desarrollar aplicaciones web y móviles que brinden soluciones completas y experiencias excepcionales.",
+  "AboutMeDescription2": "Descubrí la programación durante la pandemia y desde entonces dedico largas horas a perfeccionar mis habilidades en el frontend y backend.",
   "AboutMeDescription3": "Mi curiosidad y disciplina me han permitido crecer rápidamente como profesional y enfrentar desafíos con creatividad e innovación.",
-  "AboutMeDescription4": "Disfruto abordar proyectos que combinen tecnología y diseño, desarrollando interfaces intuitivas y funcionalidades robustas.",
+  "AboutMeDescription4": "Disfruto trabajar en proyectos que combinan tecnología y diseño, creando interfaces intuitivas y funcionalidades robustas.",
+  "AboutMeDescription5": "Tengo experiencia en proyectos internacionales, manejo herramientas como React.js, React Native y Laravel, y colaboro con equipos para resolver desafíos complejos y crear soluciones escalables.",
   "NumberExperience": "Años de experiencia",
   "NumberProjects": "Proyectos Exitosos",
   "NumberHappyClients": "Clientes Felices",
@@ -59,7 +60,7 @@
   "periodExperience1": "Jun. 2023 - Oct. 2024",
   "periodLongExperience1": "Junio 2023 - Octubre 2024",
   "descriptionExperience1": "Desarrollo y mantenimiento de aplicaciones web y móviles.",
-  "periodExperience2": "Abr. 2023 - Jun. 2024",
+  "periodExperience2": "Abr. 2023 - Jun. 2023",
   "periodLongExperience2": "Abril 2023 - Junio 2023",
   "descriptionExperience2": "Desarrollo y mantenimiento de aplicaciones web.",
   "moreLink": "Ver más",
@@ -278,5 +279,6 @@
   "Rolyazta": "3. Mi Rol en el Proyecto",
   "RolyaztaDescription": "Mi participación abarcó el <strong>desarrollo técnico</strong>, el <strong>mantenimiento</strong> y la <strong>publicación</strong> de las <strong>aplicaciones</strong>, así como la implementación estratégica para mejorar la experiencia del usuario y garantizar el éxito de la plataforma.",
   "YaztaTechnologiesTitle":"2. Tecnologías:",
-  "YaztaTechnologies":"<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (base de datos), <strong>AWS</strong> (servidores)"
+  "YaztaTechnologies":"<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (base de datos), <strong>AWS</strong> (servidores)",
+  "descriptionHome2":"Apasionada por el diseño y desarrollo de aplicaciones web y móviles. Con experiencia internacional, colaboró con equipos para resolver desafíos complejos y crear soluciones escalables con tecnologías como React.js, React Native y Laravel."
 }

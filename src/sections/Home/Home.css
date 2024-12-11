@@ -1,3 +1,6 @@
+.skeleton-circle-img {
+  border-radius: 50%;
+}
 .home-section {
   position: relative;
   /* width: 100vw; */
@@ -52,7 +55,7 @@
 }
 
 .name {
-  background: #AA3CC6;
+  background: #aa3cc6;
   /* background: linear-gradient(90deg, #AA3CC6 0%, #521D60 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,13 +68,12 @@
   font-weight: 400;
 }
 
-.job-position{
+.job-position {
   color: #ffffff;
   font-weight: 300;
-
 }
 
-.description{
+.description {
   color: #ffffff;
   line-height: 1.5;
   font-size: 0.9rem;
@@ -81,13 +83,20 @@
   .profile-image {
     width: 90%;
   }
-  .button-group{
+  .button-group {
     align-self: center;
   }
 }
 
 @media (min-width: 1400px) {
-  .description{
+  .description {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 753px) {
+  .skeleton-circle-img {
+    height: 220px;
+    width: 220px;
+    margin-bottom: 80px;
   }
 }

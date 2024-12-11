@@ -37,7 +37,7 @@ function Home() {
               <span className="name">Ayelén</span> Iasich
             </h1>
             <h2 className="job-position">FULL STACK DEVELOPER</h2>
-            <p className="description pt-4">{t("descriptionHome")}</p>
+            <p className="description pt-4">{t("descriptionHome2")}</p>
             <div className="button-group pb-3 d-flex d-md-block justify-content-center justify-md-content-start ">
               <SecondaryBtn
                 label={t("LetsTalk")}
@@ -59,6 +59,7 @@ function Home() {
               handleImageLoad={handleImageHomeLoad}
               alt={"Ayelen Iasich selfie"}
               imageStyle={"profile-image"}
+              skeletonStyle={"skeleton-circle-img"}
             />
           </div>
           <div className="scroll-down-container">
