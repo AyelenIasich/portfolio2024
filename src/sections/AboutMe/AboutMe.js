@@ -28,7 +28,7 @@ function AboutMe() {
                 imageStyle={"selfie-image"}
               />    
             </div>
-            <div className="col about-description text-start pt-5 pt-lg-0 ps-4 pe-4 ">
+            <div className="col about-description text-start pt-5 pt-lg-0 ps-4 pe-3 ">
               <h3 className="about-subtitle">{t("AboutMeSubtitle1")}</h3>
               <h5 className="about-subtitle2 pt-2">{t("AboutMeSubtitle2")}</h5>
               <hr className="line"></hr>

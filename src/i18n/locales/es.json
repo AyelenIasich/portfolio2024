@@ -46,7 +46,7 @@
   "AboutMeDescription2": "Descubrí la programación durante la pandemia y desde entonces dedico largas horas a perfeccionar mis habilidades en el frontend y backend.",
   "AboutMeDescription3": "Mi curiosidad y disciplina me han permitido crecer rápidamente como profesional y enfrentar desafíos con creatividad e innovación.",
   "AboutMeDescription4": "Disfruto trabajar en proyectos que combinan tecnología y diseño, creando interfaces intuitivas y funcionalidades robustas.",
-  "AboutMeDescription5": "Tengo experiencia en proyectos internacionales, manejo herramientas como <strong>React.js</strong>, <strong>React Native</strong>, y <strong>Laravel</strong> y colaboro con equipos multidisciplinarios para resolver desafíos complejos y crear soluciones escalables.",
+  "AboutMeDescription5": "Tengo experiencia en proyectos internacionales, manejo herramientas como <strong>React.js</strong>, <strong>React Native</strong>, y <strong>Laravel</strong> y colaboro con equipos para resolver desafíos complejos y crear soluciones escalables.",
   "NumberExperience": "Años de experiencia",
   "NumberProjects": "Proyectos Exitosos",
   "NumberHappyClients": "Clientes Felices",
@@ -281,5 +281,5 @@
   "YaztaTechnologiesTitle":"2. Tecnologías:",
   "YaztaTechnologies":"<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (base de datos), <strong>AWS</strong> (servidores)",
   "descriptionHome2":"Apasionada por el diseño y desarrollo de aplicaciones web y móviles. Con experiencia internacional, colaboró con equipos multidisciplinarios para resolver desafíos complejos y crear soluciones escalables con tecnologías como React.js, React Native y Laravel.",
-  "descriptionHome3":"Apasionada por el diseño y desarrollo de aplicaciones web y móviles. Con experiencia internacional, colaboró con equipos multidisciplinarios para resolver desafíos complejos y crear soluciones escalables."
+  "descriptionHome3":"Apasionada por el diseño y desarrollo de aplicaciones web y móviles. Con experiencia internacional, colaboró con equipos para resolver desafíos complejos y crear soluciones escalables."
 }
