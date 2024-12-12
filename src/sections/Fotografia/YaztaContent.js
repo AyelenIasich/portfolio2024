@@ -63,6 +63,11 @@ function YaztaContent() {
               />
             ))}
           </ul>
+          <p
+            className="content-description"
+            dangerouslySetInnerHTML={{ __html: t("YaztaMethics") }}
+          />
+          
           {/* TECH SECTION */}
           <h5 className="section-title content-description pt-3 pb-3">
             {t("YaztaTechnologiesTitle")}

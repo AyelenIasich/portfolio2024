@@ -12,7 +12,9 @@ import "./Footer.css";
 function Footer() {
   const { t, i18n } = useTranslation();
   const FooterNavigationLinks = linksSectionsData(t);
-
+  const handleDownloadFooter = () => {
+    handleDownloadCV(i18n.language); 
+  };
 
   return (
     <footer className="container-fluid footer-bg ">
@@ -59,7 +61,7 @@ function Footer() {
                     <h5 className="footer-title pb-5 pb-lg-4">
                       {t("downloadCvTitle")}
                     </h5>
-                    <PrimaryBtn label={t("DownloadCV")} onClick={handleDownloadCV} extraStyle={"footer-btn "} />
+                    <PrimaryBtn label={t("DownloadCV")} onClick={handleDownloadFooter} extraStyle={"footer-btn "} />
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ import SkeletonImage1 from "../../components/SkeletonImage/SkeletonImage1";
 import "./Home.css";
 
 function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleContactMe = () => {
     const section = document.getElementById("contactMe");
@@ -24,6 +24,10 @@ function Home() {
 
   const handleImageHomeLoad = () => {
     setIsSelfie1Loading(false);
+  };
+
+  const handleDownload = () => {
+    handleDownloadCV(i18n.language); 
   };
 
   return (
@@ -47,7 +51,7 @@ function Home() {
               />
               <PrimaryBtn
                 label={t("DownloadCV")}
-                onClick={handleDownloadCV}
+                onClick={handleDownload}
                 extraStyle={"mt-3 mt-lg-3 mt-xxl-4"}
               />
             </div>
