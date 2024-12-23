@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 
 function useForm() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
     user_name: "",
