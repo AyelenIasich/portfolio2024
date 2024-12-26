@@ -27,8 +27,18 @@ import HtmlCssCertificate from "../assets/png/certificate/HtmlCssCertificate.png
 import TsFundamentosCertificate from "../assets/png/certificate/TsFundamentosCertificate.png";
 import FundamentosAngularCertificate from "../assets/png/certificate/FundamentosAngularCertificate.png";
 import ProgramacionBasicaCertificate from "../assets/png/certificate/ProgramacionBasicaCertificate.png";
+import ComposicionPatronesRender from "../assets/png/certificate/ComposicionPatronesRender.png";
 
 export const certificationDataPreview = (t) => [
+  {
+    logo: React,
+    institute: t("PlatziTitle1"),
+    titleEducation: t("ReactComposicionCertificate"),
+    period: t("ReactComposicionPeriod"),
+    isShowCertification: true,
+    certificate: ComposicionPatronesRender,
+    category: "FrontendDevelopment",
+  },
   {
     logo: React,
     institute: t("PlatziTitle1"),
@@ -37,15 +47,6 @@ export const certificationDataPreview = (t) => [
     isShowCertification: true,
     certificate: ReactCertificate,
     category: "FrontendDevelopment",
-  },
-  {
-    logo: PreworkWindows,
-    institute: t("PlatziTitle1"),
-    titleEducation: t("PreworkWinCertificate"),
-    period: t("PreworkWinCertificatePeriod"),
-    isShowCertification: true,
-    certificate: PreWorkWinCertficate,
-    category: "Infrastructure&OS",
   },
   {
     logo: JS,
@@ -81,6 +82,15 @@ export const categoriesCertificates = (t) => [
 ];
 
 const certificationData = (t) => [
+  {
+    logo: React,
+    institute: t("PlatziTitle1"),
+    titleEducation: t("ReactComposicionCertificate"),
+    period: t("ReactComposicionPeriod"),
+    isShowCertification: true,
+    certificate: ComposicionPatronesRender,
+    category: "FrontendDevelopment",
+  },
   {
     logo: React,
     institute: t("PlatziTitle1"),

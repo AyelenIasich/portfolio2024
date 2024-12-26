@@ -3,14 +3,11 @@
 }
 .home-section {
   position: relative;
-  /* width: 100vw; */
   min-height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--light-purple-bg); */
-  /* background-color: rgba(188, 166, 229, 0.2); */
   background: linear-gradient(90deg, #523c7b 0%, #7c62ad 36%, #dcd1f1 100%);
 }
 
