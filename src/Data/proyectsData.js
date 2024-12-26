@@ -149,7 +149,7 @@ const proyectsData = (t) => [
     description: t("MarketChainDescription"),
     linkWeb:
       "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
-    isShowBtns: true,
+    isShowBtns: false,
     isShowMoreInfo: false,
   },
   {
