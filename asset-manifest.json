@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f3498fc6.css",
-    "main.js": "/static/js/main.daffe37c.js",
+    "main.js": "/static/js/main.ccf6a0f0.js",
     "static/js/453.addf49e5.chunk.js": "/static/js/453.addf49e5.chunk.js",
     "static/media/Marcket-Chain.jpg": "/static/media/Marcket-Chain.bd95a916bbe02ae37d12.jpg",
     "static/media/yazta.jpg": "/static/media/yazta.c502706e0fe1aaef3368.jpg",
@@ -11,6 +11,7 @@
     "static/media/PiedraPapelTijera.png": "/static/media/PiedraPapelTijera.9bb3b2bbd10ed5c745d0.png",
     "static/media/PreWorkLinux.png": "/static/media/PreWorkLinux.d98e062a40b9b3c0b925.png",
     "static/media/ComposicionPatronesRender.png": "/static/media/ComposicionPatronesRender.9b9c237279e85bc4f490.png",
+    "static/media/ManejoProfEstado.png": "/static/media/ManejoProfEstado.9d670067578cc610b996.png",
     "static/media/AngularComponentesCertificate.png": "/static/media/AngularComponentesCertificate.b5e269a261842aea34bc.png",
     "static/media/seeker-Parking.jpg": "/static/media/seeker-Parking.af9d24d5c8d1f37a64a0.jpg",
     "static/media/FuncionesEstructuresControlCertificate.png": "/static/media/FuncionesEstructuresControlCertificate.b302cab495c28226535c.png",
@@ -66,7 +67,6 @@
     "static/media/js.webp": "/static/media/js.ebc56816dfdeaa9f5d97.webp",
     "static/media/AngularComponentes.webp": "/static/media/AngularComponentes.a33e4acaa977d296c361.webp",
     "static/media/github.svg": "/static/media/github.35522b75964a2816f22f1c0ed706c49f.svg",
-    "static/media/AngularFundamentos.webp": "/static/media/AngularFundamentos.a2d2fa61d75fbe7d60e7.webp",
     "static/media/React.webp": "/static/media/React.582129d76ccefa8ead47.webp",
     "static/media/PreworkLinux.webp": "/static/media/PreworkLinux.960524d9eb9a3bfc1189.webp",
     "static/media/ProgramacionBasica.webp": "/static/media/ProgramacionBasica.88e1d68eb2822c653b1a.webp",
@@ -81,11 +81,11 @@
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
     "main.f3498fc6.css.map": "/static/css/main.f3498fc6.css.map",
-    "main.daffe37c.js.map": "/static/js/main.daffe37c.js.map",
+    "main.ccf6a0f0.js.map": "/static/js/main.ccf6a0f0.js.map",
     "453.addf49e5.chunk.js.map": "/static/js/453.addf49e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3498fc6.css",
-    "static/js/main.daffe37c.js"
+    "static/js/main.ccf6a0f0.js"
   ]
 }
