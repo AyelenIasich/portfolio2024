@@ -10,7 +10,6 @@ import ComputacionBasica from "../assets/png/icon/ComputacionBasica.webp";
 import AngularComponentes from "../assets/png/icon/AngularComponentes.webp";
 import HtmlCss from "../assets/png/icon/htmlCss.webp";
 import TS from "../assets/png/icon/ts.webp";
-import AngularFund from "../assets/png/icon/AngularFundamentos.webp";
 import ProgramacionBasica from "../assets/png/icon/ProgramacionBasica.webp";
 
 import ComputacionBasicaCertificate from "../assets/png/certificate/ComputacionBasicaCertificate.png";
@@ -28,8 +27,18 @@ import TsFundamentosCertificate from "../assets/png/certificate/TsFundamentosCer
 import FundamentosAngularCertificate from "../assets/png/certificate/FundamentosAngularCertificate.png";
 import ProgramacionBasicaCertificate from "../assets/png/certificate/ProgramacionBasicaCertificate.png";
 import ComposicionPatronesRender from "../assets/png/certificate/ComposicionPatronesRender.png";
+import ManejoProfEstado from "../assets/png/certificate/ManejoProfEstado.png"
 
 export const certificationDataPreview = (t) => [
+  {
+    logo: React,
+    institute: t("PlatziTitle1"),
+    titleEducation: t("ReactEstadoCertificate"),
+    period: t("ReactEstadoCertificatePeriod"),
+    isShowCertification: true,
+    certificate: ManejoProfEstado,
+    category: "FrontendDevelopment",
+  },
   {
     logo: React,
     institute: t("PlatziTitle1"),
@@ -57,15 +66,6 @@ export const certificationDataPreview = (t) => [
     certificate: JsCertificate,
     category: "Programming&&Logic",
   },
-  {
-    logo: Frontend,
-    institute: t("PlatziTitle1"),
-    titleEducation: t("FrontendCertificate"),
-    period: t("FrontendCertificatePeriod"),
-    isShowCertification: true,
-    certificate: FrontendCertificate,
-    category: "FrontendDevelopment",
-  },
 ];
 
 export const categoriesCertificates = (t) => [
@@ -82,6 +82,15 @@ export const categoriesCertificates = (t) => [
 ];
 
 const certificationData = (t) => [
+  {
+    logo: React,
+    institute: t("PlatziTitle1"),
+    titleEducation: t("ReactEstadoCertificate"),
+    period: t("ReactEstadoCertificatePeriod"),
+    isShowCertification: true,
+    certificate: ManejoProfEstado,
+    category: "FrontendDevelopment",
+  },
   {
     logo: React,
     institute: t("PlatziTitle1"),
@@ -200,7 +209,7 @@ const certificationData = (t) => [
     category: "FrontendDevelopment",
   },
   {
-    logo: AngularFund,
+    logo: AngularComponentes,
     institute: t("PlatziTitle1"),
     titleEducation: t("AnFundamentosCertificate"),
     period: t("AnFundamentosCertificatePeriod"),

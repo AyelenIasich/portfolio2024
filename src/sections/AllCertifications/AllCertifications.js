@@ -14,13 +14,13 @@ import "./AllCertifications.css";
 
 function AllCertifications() {
   const { t } = useTranslation();
-  const [visibleItems, setiVisibleItems] = useState(4);
+  const [visibleItems, setVisibleItems] = useState(4);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const certifications = certificationData(t);
   const navigate = useNavigate();
 
   const handleShowAllCertificate = () => {
-    setiVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
   };
 
   const handleGoBackCertificate = () => {
@@ -57,6 +57,7 @@ function AllCertifications() {
             categories={categories}
             selectedCategory={selectedCategory}
             onCategoryChange={setSelectedCategory}
+            setVisibleItem={setVisibleItems}
           />
         </div>
 
