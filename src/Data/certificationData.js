@@ -11,7 +11,9 @@ import AngularComponentes from "../assets/png/icon/AngularComponentes.webp";
 import HtmlCss from "../assets/png/icon/htmlCss.webp";
 import TS from "../assets/png/icon/ts.webp";
 import ProgramacionBasica from "../assets/png/icon/ProgramacionBasica.webp";
+import ReduxIcon from "../assets/png/icon/reduxIcon.png";
 
+import Certificate_redux from "../assets/png/certificate/certificate_redux.png";
 import ComputacionBasicaCertificate from "../assets/png/certificate/ComputacionBasicaCertificate.png";
 import ReactCertificate from "../assets/png/certificate/ReactCertificate.png";
 import PreWorkWinCertficate from "../assets/png/certificate/PreWorkWinCertficate.png";
@@ -30,6 +32,15 @@ import ComposicionPatronesRender from "../assets/png/certificate/ComposicionPatr
 import ManejoProfEstado from "../assets/png/certificate/ManejoProfEstado.png"
 
 export const certificationDataPreview = (t) => [
+  {
+    logo: ReduxIcon,
+    institute: t("PlatziTitle1"),
+    titleEducation: t("ReduxCertificate"),
+    period: t("ReduxCertificatePeriod"),
+    isShowCertification: true,
+    certificate: Certificate_redux,
+    category: "FrontendDevelopment",
+  },
   {
     logo: React,
     institute: t("PlatziTitle1"),
@@ -57,15 +68,7 @@ export const certificationDataPreview = (t) => [
     certificate: ReactCertificate,
     category: "FrontendDevelopment",
   },
-  {
-    logo: JS,
-    institute: t("PlatziTitle1"),
-    titleEducation: t("JSCertificate"),
-    period: t("JSCertificatePeriod"),
-    isShowCertification: true,
-    certificate: JsCertificate,
-    category: "Programming&&Logic",
-  },
+
 ];
 
 export const categoriesCertificates = (t) => [
@@ -82,6 +85,15 @@ export const categoriesCertificates = (t) => [
 ];
 
 const certificationData = (t) => [
+  {
+    logo: ReduxIcon,
+    institute: t("PlatziTitle1"),
+    titleEducation: t("ReduxCertificate"),
+    period: t("ReduxCertificatePeriod"),
+    isShowCertification: true,
+    certificate: Certificate_redux,
+    category: "FrontendDevelopment",
+  },
   {
     logo: React,
     institute: t("PlatziTitle1"),

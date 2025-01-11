@@ -21,6 +21,8 @@ import ClockifyLogo from "../assets/png/tech/clockify.png";
 import JiraLogo from "../assets/png/tech/jira.png";
 import ScrumLogo from "../assets/png/tech/scrum.png";
 import GenexusLogo from "../assets/png/tech/genexus.jpg";
+import ReduxIcon from "../assets/png/icon/reduxIcon.png";
+import tailwind from "../assets/png/icon/tailwind.png";
 
 const technologiesData = (t) => [
   {
@@ -70,6 +72,11 @@ export const dataBaseData = (t) => [
 
 export const frameworksData = (t) => [
   {
+    image: ReduxIcon,
+    tech: "Redux",
+    techDescription: t("StateManagement"),
+  },
+  {
     image: ReactNativeLogo,
     tech: "React Native",
     techDescription: t("MobileDevelopment"),
@@ -97,6 +104,11 @@ export const frameworksData = (t) => [
   {
     image: BootstrapLogo,
     tech: "Bootstrap",
+    techDescription: t("CssFramework"),
+  },
+  {
+    image: tailwind,
+    tech: "Tailwind",
     techDescription: t("CssFramework"),
   },
   {
