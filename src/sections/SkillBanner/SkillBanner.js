@@ -9,14 +9,12 @@ import Css from "../../assets/png/tech/css-3.png";
 import Sass from "../../assets/png/tech/sass.png";
 import Bootstrap from "../../assets/png/tech/bootstrap-1.png";
 import Figma from "../../assets/png/tech/figma.png";
-import Angular from "../../assets/png/tech/angular.png";
 import Php from "../../assets/png/tech/php.png";
 import Laravel from "../../assets/png/tech/Laravel.png";
 import Django from "../../assets/png/tech/django.png";
 import PostgreSQL from "../../assets/png/tech/postgreSQL.png";
 import Mysql from "../../assets/png/tech/mysql.png";
 import Genexus from "../../assets/png/tech/genexus.jpg";
-import Java from "../../assets/png/tech/java.png";
 
 function SkillBanner() {
   const technologies1 = [

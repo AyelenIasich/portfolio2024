@@ -1,55 +1,56 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
-import TitleSection from "../../components/TitleSection/TitleSection";
-import technologiesData, {
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import TitleSection from '../../components/TitleSection/TitleSection'
+import {
   toolsDevData,
   dataBaseData,
-  frameworksData,
-} from "../../Data/technologiesData";
-import "./Technologies.css";
-import TechCardSection from "../TechCardSection/TechCardSection";
+  frontendData,
+  BackendData,
+} from '../../Data/technologiesData'
+import './Technologies.css'
+import TechCardSection from '../TechCardSection/TechCardSection'
 
 function Technologies() {
-  const { t } = useTranslation();
-  const technologies = technologiesData(t);
-  const toolsDevelopment = toolsDevData(t);
-  const DataBases = dataBaseData(t);
-  const frameworkData = frameworksData(t);
+  const { t } = useTranslation()
+  const backendTechnologies = BackendData(t)
+  const toolsDevelopment = toolsDevData(t)
+  const DataBases = dataBaseData(t)
+  const frontendTech = frontendData(t)
 
-  const [visibleProgramming, setVisibleProgramming] = useState(3);
-  const [visibleFramework, setVisibleFramework] = useState(3);
-  const [visibleTools, setVisibleTools] = useState(3);
+  const [visibleProgramming, setVisibleProgramming] = useState(3)
+  const [visibleFramework, setVisibleFramework] = useState(3)
+  const [visibleTools, setVisibleTools] = useState(3)
 
   const handleShowMoreProgramming = () => {
-    setVisibleProgramming((prevVisibleItems) => prevVisibleItems + 3);
-  };
+    setVisibleProgramming((prevVisibleItems) => prevVisibleItems + 3)
+  }
 
   const handleShowMoreFrameworks = () => {
-    setVisibleFramework((prevVisibleItems) => prevVisibleItems + 3);
-  };
+    setVisibleFramework((prevVisibleItems) => prevVisibleItems + 3)
+  }
 
   const handleShowMoreTools = () => {
-    setVisibleTools((prevVisibleItems) => prevVisibleItems + 3);
-  };
+    setVisibleTools((prevVisibleItems) => prevVisibleItems + 3)
+  }
 
   return (
     <section className="container pt-3" id="technologies">
       <div className="row ">
         <div className="col-12 text-center pt-5 pt-xxl-5 mt-xxl-3">
-          <TitleSection t={t} title={t("SkillsTitle")} />
+          <TitleSection t={t} title={t('SkillsTitle')} />
         </div>
-        {/* FRAMEWORK SECTION  */}
+        {/* FRONTEND SECTION  */}
         <TechCardSection
-          list={frameworkData}
-          title={t("Frameworks&Libraries")}
+          list={frontendTech}
+          title={"Frontend"}
           visibleItem={visibleFramework}
           handleShow={handleShowMoreFrameworks}
         />
 
-        {/* PROGRAMMING LANGUAGES SECTION */}
+        {/* BACKEND SECTION */}
         <TechCardSection
-          list={technologies}
-          title={t("ProgrammingLanguages")}
+          list={backendTechnologies}
+          title={"Backend"}
           visibleItem={visibleProgramming}
           handleShow={handleShowMoreProgramming}
         />
@@ -57,7 +58,7 @@ function Technologies() {
         {/* DATABASE SECTION */}
         <TechCardSection
           list={DataBases}
-          title={t("Databases")}
+          title={t('Databases')}
           visibleItem={2}
           isShowBtn={false}
         />
@@ -65,13 +66,13 @@ function Technologies() {
         {/* TOOLS SECTION */}
         <TechCardSection
           list={toolsDevelopment}
-          title={t("DevelopmentTools")}
+          title={t('DevelopmentTools')}
           visibleItem={visibleTools}
           handleShow={handleShowMoreTools}
         />
       </div>
     </section>
-  );
+  )
 }
 
-export default Technologies;
+export default Technologies

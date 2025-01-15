@@ -23,17 +23,29 @@ import ScrumLogo from "../assets/png/tech/scrum.png";
 import GenexusLogo from "../assets/png/tech/genexus.jpg";
 import ReduxIcon from "../assets/png/icon/reduxIcon.png";
 import tailwind from "../assets/png/icon/tailwind.png";
+import Node from "../assets/png/tech/node.png";
 
-const technologiesData = (t) => [
+
+export const BackendData = (t) => [
   {
-    image: JsLogo,
-    tech: "Javascript",
-    techDescription: t("WebDevelopment"),
+    image: LaravelLogo,
+    tech: "Laravel",
+    techDescription: t("FullStack"),
   },
   {
-    image: PhpLogo,
-    tech: "Php",
+    image: StrapiLogo,
+    tech: "Strapi",
+    techDescription: t("CMS"),
+  },
+  {
+    image: Node,
+    tech: "Node.js",
     techDescription: t("BackendDevelopment"),
+  },
+  {
+    image: DjangoLogo,
+    tech: "Django",
+    techDescription: t("FullStack"),
   },
   {
     image: PythonLogo,
@@ -41,14 +53,9 @@ const technologiesData = (t) => [
     techDescription: t("FullStack"),
   },
   {
-    image: CssLogo,
-    tech: "Css",
-    techDescription: t("WebDesign"),
-  },
-  {
-    image: TsLogo,
-    tech: "Typescript",
-    techDescription: t("WebDevelopment"),
+    image: PhpLogo,
+    tech: "Php",
+    techDescription: t("BackendDevelopment"),
   },
   {
     image: JavaLogo,
@@ -56,21 +63,7 @@ const technologiesData = (t) => [
     techDescription: t("BackendDevelopment"),
   },
 ];
-
-export const dataBaseData = (t) => [
-  {
-    image: MySQLLogo,
-    tech: "MySQL",
-    techDescription: t("DataBase"),
-  },
-  {
-    image: PostgreSQLLogo,
-    tech: "PostgreSQL",
-    techDescription: t("DataBase"),
-  },
-];
-
-export const frameworksData = (t) => [
+export const frontendData = (t) => [
   {
     image: ReduxIcon,
     tech: "Redux",
@@ -87,19 +80,24 @@ export const frameworksData = (t) => [
     techDescription: t("FrontendDevelopment1"),
   },
   {
-    image: LaravelLogo,
-    tech: "Laravel",
-    techDescription: t("FullStack"),
+    image: AngularLogo,
+    tech: "Angular",
+    techDescription: t("FrontendDevelopment1"),
   },
   {
-    image: DjangoLogo,
-    tech: "Django",
-    techDescription: t("FullStack"),
+    image: JsLogo,
+    tech: "Javascript",
+    techDescription: t("WebDevelopment"),
   },
   {
-    image: StrapiLogo,
-    tech: "Strapi",
-    techDescription: t("CMS"),
+    image: TsLogo,
+    tech: "Typescript",
+    techDescription: t("WebDevelopment"),
+  },
+  {
+    image: CssLogo,
+    tech: "Css",
+    techDescription: t("WebDesign"),
   },
   {
     image: BootstrapLogo,
@@ -116,19 +114,28 @@ export const frameworksData = (t) => [
     tech: "Sass",
     techDescription: t("CssFramework"),
   },
-  {
-    image: AngularLogo,
-    tech: "Angular",
-    techDescription: t("FrontendDevelopment1"),
-  },
-];
-
-export const toolsDevData = (t) => [
-  {
+   {
     image: FigmaLogo,
     tech: "Figma",
     techDescription: t("UxIxDesign"),
   },
+];
+
+export const dataBaseData = (t) => [
+  {
+    image: MySQLLogo,
+    tech: "MySQL",
+    techDescription: t("DataBase"),
+  },
+  {
+    image: PostgreSQLLogo,
+    tech: "PostgreSQL",
+    techDescription: t("DataBase"),
+  },
+];
+
+
+export const toolsDevData = (t) => [
   {
     image: ClockifyLogo,
     tech: "Clockify",
@@ -160,5 +167,3 @@ export const toolsDevData = (t) => [
     techDescription: t("Devops"),
   },
 ];
-
-export default technologiesData;
