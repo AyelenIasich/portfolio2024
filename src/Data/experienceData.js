@@ -1,7 +1,19 @@
 import InnovusLogo from "../assets/png/Innovus-Logo.png";
 import GobiernoTDF from "../assets/png/Gobierno-TDF.jpg";
+import InisoftLogo from "../assets/png/InisoftLogo.png";
 
 const experienceData = (t) => [
+  {
+    logo: InisoftLogo,
+    company: "Inisoft",
+    role: t("roleExperience1"),
+    modality: t("modalityRemote"),
+    period: t("periodExperience3"),
+    periodLong: t("periodLongExperience3"),
+    description: t("descriptionExperience1"),
+    technologies: t("techExperience3"),
+    toolMethologies: [t("toolExperience1b"), t("toolExperience1c")],
+  },
   {
     logo: InnovusLogo,
     company: "Innovus - Software Company",
