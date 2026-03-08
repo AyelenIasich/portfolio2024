@@ -72,3 +72,11 @@
   width: 150px;
   height: 150px;
 }
+
+
+@media screen and (max-width: 730px) {
+  .testimonial-feedback {
+    font-size: 0.9rem;
+  }
+  
+}

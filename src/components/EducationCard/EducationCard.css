@@ -39,12 +39,14 @@
     text-align: left;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 1.5;
   }
   
   .titleEducation {
     color: #000000;
     font-size: 1rem;
     font-weight: 700;
+    line-height: 1.5;
   }
   
   .modality {
@@ -85,7 +87,7 @@
   
   @media screen and (max-width: 730px) {
     .institute {
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin: 0;
     }
   
