@@ -14,9 +14,18 @@ function ModalPhoto({ children, title, handleCloseModal, extraStyle }) {
         role="document"
       >
         <div className="modal-content modal-content-photo px-md-4 py-md-4 px-2 pt-3 pb-2">
-          <div className="exp-header">
-            <h5 className={`modal-title-photo ${extraStyle} mb-0 ps-1`}>{title}</h5>
-            <IoClose className="btn-photo-modal" onClick={handleCloseModal} />
+          <div className="modal-photo-header">
+            <h5 className={`modal-title-photo ${extraStyle || ""} mb-0 ps-1`}>
+              {title}
+            </h5>
+            <button
+              type="button"
+              className="btn-photo-modal"
+              onClick={handleCloseModal}
+              aria-label="Cerrar modal"
+            >
+              <IoClose />
+            </button>
           </div>
           {children}
         </div>

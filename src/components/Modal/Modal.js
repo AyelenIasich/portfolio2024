@@ -2,6 +2,7 @@ import React from "react";
 import "./Modal.css";
 
 function Modal({ children, title, handleCloseModal, extraStyle }) {
+
   return (
     <div className="modal show d-block" tabIndex="-1" role="dialog">
       <div className="modal-dialog modal-dialog-centered " role="document">

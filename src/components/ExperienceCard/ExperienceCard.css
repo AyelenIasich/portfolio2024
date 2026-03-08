@@ -85,8 +85,12 @@
 
 @media screen and (max-width: 730px) {
   .company {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin: 0;
+  }
+
+  .role {
+    font-size: 0.9rem;
   }
 
   .period {

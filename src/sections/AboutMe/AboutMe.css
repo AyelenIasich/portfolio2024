@@ -25,12 +25,13 @@
 .about-subtitle2 {
   font-weight: 500;
   color: #4b4b4b;
+  line-height: 1.5;
 }
 
 .about-text {
   font-weight: 500;
   color: #757575;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .container-about-me {
@@ -39,5 +40,18 @@
 @media screen and (max-width: 445px) {
   .about-text {
     font-size: 0.9rem;
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+  .about-text {
+    font-size: 0.85rem;
+  }
+  .about-subtitle {
+    font-size: 1.2rem;
+  }
+  .about-subtitle2 {
+    font-size: 1rem;
   }
 }

@@ -169,7 +169,7 @@ function ProyectCard({
         </div>
       </div>
       {showProjectModal && (
-        <ModalPhoto handleCloseModal={closeModal}>
+        <ModalPhoto handleCloseModal={closeModal} title={title2 || title}>
           {isYaztaModalContent ? (
             <YaztaContent />
           ) : (
@@ -196,7 +196,7 @@ function ProyectCard({
         </ModalPhoto>
       )}
       {showProjectPhotoModal && (
-        <ModalPhoto handleCloseModal={closeModalPhotoProject}>
+        <ModalPhoto handleCloseModal={closeModalPhotoProject} title={title}>
           <ImageSkeleton
             isLoading={isPgLoading}
             certificate={image}

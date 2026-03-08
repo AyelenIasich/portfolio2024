@@ -38,10 +38,6 @@ function YaztaContent() {
 
   return (
     <div className="row ">
-      <div className="col-12 text-center pt-4 pt-md-0 pb-3">
-        <h4 className="title-proj">Yazta Mx & Yazta Pro</h4>
-      </div>
-
       <div className="col-12 col-xxl-11 px-4 mx-auto">
         <div className="col-12 mx-auto">
           {/* SECTION DESCRIPTION PROJECT  */}

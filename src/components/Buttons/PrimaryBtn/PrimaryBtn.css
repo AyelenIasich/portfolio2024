@@ -32,3 +32,10 @@
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 730px) {
+  .primary-btn {
+    font-size: 0.9rem;
+  }
+}

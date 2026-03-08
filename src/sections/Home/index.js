@@ -41,7 +41,7 @@ function Home() {
               <span className="name">Ayelén</span> Iasich
             </h1>
             <h2 className="job-position">FULL STACK DEVELOPER</h2>
-            <p className="description pt-4 pt-lg-2 pt-xxl-3">{t("descriptionHome3")}</p>
+            <p className="description pt-3 pt-lg-2 pt-xxl-3">{t("descriptionHome3")}</p>
             <div className="button-group pb-3 d-flex d-md-block justify-content-center justify-md-content-start ">
               <SecondaryBtn
                 label={t("LetsTalk")}
@@ -56,7 +56,7 @@ function Home() {
               />
             </div>
           </div>
-          <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2  mt-5 pt-3 pt-md-0  image-content col-home">
+          <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center order-lg-2  mt-4 pt-0 pt-md-0  image-content col-home">
             <SkeletonImage1
               isLoading={isSelfie1Loading}
               image={ayeIasich}

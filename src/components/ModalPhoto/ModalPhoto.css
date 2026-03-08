@@ -25,14 +25,42 @@
   color: #FFFFFF;
 }
 
+.modal-photo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+}
+
 .btn-photo-modal{
-  color: antiquewhite !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: antiquewhite;
   font-size: 1.8rem;
+  line-height: 1;
   cursor: pointer;
+  flex-shrink: 0;
+}
+
+.btn-photo-modal:hover,
+.btn-photo-modal:focus-visible {
+  opacity: 0.85;
 }
 
 .modal-title-photo{
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 700;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 

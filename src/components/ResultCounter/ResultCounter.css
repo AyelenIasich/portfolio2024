@@ -3,3 +3,9 @@
   color: #757575;
   font-weight: 500;
 }
+
+@media screen and (max-width: 730px) {
+  .results-counter-display {
+    text-align: center;
+  }
+}

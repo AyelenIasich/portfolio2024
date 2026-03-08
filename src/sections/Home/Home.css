@@ -79,7 +79,7 @@
 
 .description {
   color: #ffffff;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 0.9rem;
 }
 
@@ -92,15 +92,20 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .description {
     font-size: 1rem;
   }
 }
-@media (max-width: 753px) {
+
+@media screen and (max-width: 753px) {
   .skeleton-circle-img {
     height: 220px;
     width: 220px;
     margin-bottom: 80px;
+  }
+
+  .job-position {
+    font-size: 1.25rem;
   }
 }
