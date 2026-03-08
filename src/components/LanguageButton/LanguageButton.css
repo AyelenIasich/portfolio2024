@@ -1,8 +1,14 @@
-.language-btn {
+.language-btn-wrapper {
   position: fixed;
   top: 25%;
   right: 0px;
-  transform: translateY(-50%);
+  transform: translateY(-50%);  
+  z-index: 10;
+}
+
+.language-btn {
+  appearance: none;
+  -webkit-appearance: none;
   backdrop-filter: blur(1rem);
   background-color: var(--bg-lang);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,25 +20,60 @@
   justify-content: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: border-color 0.3s ease;
-  z-index: 10;
-}
-
-.btn-lang {
-  background: none;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
   border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: none;
 }
 
 .icon-lang {
   font-size: 1.5rem;
+  color: #000;
 }
 
 .language-btn:hover,
-.language-btn:focus {
+.language-btn:focus-visible {
     border-color: #6d28d9;
     box-shadow: 0 0 8px rgba(109, 40, 217, 0.5);
     background-color: #f3e8ff;
+}
+
+.language-btn-glow {
+  animation: langGlow 1.4s ease-in-out infinite;
+}
+
+.language-tooltip {
+  position: absolute;
+  right: 62px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(14, 36, 49, 0.95);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.language-tooltip::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 6px solid rgba(14, 36, 49, 0.95);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+@keyframes langGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(109, 40, 217, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(109, 40, 217, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(109, 40, 217, 0.2);
+  }
 }
