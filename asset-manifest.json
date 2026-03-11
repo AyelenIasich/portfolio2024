@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a4654550.css",
-    "main.js": "/static/js/main.72128a71.js",
+    "main.js": "/static/js/main.3a908706.js",
     "static/js/453.addf49e5.chunk.js": "/static/js/453.addf49e5.chunk.js",
     "static/media/Marcket-Chain.jpg": "/static/media/Marcket-Chain.bd95a916bbe02ae37d12.jpg",
     "static/media/yazta.jpg": "/static/media/yazta.c502706e0fe1aaef3368.jpg",
@@ -84,11 +84,11 @@
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
     "main.a4654550.css.map": "/static/css/main.a4654550.css.map",
-    "main.72128a71.js.map": "/static/js/main.72128a71.js.map",
+    "main.3a908706.js.map": "/static/js/main.3a908706.js.map",
     "453.addf49e5.chunk.js.map": "/static/js/453.addf49e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4654550.css",
-    "static/js/main.72128a71.js"
+    "static/js/main.3a908706.js"
   ]
 }
