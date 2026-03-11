@@ -15,7 +15,7 @@ function ModalPhoto({ children, title, handleCloseModal, extraStyle }) {
       >
         <div className="modal-content modal-content-photo px-md-4 py-md-4 px-2 pt-3 pb-2">
           <div className="modal-photo-header">
-            <h5 className={`modal-title-photo ${extraStyle || ""} mb-0 ps-1`}>
+            <h5 className={`modal-title-photo ${extraStyle || ""} mb-0 ps-1 ps-2`}>
               {title}
             </h5>
             <button

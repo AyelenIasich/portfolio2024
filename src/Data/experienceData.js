@@ -10,7 +10,7 @@ const experienceData = (t) => [
     modality: t("modalityRemote"),
     period: t("periodExperience3"),
     periodLong: t("periodLongExperience3"),
-    description: t("descriptionExperience1"),
+    description: t("inisoftExperience"),
     technologies: t("techExperience3"),
     toolMethologies: [t("toolExperience1b"), t("toolExperience1c")],
   },

@@ -35,7 +35,7 @@ function AboutMe() {
               <p className="about-text">{t("AboutMeDescription1")}</p>
               <p className="about-text" dangerouslySetInnerHTML={{ __html: t("AboutMeDescription2")}}/>
               <p className="about-text">{t("AboutMeDescription3")}</p>
-              <p className="about-text">{t("AboutMeDescription4")}</p>
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t("AboutMeDescription4")}}/>
             </div>
           </div>
         </div>
