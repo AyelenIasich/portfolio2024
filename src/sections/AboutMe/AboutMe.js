@@ -33,9 +33,9 @@ function AboutMe() {
               <h5 className="about-subtitle2 pt-2">{t("AboutMeSubtitle2")}</h5>
               <hr className="line"></hr>
               <p className="about-text">{t("AboutMeDescription1")}</p>
-              <p className="about-text" dangerouslySetInnerHTML={{ __html: t("AboutMeDescription5")}}/>
-              <p className="about-text">{t("AboutMeDescription4")}</p>
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t("AboutMeDescription2")}}/>
               <p className="about-text">{t("AboutMeDescription3")}</p>
+              <p className="about-text">{t("AboutMeDescription4")}</p>
             </div>
           </div>
         </div>

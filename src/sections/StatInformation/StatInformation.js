@@ -27,8 +27,8 @@ function StatInformation() {
             isDecimal={true}
             showPlusSign={false}
           />
-          <StatCard number={8} label={t("NumberProjects")} />
-          <StatCard number={8} label={t("NumberHappyClients")} />
+          <StatCard number={10} label={t("NumberProjects")} />
+          <StatCard number={10} label={t("NumberHappyClients")} />
         </div>
       </div>
     </div>

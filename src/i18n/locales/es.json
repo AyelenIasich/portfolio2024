@@ -41,12 +41,11 @@
   "errorValidateEmail": "Por favor, ingrese un email válido",
   "AboutMeTitle": "Sobre mí",
   "AboutMeSubtitle1": "¡Bienvenidos, soy Aye!",
-  "AboutMeSubtitle2": "Desarrolladora Full Stack y autodidacta al tiempo completo",
-  "AboutMeDescription1": "Vivo en Ushuaia, Argentina, y me apasiona diseñar y desarrollar aplicaciones web y móviles que brinden soluciones completas y experiencias excepcionales.",
-  "AboutMeDescription2": "Descubrí la programación durante la pandemia y desde entonces dedico largas horas a perfeccionar mis habilidades en el frontend y backend.",
-  "AboutMeDescription3": "Mi curiosidad y disciplina me han permitido crecer rápidamente como profesional y enfrentar desafíos con creatividad e innovación.",
-  "AboutMeDescription4": "Disfruto trabajar en proyectos que combinan tecnología y diseño, creando interfaces intuitivas y funcionalidades robustas.",
-  "AboutMeDescription5": "Tengo experiencia en proyectos internacionales, manejo herramientas como <strong>React.js</strong>, <strong>React Native</strong>, y <strong>Laravel</strong> y colaboro con equipos para resolver desafíos complejos y crear soluciones escalables.",
+  "AboutMeSubtitle2": "Desarrolladora Full Stack enfocada en construir productos digitales end-to-end",
+  "AboutMeDescription1": "Vivo en Ushuaia, Argentina, y trabajo en aplicaciones web y móviles utilizadas en entornos reales, combinando visión de producto, experiencia de usuario y arquitectura de sistemas.",
+  "AboutMeDescription2": "Tengo experiencia desarrollando aplicaciones móviles, sistemas en tiempo real y plataformas backend, utilizando tecnologías como <strong>Laravel</strong>, <strong>Angular</strong>, <strong>Ionic</strong>, <strong>React Native</strong>, <strong>Redis</strong> y <strong>WebSockets</strong>.",
+  "AboutMeDescription3": "Disfruto trabajar en todo el ciclo del producto: diseñar flujos en Figma, implementar interfaces en frontend y construir servicios backend confiables que soportan aplicaciones reales.",
+  "AboutMeDescription4": "Actualmente estudio Ciencia de Datos e Inteligencia Artificial, explorando cómo la IA puede mejorar la productividad, el desarrollo de software y el diseño de sistemas.",
   "NumberExperience": "Años de experiencia",
   "NumberProjects": "Proyectos Exitosos",
   "NumberHappyClients": "Clientes Felices",
@@ -293,5 +292,5 @@
   "YaztaTechnologies":"<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (base de datos), <strong>AWS</strong> (servidores)",
   "YaztaMethics":"Estas aplicaciones alcanzaron <strong>10,000 descargas en los primeros 90 días, 2,500 usuarios activos mensuales (MAU) y 33,400 sesiones comprometidas</strong>.",
   "descriptionHome2":"Apasionada por el diseño y desarrollo de aplicaciones web y móviles. Con experiencia internacional, colaboró con equipos multidisciplinarios para resolver desafíos complejos y crear soluciones escalables con tecnologías como React.js, React Native y Laravel.",
-  "descriptionHome3":"Apasionada por el diseño y desarrollo de aplicaciones web y móviles. Con experiencia internacional, colaboró con equipos para resolver desafíos complejos y crear soluciones escalables."
+  "descriptionHome3":"Diseño y construyo productos digitales end-to-end, desde el diseño de UX/UI hasta el desarrollo de sistemas backend escalables y su implementación en producción."
 }
