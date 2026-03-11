@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4654550.css",
-    "main.js": "/static/js/main.9b24906f.js",
+    "main.css": "/static/css/main.1fac1d72.css",
+    "main.js": "/static/js/main.8d30f954.js",
     "static/js/453.addf49e5.chunk.js": "/static/js/453.addf49e5.chunk.js",
+    "static/media/TQR.jpg": "/static/media/TQR.49112b4737fefe544b6f.jpg",
     "static/media/Marcket-Chain.jpg": "/static/media/Marcket-Chain.bd95a916bbe02ae37d12.jpg",
     "static/media/yazta.jpg": "/static/media/yazta.c502706e0fe1aaef3368.jpg",
     "static/media/symbioXr.jpg": "/static/media/symbioXr.0283748d924badf07795.jpg",
     "static/media/politecnico.png": "/static/media/politecnico.f09d28feb9f9e1808850.png",
+    "static/media/OIL_GAS.jpg": "/static/media/OIL_GAS.a85d4acaaa3adb258773.jpg",
     "static/media/contact-austraunt2.svg": "/static/media/contact-austraunt2.bbb6c490bde4ff6e3b30b261eb522986.svg",
     "static/media/PiedraPapelTijera.png": "/static/media/PiedraPapelTijera.9bb3b2bbd10ed5c745d0.png",
     "static/media/PreWorkLinux.png": "/static/media/PreWorkLinux.d98e062a40b9b3c0b925.png",
@@ -83,12 +85,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.2585ac91c8831f47aa7b081d62c28e23.svg",
     "static/media/envelope.svg": "/static/media/envelope.a0db488f1138af64e6d8eb289aeaf587.svg",
     "static/media/bg-home-mobile3.svg": "/static/media/bg-home-mobile3.73b1e44ff8eec48d8bb0998566a9da00.svg",
-    "main.a4654550.css.map": "/static/css/main.a4654550.css.map",
-    "main.9b24906f.js.map": "/static/js/main.9b24906f.js.map",
+    "main.1fac1d72.css.map": "/static/css/main.1fac1d72.css.map",
+    "main.8d30f954.js.map": "/static/js/main.8d30f954.js.map",
     "453.addf49e5.chunk.js.map": "/static/js/453.addf49e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4654550.css",
-    "static/js/main.9b24906f.js"
+    "static/css/main.1fac1d72.css",
+    "static/js/main.8d30f954.js"
   ]
 }
