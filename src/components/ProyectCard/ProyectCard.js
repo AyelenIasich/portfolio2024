@@ -30,6 +30,7 @@ function ProyectCard({
   isShowModalPhotoProject = false,
   paragraphModal0,
   paragraphModal1,
+  paragraphModalNew,
   listTitle,
   listItem,
   paragraphModal2,
@@ -177,6 +178,7 @@ function ProyectCard({
               title={title2}
               paragraphModal0={paragraphModal0}
               paragraphModal1={paragraphModal1}
+              paragraphModalNew={paragraphModalNew}
               listTitle={listTitle}
               listItem={listItem}
               paragraphModal2={paragraphModal2}

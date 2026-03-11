@@ -8,6 +8,7 @@ function ModalContent({
   title,
   paragraphModal0,
   paragraphModal1,
+  paragraphModalNew, 
   listTitle,
   listItem,
   paragraphModal2,
@@ -36,6 +37,9 @@ function ModalContent({
           <p className="content-description" dangerouslySetInnerHTML={{ __html:paragraphModal0 }}/>
           {paragraphModal1 && (
             <p className="content-description"  dangerouslySetInnerHTML={{ __html:paragraphModal1 }}/>
+          )}
+          {paragraphModalNew && (
+            <p className="content-description"  dangerouslySetInnerHTML={{ __html:paragraphModalNew }}/>
           )}
 
           {sectionTitle2 && (

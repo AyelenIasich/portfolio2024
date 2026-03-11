@@ -6,6 +6,7 @@ import Fotografia from "../assets/proyects/Curso-Fotografia.jpg";
 import SeekerParking from "../assets/proyects/seeker-Parking.jpg";
 import MarcketChain from "../assets/proyects/Marcket-Chain.jpg";
 import OIL_GAS from "../assets/proyects/OIL_GAS.jpg";
+import TQR from "../assets/proyects/TQR.jpg";
 import Portfolio2022 from "../assets/proyects/Portfolio2022.jpg";
 import UshuaiaCultura from "../assets/proyects/UshuaiaCultura.jpg";
 import MarioFirstGame from "../assets/proyects/MarioFirstGame.jpg";
@@ -34,8 +35,49 @@ import DigitalOcean from "../assets/png/tech/DigitalOcean.png";
 import Springboot from "../assets/png/tech/Springboot.png";
 import CleverCloud from "../assets/png/tech/CleverCloud.png";
 import Railway from "../assets/png/tech/railway.png";
+import RedisLogo from "../assets/png/tech/redis.png";
+import WebSocketsLogo from "../assets/png/tech/websockets.png";
+import IonicLogo from "../assets/png/tech/ionic.png";
+import VueJsLogo from "../assets/png/tech/vue.png";
 
 const proyectsData = (t) => [
+  {
+    image: TQR,
+    category: t("MobileDevelopment"),
+    categoryFilter: "MobileDevelopment",
+    title: "TQR – Ticketing Platform (Inisoft)",
+    title2: "TQR – Ticketing Platform",
+    tech: [{ name: "Figma", icon: FigmaLogo }, 
+      {name: "Docker", icon: DockerLogo},
+      {name: "AWS", icon: AWS},
+      { name: "Laravel", icon: LaravelLogo },
+      { name: "MySQL", icon: MySQLLogo },
+      { name: "Redis", icon: RedisLogo },
+      { name: "WebSockets + laravel horizon", icon: WebSocketsLogo },
+      { name: "Ionic + Capacitor", icon: IonicLogo },
+      { name: "Angular", icon: AngularLogo },
+      { name: "Vue", icon: VueJsLogo },
+      { name: "React", icon: ReactJsLogo },
+    ],
+    period: t("tqrPeriod"),
+    description: t("tqrDescription"),
+
+    sectionTitle1: t("NietosSectioTitle1"),
+    paragraphModal0: t("tqrDescriptionModal0"),
+    paragraphModal1: t("tqrDescriptionModal1"),
+    paragraphModalNew: t("tqrDescriptionModalNew"),
+    sectionTitle2: t("NietosSectioTitle2"),
+    contributions: [
+      t("tqrContribution1"),
+      t("tqrContribution2"),
+      t("tqrContribution3"),
+      t("tqrContribution4"),
+      t("tqrContribution5"),
+      t("tqrContribution6"),
+    ],
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+  },
   {
     image: OIL_GAS,
     category: t("WebDesign"),
@@ -363,6 +405,43 @@ export const categoriesProyects = (t) => [
 ];
 
 export const previewProjectsData = (t) => [
+  {
+    image: TQR,
+    category: t("MobileDevelopment"),
+    categoryFilter: "MobileDevelopment",
+    title: "TQR – Ticketing Platform (Inisoft)",
+    title2: "TQR – Ticketing Platform",
+    tech: [{ name: "Figma", icon: FigmaLogo }, 
+      {name: "Docker", icon: DockerLogo},
+      {name: "AWS", icon: AWS},
+      { name: "Laravel", icon: LaravelLogo },
+      { name: "MySQL", icon: MySQLLogo },
+      { name: "Redis", icon: RedisLogo },
+      { name: "WebSockets + laravel horizon", icon: WebSocketsLogo },
+      { name: "Ionic + Capacitor", icon: IonicLogo },
+      { name: "Angular", icon: AngularLogo },
+      { name: "Vue", icon: VueJsLogo },
+      { name: "React", icon: ReactJsLogo },
+    ],
+    period: t("tqrPeriod"),
+    description: t("tqrDescription"),
+
+    sectionTitle1: t("NietosSectioTitle1"),
+    paragraphModal0: t("tqrDescriptionModal0"),
+    paragraphModal1: t("tqrDescriptionModal1"),
+    paragraphModalNew: t("tqrDescriptionModalNew"),
+    sectionTitle2: t("NietosSectioTitle2"),
+    contributions: [
+      t("tqrContribution1"),
+      t("tqrContribution2"),
+      t("tqrContribution3"),
+      t("tqrContribution4"),
+      t("tqrContribution5"),
+      t("tqrContribution6"),
+    ],
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+  },
   {
     image: OIL_GAS,
     category: t("WebDesign"),

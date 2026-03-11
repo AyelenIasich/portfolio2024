@@ -306,5 +306,16 @@
   "OilGasContribution1": "Designed user flows and information architecture for energy analytics dashboards",
   "OilGasContribution2": "Created high-fidelity prototypes in Figma for industrial data visualization",
   "OilGasContribution3": "Collaborated directly with domain experts to validate technical requirements",
-  "OilGasContribution4": "Participated in the YPF Hackathon exploring AI-driven solutions for predictive maintenance of oil storage tanks"
+  "OilGasContribution4": "Participated in the YPF Hackathon exploring AI-driven solutions for predictive maintenance of oil storage tanks",
+  "tqrPeriod": "Jan. 2025 - Present",
+  "tqrDescription": "Full stack development of the TQR ticketing ecosystem, a platform used in live events for access control, ticket sales and real-time operational monitoring. I designed and developed the mobile application used by event staff (iOS and Android), as well as the QR ticket validation system and real-time monitoring dashboards using WebSockets and Redis. I implemented the push notification infrastructure using Firebase Cloud Messaging and integrated the system with physical turnstiles for access control. I also developed the asynchronous processing architecture using queues and Laravel Horizon to ensure system stability and scalability.",
+  "tqrDescriptionModal0": "TQR is a ticketing platform used in live events to manage ticket sales, access control and real-time operational monitoring.",
+  "tqrDescriptionModal1": "The ecosystem includes multiple applications connected to a central Laravel API: mobile apps for event operations staff, administration and configuration dashboards, an ecommerce platform for ticket sales, and real-time monitoring and analytics systems. These applications are integrated through backend infrastructure using Redis, WebSockets and asynchronous processing.",
+  "tqrDescriptionModalNew": "The platform is used in real production environments during live events to manage access control and operational workflows.",
+  "tqrContribution1": "Design and development of the <strong>TQR</strong> mobile application for iOS and Android using <strong>Ionic</strong>, <strong>Angular</strong> and <strong>Capacitor</strong>",
+  "tqrContribution2": "Implementation of the <strong>QR ticket validation workflow</strong> for event access control",
+  "tqrContribution3": "Integration with <strong>physical turnstiles</strong> to automate ticket validation",
+  "tqrContribution4": "Development of <strong>real-time operational dashboards</strong> using <strong>WebSockets</strong> and <strong>Redis</strong>",
+  "tqrContribution5": "Implementation of <strong>push notification infrastructure</strong> using <strong>Firebase Cloud Messaging (FCM)</strong>",
+  "tqrContribution6": "Design of <strong>UX flows in Figma</strong> and direct implementation in the application frontend"
 }

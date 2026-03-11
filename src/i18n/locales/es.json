@@ -301,5 +301,18 @@
   "OilGasContribution1":"Diseño de flujos de usuario y arquitectura de información para dashboards de análisis energético",
   "OilGasContribution2":"Creación de prototipos de alta fidelidad en Figma para visualización de datos industriales",
   "OilGasContribution3":"Colaboración directa con expertos del dominio para validar requerimientos técnicos",
-  "OilGasContribution4":"Participación en el YPF Hackathon, explorando soluciones basadas en IA para mantenimiento predictivo de tanques de petróleo"
+  "OilGasContribution4":"Participación en el YPF Hackathon, explorando soluciones basadas en IA para mantenimiento predictivo de tanques de petróleo",
+  "tqrPeriod": "Ene. 2025 - Actualidad",
+  "tqrDescription": "Desarrollo full stack del ecosistema de ticketing TQR, una plataforma utilizada en eventos para la gestión de accesos, ventas y monitoreo operativo en tiempo real. Diseñé y desarrollé la aplicación móvil utilizada por el staff de eventos (iOS y Android), así como el sistema de validación de tickets mediante QR y los dashboards de monitoreo en tiempo real utilizando WebSockets y Redis. Implementé la infraestructura de notificaciones push con Firebase Cloud Messaging y la integración con molinetes físicos para el control de accesos. También desarrollé el procesamiento asincrónico del sistema mediante colas de trabajo y Laravel Horizon para garantizar estabilidad y escalabilidad.",
+  "tqrDescriptionModal0" : "TQR es una plataforma de ticketing utilizada en eventos en vivo para gestionar ventas de tickets, control de accesos y monitoreo operativo en tiempo real.",
+  "tqrDescriptionModal1": "El ecosistema incluye múltiples aplicaciones conectadas a una API central en Laravel: aplicaciones móviles para el personal del evento, dashboards de administración y configuración, una plataforma de ecommerce para la venta de entradas y sistemas de monitoreo y analítica en tiempo real. Estas aplicaciones se integran mediante infraestructura backend con Redis, WebSockets y procesamiento asincrónico.",
+  "tqrDescriptionModalNew":"La aplicación es utilizada en entornos reales durante eventos para gestionar accesos y operaciones en vivo.",
+  "tqrContribution1":"Diseño y desarrollo de la aplicación móvil <strong>TQR</strong> para iOS y Android utilizando <strong>Ionic</strong>, <strong>Angular</strong> y <strong>Capacitor</strong>",
+  "tqrContribution2":"Implementación del flujo de <strong>validación de tickets mediante QR</strong> para control de accesos en eventos",
+  "tqrContribution3":"Integración con <strong>molinetes físicos</strong> para automatizar la validación de entradas",
+  "tqrContribution4":"Desarrollo de <strong>dashboards operativos en tiempo real</strong> utilizando <strong>WebSockets</strong> y <strong>Redis</strong>",
+  "tqrContribution5":"Implementación de <strong>notificaciones push</strong> con <strong>Firebase Cloud Messaging (FCM)</strong>",
+  "tqrContribution6":"Diseño de <strong>flujos UX en Figma</strong> e implementación directa en el frontend de la aplicación"
+
+
 }
