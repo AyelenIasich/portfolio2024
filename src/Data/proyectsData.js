@@ -5,6 +5,7 @@ import Celigourmet from "../assets/proyects/celigourmet.jpg";
 import Fotografia from "../assets/proyects/Curso-Fotografia.jpg";
 import SeekerParking from "../assets/proyects/seeker-Parking.jpg";
 import MarcketChain from "../assets/proyects/Marcket-Chain.jpg";
+import OIL_GAS from "../assets/proyects/OIL_GAS.jpg";
 import Portfolio2022 from "../assets/proyects/Portfolio2022.jpg";
 import UshuaiaCultura from "../assets/proyects/UshuaiaCultura.jpg";
 import MarioFirstGame from "../assets/proyects/MarioFirstGame.jpg";
@@ -35,26 +36,30 @@ import CleverCloud from "../assets/png/tech/CleverCloud.png";
 import Railway from "../assets/png/tech/railway.png";
 
 const proyectsData = (t) => [
-  // {
-  //   image: Yazta,
-  //   category: t("MobileDevelopment"),
-  //   categoryFilter: "MobileDevelopment",
-  //   title: "Yazta Mx & Yazta Pro (Innovus)",
-  //   title2: "Yazta Mx & Yazta Pro",
-  //   tech: [
-  //     { name: "React Native", icon: ReactNativeLogo },
-  //     { name: "Strapi", icon: StrapiLogo },
-  //     { name: "AWS", icon: AWS },
-  //     { name: "PostgreSQL", icon: PostgreSQLLogo },
-  //     { name: "CSS", icon: CssLogo },
-  //     { name: "Figma", icon: FigmaLogo },
-  //   ],
-  //   period: "Nov. 2023 - Oct. 2024",
-  //   description: t("YaztaDescription"),
-  //   linkMoreInfo: "/yaztaproject",
-  //   isYazta: true,
-  //   isShowModalPhotoProject: false,
-  // },
+  {
+    image: OIL_GAS,
+    category: t("WebDesign"),
+    categoryFilter: "WebDesign",
+    title: "Oil & Gas Data Platform – UX Prototypes (Inisoft)",
+    title2: "Oil & Gas Data Platform – UX Prototypes",
+    tech: [{ name: "Figma", icon: FigmaLogo }],
+    period: t("OilGasPeriod"),
+    description: t("OilGasDescription"),
+
+    sectionTitle1: t("NietosSectioTitle1"),
+    paragraphModal0: t("OilGasDescriptionModal"),
+    paragraphModal1: t("OilGasDescriptionModal1"),
+    sectionTitle2: t("NietosSectioTitle2"),
+    contributions: [
+      t("OilGasContribution1"),
+      t("OilGasContribution2"),
+      t("OilGasContribution3"),
+      t("OilGasContribution4"),
+    ],
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+  },
+
   {
     image: Yazta,
     category: t("MobileDevelopment"),
@@ -359,6 +364,29 @@ export const categoriesProyects = (t) => [
 
 export const previewProjectsData = (t) => [
   {
+    image: OIL_GAS,
+    category: t("WebDesign"),
+    categoryFilter: "WebDesign",
+    title: "Oil & Gas Data Platform – UX Prototypes (Inisoft)",
+    title2: "Oil & Gas Data Platform – UX Prototypes",
+    tech: [{ name: "Figma", icon: FigmaLogo }],
+    period: t("OilGasPeriod"),
+    description: t("OilGasDescription"),
+
+    sectionTitle1: t("NietosSectioTitle1"),
+    paragraphModal0: t("OilGasDescriptionModal"),
+    paragraphModal1: t("OilGasDescriptionModal1"),
+    sectionTitle2: t("NietosSectioTitle2"),
+    contributions: [
+      t("OilGasContribution1"),
+      t("OilGasContribution2"),
+      t("OilGasContribution3"),
+      t("OilGasContribution4"),
+    ],
+    isShowModalPhotoProject: true,
+    isShowMoreInfo: true,
+  },
+  {
     image: Yazta,
     category: t("MobileDevelopment"),
     categoryFilter: "MobileDevelopment",
@@ -442,19 +470,7 @@ export const previewProjectsData = (t) => [
       t("SeekerParkingListItem3"),
     ],
   },
-  {
-    image: MarcketChain,
-    category: t("WebDesign"),
-    categoryFilter: "WebDesign",
-    title: "MarketChain (Innovus)",
-    tech: [{ name: "Figma", icon: FigmaLogo }],
-    period: t("MarketChainPeriod"),
-    description: t("MarketChainDescription"),
-    linkWeb:
-      "https://www.figma.com/design/LVUtuggIRUZDLkGmrjJiZQ/MarketChainFigmaUX%7CIX?node-id=0-1&node-type=canvas&t=sPowzbgy41RHGWsc-0",
-    isShowBtns: false,
-    isShowMoreInfo: false,
-  },
+
 ];
 
 export default proyectsData;

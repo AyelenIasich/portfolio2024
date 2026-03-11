@@ -298,5 +298,13 @@
   "YaztaTechnologies": "<strong>React Native</strong> (frontend), <strong>Strapi v3</strong> (backend), <strong>PostgreSQL</strong> (database), <strong>AWS</strong> (servers)",
   "YaztaMethics": "These applications reached <strong>10,000 downloads in the first 90 days, 2,500 monthly active users (MAU)</strong>, and <strong>33,400 engaged sessions</strong> on the platform.",
   "descriptionHome2": "Passionate about designing and developing web and mobile applications. With international experience, I collaborate with multidisciplinary teams to solve complex challenges and deliver scalable solutions using technologies like React.js, React Native, and Laravel.",
-  "descriptionHome3": "I design and build end-to-end digital products — from UX/UI design and frontend development to scalable backend systems and real-time architectures used in production."
+  "descriptionHome3": "I design and build end-to-end digital products — from UX/UI design and frontend development to scalable backend systems and real-time architectures used in production.",
+  "OilGasPeriod": "Jan. 2025 - Mar. 2025",
+  "OilGasDescription": "Designed UX prototypes in Figma for a data analytics platform in the Oil & Gas industry, focused on operational dashboards and predictive maintenance. Collaborated with a petroleum engineer and a CIAO (Collaborative Intelligence Architect & Orchestrator) to translate complex operational workflows into intuitive interfaces. Participated in the YPF Hackathon exploring AI-driven solutions for predictive maintenance of oil storage tanks.",
+  "OilGasDescriptionModal": "UX prototyping for a data analytics platform in the <strong>Oil & Gas</strong> industry, aimed at improving operational data visualization and supporting predictive maintenance processes.",
+  "OilGasDescriptionModal1": "The prototypes were developed in <strong>Figma</strong>, collaborating with domain experts including a petroleum engineer and a <strong>Collaborative Intelligence Architect & Orchestrator (CIAO)</strong>.",
+  "OilGasContribution1": "Designed user flows and information architecture for energy analytics dashboards",
+  "OilGasContribution2": "Created high-fidelity prototypes in Figma for industrial data visualization",
+  "OilGasContribution3": "Collaborated directly with domain experts to validate technical requirements",
+  "OilGasContribution4": "Participated in the YPF Hackathon exploring AI-driven solutions for predictive maintenance of oil storage tanks"
 }
