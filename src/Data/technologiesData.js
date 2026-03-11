@@ -24,7 +24,9 @@ import GenexusLogo from "../assets/png/tech/genexus.jpg";
 import ReduxIcon from "../assets/png/icon/reduxIcon.png";
 import tailwind from "../assets/png/icon/tailwind.png";
 import Node from "../assets/png/tech/node.png";
-
+import IonicLogo from "../assets/png/tech/ionic.png";
+import VueJsLogo from "../assets/png/tech/vue.png";
+import RedisLogo from "../assets/png/tech/redis.png";
 
 export const BackendData = (t) => [
   {
@@ -58,12 +60,23 @@ export const BackendData = (t) => [
     techDescription: t("BackendDevelopment"),
   },
   {
-    image: JavaLogo,
-    tech: "Java",
-    techDescription: t("BackendDevelopment"),
+    image:RedisLogo,
+    tech: "Redis",
+    techDescription: t("RedisInfrastructure"),
   },
+
 ];
 export const frontendData = (t) => [
+  {
+    image: IonicLogo,
+    tech: "Ionic + Capacitor",
+    techDescription: t("MobileDevelopment"),
+  },
+  {
+    image: AngularLogo,
+    tech: "Angular",
+    techDescription: t("FrontendDevelopment1"),
+  },
   {
     image: ReduxIcon,
     tech: "Redux",
@@ -79,11 +92,7 @@ export const frontendData = (t) => [
     tech: "React.js",
     techDescription: t("FrontendDevelopment1"),
   },
-  {
-    image: AngularLogo,
-    tech: "Angular",
-    techDescription: t("FrontendDevelopment1"),
-  },
+
   {
     image: JsLogo,
     tech: "Javascript",
@@ -93,6 +102,11 @@ export const frontendData = (t) => [
     image: TsLogo,
     tech: "Typescript",
     techDescription: t("WebDevelopment"),
+  },
+  {
+    image: VueJsLogo,
+    tech: "Vue.js",
+    techDescription: t("FrontendDevelopment1"),
   },
   {
     image: CssLogo,
