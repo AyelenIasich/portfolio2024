@@ -22,7 +22,7 @@ import "../i18n/i18n";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
           path="/"
