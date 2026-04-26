@@ -45,6 +45,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://ayeleniasich.github.io/portfolio2024",
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
